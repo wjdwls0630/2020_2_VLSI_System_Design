@@ -1,0 +1,50 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+ )
+( net
+( "CK" "ck" )
+( "GND" "gnd" )
+( "VDD" "vdd" )
+( "D" "d" )
+( "Q" "q" )
+ )
+( inst
+( "M12" "m12" )
+( "M10" "m10" )
+( "M26" "m26" )
+( "M18" "m18" )
+( "M5" "m5" )
+( "M8" "m8" )
+( "M4" "m4" )
+( "M2" "m2" )
+( "M14" "m14" )
+( "M16" "m16" )
+( "M25" "m25" )
+( "M9" "m9" )
+( "M7" "m7" )
+( "M13" "m13" )
+( "M15" "m15" )
+( "M22" "m22" )
+( "M1" "m1" )
+( "M6" "m6" )
+( "M17" "m17" )
+( "M21" "m21" )
+( "M11" "m11" )
+( "M20" "m20" )
+( "M24" "m24" )
+( "M19" "m19" )
+( "M3" "m3" )
+( "M23" "m23" )
+ )
+( model
+( "D-FF" "_sub0" )
+ )
+( term
+ )
+( param
+ )
+ )

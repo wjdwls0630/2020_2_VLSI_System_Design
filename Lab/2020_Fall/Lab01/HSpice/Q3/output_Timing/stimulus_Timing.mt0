@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
+.TITLE 'dff_timing'
+ tclk_qf          tclk_qr          tclk-q           avgpower          
+ peakpower        temper           alter#            
+  4.945e-11        6.329e-11        5.637e-11        1.765e-05        
+  2.835e-04        2.500e+01       1                 

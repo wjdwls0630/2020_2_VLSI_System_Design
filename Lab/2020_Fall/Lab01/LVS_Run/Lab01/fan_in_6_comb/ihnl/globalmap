@@ -1,0 +1,9 @@
+CADENCE IHNL01070
+$model
+Library_Jin/inverter/schematic inverter
+Library_Jin/fan_in_6_comb/schematic fan_in_6_comb
+$endmodel
+$net
+$endnet
+$param
+$endparam

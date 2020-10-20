@@ -1,0 +1,31 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP1 64-BIT"
+* "format" "HSP"
+* "rundate" "21:26:58 10/20/2020 "
+* "netlist" "stimulus_Bisec.sp "
+* "runtitle" "dff_case00"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ ck = 0.000e+00       
++ d = 0.000e+00       
++ q = 5.452e-01       
++ vdd = 1.100e+00       
++ x1.clk = 2.566e-05       
++ x1.clk_b = 1.100e+00       
++ x1.net18 = 1.100e+00       
++ x1.net32 = 2.966e-05       
++ x1.net39 = 5.246e-01       
++ x1.net45 = 5.092e-01       
++ x1.net75 = 7.291e-01       
++ x1.net76 = 4.148e-01       
++ x1.net77 = 1.100e+00       
++ x1.net78 = 3.008e-02       
++ x1.net79 = 1.100e+00       
++ x1.net80 = 8.956e-01       
++ x1.net81 = 1.100e+00       
++ x1.net82 = 8.956e-01       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
+.TITLE 'dff_case00'
+ index            delaytime        vout             setup00           
+                  avgpower         peakpower        temper            
+                  alter#            
+  1.000e+00          failed           failed           failed         
+                     failed           failed         2.500e+01        
+                  2                 

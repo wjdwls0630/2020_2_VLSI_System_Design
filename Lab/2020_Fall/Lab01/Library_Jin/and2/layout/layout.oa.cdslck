@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      2015104027
+HostName                       vlsi-dist.khu.ac.kr
+ProcessIdentifier              10450
+ProcessCreationTime_UTC        1587199393
+ProcessCreationTime_Readable   Sat Apr 18 17:43:13 2020 KST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/VLSI_undergraduated_2020/2015104027/Library_Jin/and2/layout/layout.oa.cdslck.dirlck
+TimeEditLocked                 Sat Apr 18 17:43:21 2020 KST

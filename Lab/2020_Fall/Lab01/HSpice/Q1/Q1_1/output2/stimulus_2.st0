@@ -1,0 +1,82 @@
+***** HSPICE -- I-2013.12-SP1 64-BIT (Feb 25 2014) RHEL64 ******
+ Input File: stimulus_2.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   2015104027           HOSTNAME: vlsi-dist.khu.ac.kr
+ lic: HOSTID: 382c4ac7d475         PID:      32966
+ lic: Using FLEXlm license file:
+ lic: 27020@163.180.118.198
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-jun-2021/2020.03
+ lic: 1(in_use)/5(total) FLOATING license(s) on SERVER 27020@163.180.118.198
+ lic:
+ init: begin read circuit files,  cpu clock=  7.81E-01
+       option search = /Tools/Synopsys/Hspice/hspice/parts/ad
+       option search = /Tools/Synopsys/Hspice/hspice/parts/ad
+       option search = /Tools/Synopsys/Hspice/hspice/parts/behave
+       option search = /Tools/Synopsys/Hspice/hspice/parts/bjt
+       option search = /Tools/Synopsys/Hspice/hspice/parts/burr_brn
+       option search = /Tools/Synopsys/Hspice/hspice/parts/comlinear
+       option search = /Tools/Synopsys/Hspice/hspice/parts/dio
+       option search = /Tools/Synopsys/Hspice/hspice/parts/fet
+       option search = /Tools/Synopsys/Hspice/hspice/parts/lin_tech
+       option search = /Tools/Synopsys/Hspice/hspice/parts/pci
+       option search = /Tools/Synopsys/Hspice/hspice/parts/signet
+       option search = /Tools/Synopsys/Hspice/hspice/parts/ti
+       option search = /Tools/Synopsys/Hspice/hspice/parts/tline
+       option search = /Tools/Synopsys/Hspice/hspice/parts/xilinx
+       option runlvl
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option delmax =    1.000E-09
+       option ivth =    1.000E-07
+       option bypass =     0.00
+ init: end read circuit files,  cpu clock=  7.83E-01 peak memory=       172 mb
+ init: begin check errors,  cpu clock=  7.83E-01
+ init: end check errors,  cpu clock=  7.86E-01 peak memory=       173 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  7.86E-01
+       establish matrix -- done,  cpu clock=  7.86E-01 peak memory=       173 mb
+       re-order matrix -- done,  cpu clock=  7.86E-01 peak memory=       173 mb
+ init: end setup matrix,  cpu clock=  7.86E-01 peak memory=       173 mb
+ sweep: voltage         voltage1         begin, #sweeps =  12
+ voltage: vsg             =    0.00E+00
+ sweep: dc dc1    begin, #sweeps=1101 cpu clock=  7.88E-01
+ sweep: dc dc1    end,  cpu clock=  8.35E-01 peak memory=       173 mb
+ voltage: vsg             =    1.00E-01
+ sweep: dc dc2    begin, #sweeps=1101 cpu clock=  8.37E-01
+ sweep: dc dc2    end,  cpu clock=  8.85E-01 peak memory=       173 mb
+ voltage: vsg             =    2.00E-01
+ sweep: dc dc3    begin, #sweeps=1101 cpu clock=  8.86E-01
+ sweep: dc dc3    end,  cpu clock=  9.33E-01 peak memory=       173 mb
+ voltage: vsg             =    3.00E-01
+ sweep: dc dc4    begin, #sweeps=1101 cpu clock=  9.35E-01
+ sweep: dc dc4    end,  cpu clock=  9.83E-01 peak memory=       173 mb
+ voltage: vsg             =    4.00E-01
+ sweep: dc dc5    begin, #sweeps=1101 cpu clock=  9.84E-01
+ sweep: dc dc5    end,  cpu clock=  1.03E+00 peak memory=       173 mb
+ voltage: vsg             =    5.00E-01
+ sweep: dc dc6    begin, #sweeps=1101 cpu clock=  1.03E+00
+ sweep: dc dc6    end,  cpu clock=  1.08E+00 peak memory=       173 mb
+ voltage: vsg             =    6.00E-01
+ sweep: dc dc7    begin, #sweeps=1101 cpu clock=  1.08E+00
+ sweep: dc dc7    end,  cpu clock=  1.13E+00 peak memory=       173 mb
+ voltage: vsg             =    7.00E-01
+ sweep: dc dc8    begin, #sweeps=1101 cpu clock=  1.13E+00
+ sweep: dc dc8    end,  cpu clock=  1.18E+00 peak memory=       173 mb
+ voltage: vsg             =    8.00E-01
+ sweep: dc dc9    begin, #sweeps=1101 cpu clock=  1.18E+00
+ sweep: dc dc9    end,  cpu clock=  1.23E+00 peak memory=       173 mb
+ voltage: vsg             =    9.00E-01
+ sweep: dc dc10   begin, #sweeps=1101 cpu clock=  1.23E+00
+ sweep: dc dc10   end,  cpu clock=  1.28E+00 peak memory=       173 mb
+ voltage: vsg             =    1.00E+00
+ sweep: dc dc11   begin, #sweeps=1101 cpu clock=  1.28E+00
+ sweep: dc dc11   end,  cpu clock=  1.33E+00 peak memory=       173 mb
+ voltage: vsg             =    1.10E+00
+ sweep: dc dc12   begin, #sweeps=1101 cpu clock=  1.33E+00
+ sweep: dc dc12   end,  cpu clock=  1.37E+00 peak memory=       173 mb
+ sweep: voltage         voltage         1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

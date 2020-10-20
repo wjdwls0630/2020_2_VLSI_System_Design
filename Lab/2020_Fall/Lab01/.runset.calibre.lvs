@@ -1,0 +1,22 @@
+*lvsRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreLVS.rul
+*lvsRunDir: /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb
+*lvsLayoutPaths: fan_in_6_comb.calibre.db
+*lvsLayoutPrimary: fan_in_6_comb
+*lvsLayoutLibrary: Library_Jin
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: fan_in_6_comb.src.net
+*lvsSourcePrimary: fan_in_6_comb
+*lvsSourceLibrary: Library_Jin
+*lvsSourceView: schematic
+*lvsSourceGetFromViewer: 1
+*lvsSpiceFile: fan_in_6_comb.sp
+*lvsERCDatabase: fan_in_6_comb.erc.results
+*lvsERCSummaryFile: fan_in_6_comb.erc.summary
+*lvsReportFile: fan_in_6_comb.lvs.report
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: Library_Jin
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: fan_in_6_comb.def

@@ -1,0 +1,17 @@
+
+** Library name: Library_Jin
+** Cell name: fan_in_6_comb
+** View name: schematic
+m11 net19 b vdd vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m10 net19 a vdd vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m9 net15 c net19 vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m8 net15 e net19 vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m7 net15 d net19 vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m0 y_b f net15 vdd PMOS_VTL L=50e-9 W=540e-9 AD=56.7e-15 AS=56.7e-15 PD=750e-9 PS=750e-9 M=1
+m6 y_b f net13 gnd NMOS_VTL L=50e-9 W=360e-9 AD=37.8e-15 AS=37.8e-15 PD=570e-9 PS=570e-9 M=1
+m5 net32 a gnd gnd NMOS_VTL L=50e-9 W=240e-9 AD=25.2e-15 AS=25.2e-15 PD=450e-9 PS=450e-9 M=1
+m4 net30 c gnd gnd NMOS_VTL L=50e-9 W=360e-9 AD=37.8e-15 AS=37.8e-15 PD=570e-9 PS=570e-9 M=1
+m3 net31 d net30 gnd NMOS_VTL L=50e-9 W=360e-9 AD=37.8e-15 AS=37.8e-15 PD=570e-9 PS=570e-9 M=1
+m2 net13 b net32 gnd NMOS_VTL L=50e-9 W=240e-9 AD=25.2e-15 AS=25.2e-15 PD=450e-9 PS=450e-9 M=1
+m1 net13 e net31 gnd NMOS_VTL L=50e-9 W=360e-9 AD=37.8e-15 AS=37.8e-15 PD=570e-9 PS=570e-9 M=1
+xi0 gnd y_b y vdd inverter

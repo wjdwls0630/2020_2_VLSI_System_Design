@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT fan_in_6_comb.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb/fan_in_6_comb.src.net
+lvs_LvsOutFile RULES_FILE /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb/_calibreLVS.rul_
+lvs_LvsRunTimes 1603110969 1603110969

@@ -1,0 +1,5 @@
+
+** Library name: Library_Jin
+** Cell name: inverter
+** View name: schematic
+.subckt inverter gnd input output vdd

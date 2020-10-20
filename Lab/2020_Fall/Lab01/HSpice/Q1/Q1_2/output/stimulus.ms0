@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
+.TITLE 'tttt_vtc_dc_forward'
+ vil              voh              vih              vol               
+ nml              nmh              vm               temper            
+ alter#            
+  4.686e-01        9.973e-01        6.912e-01        1.061e-01        
+  3.625e-01        3.061e-01        5.743e-01        2.500e+01        
+ 1                 

@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP1 64-BIT"
+* "format" "HSP"
+* "rundate" "01:27:22 10/20/2020 "
+* "netlist" "stimulus_Delay.sp "
+* "runtitle" "ttff"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ input = 0.000e+00       
++ output = 1.100e+00       
++ vdd = 1.100e+00       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,19 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "23:50:40 10/19/2020 " 
+"runtitle" "tttt_nmos_i-v_curve                                               " 
+"runtype" "Summary Information"
+"op point time" "      0.00"  
+"op point iterations" "       
+"dc sweep time" "      0.58"       
+"dc sweep iterations" "     26447" 
+"total cpu time" "        0.60"    
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "complete"
+"transient analysis" "invalid"
+trailer
+end

@@ -1,0 +1,14 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 11/05/2015 10:35 (sjfql586) $
+\o Sub version:		sub-version  s019 
+\o Arguments:		-display localhost:11.0 -mpssession virtuoso10193 -mpshost vlsi-dist.khu.ac.kr -namespace CDBA -cdslib /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/cds.lib 
+\o Working Directory:	vlsi-dist.khu.ac.kr:/home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.7.2
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(85 47 500 400))
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

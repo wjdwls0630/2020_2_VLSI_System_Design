@@ -1,0 +1,6 @@
+mgc_rve_context_lcv "Library_Jin" "fan_in_6_comb" "layout" 2000
+mgc_rve_highlight_index 0 "M0" "#FFFF0000FFFF"
+mgc_rve_property "w" 3.6e-07  "l" 5e-08  "as" 5.76e-14  "ad" 5.04e-14  "ps" 1.04e-06  "pd" 1e-06  "model" "NMOS_VTL"
+mgc_rve_layer "ngate"
+mr 0.705 -3.635 0.755 -3.275
+mgc_rve_zoom 0.6945 -3.712 0.7655 -3.198 1

@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+Library_Jin/D-FF/schematic _sub0
+$endmodel
+$net
+$endnet
+$param
+$endparam

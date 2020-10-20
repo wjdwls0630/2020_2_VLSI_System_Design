@@ -1,0 +1,14 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
+.TITLE 'corner_ss_dc_noise_margin_with_temp_variation'
+ temper           vil              voh              vih               
+                  vol              nml              nmh               
+                  vm               alter#            
+ -4.500e+01        4.941e-01        1.020e+00        6.587e-01        
+                   8.771e-02        4.064e-01        3.619e-01        
+                   5.730e-01       2                 
+  2.500e+01        4.722e-01        1.009e+00        6.832e-01        
+                   9.327e-02        3.789e-01        3.265e-01        
+                   5.729e-01       2                 
+  1.250e+02        4.530e-01        9.995e-01        7.079e-01        
+                   1.005e-01        3.525e-01        2.915e-01        
+                   5.735e-01       2                 

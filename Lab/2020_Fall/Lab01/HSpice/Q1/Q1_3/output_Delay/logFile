@@ -1,0 +1,64 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "01:27:22 10/20/2020 " 
+"runtitle" "ttss                                                              " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"stimulus_Delay.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"stimulus_Delay.su0"
+"PSF"
+""
+()
+"Summary Information"
+)
+"timeSweep1" "analysisInst" ( 
+"Transient Analysis"
+"stimulus_Delay.tr1"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"stimulus_Delay.su1" "analysisInst" ( 
+"Summary Information"
+"stimulus_Delay.su1"
+"PSF"
+""
+()
+"Summary Information"
+)
+"timeSweep2" "analysisInst" ( 
+"Transient Analysis"
+"stimulus_Delay.tr2"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"stimulus_Delay.su2" "analysisInst" ( 
+"Summary Information"
+"stimulus_Delay.su2"
+"PSF"
+""
+()
+"Summary Information"
+)

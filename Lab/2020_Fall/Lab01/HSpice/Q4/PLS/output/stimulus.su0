@@ -1,0 +1,19 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "00:35:25 10/21/2020 " 
+"runtitle" "fan_in_6_comb_timing                                              " 
+"runtype" "Summary Information"
+"op point time" "      0.01"  
+"op point iterations" "       
+"transient time" "      0.03"      
+"transient time" "      0.03"      
+"total cpu time" "        0.07"    
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "invalid"
+"transient analysis" "complete"
+trailer
+end

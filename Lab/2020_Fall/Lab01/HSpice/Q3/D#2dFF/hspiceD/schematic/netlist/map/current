@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "D-FF"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/graduation_project3/2015103977/2020_2_VLSI/Lab01/HSpice/D-FF/D-FF/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Library_Jin/D-FF/schematic" "_sub0" )
+ )
+( term
+ )
+( param
+ )
+( "_sub0" "ihnl/cds0/map" )
+ )
