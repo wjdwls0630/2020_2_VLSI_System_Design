@@ -64,7 +64,7 @@ vin1 ck gnd PWL
 * finds the transition if it exists
 .if ('first_volt'=='vdd')
 * Setup Time 
-.MEASURE TRAN Vout MIN v(q) Goal=1u FROM=3.4n TO=6.2n
+.MEASURE TRAN Vout AVG v(q) Goal=0.4468 FROM=5.4n TO=6.4n
 .MEASURE tran setup11 TRIG v(d) VAL='vdd/2' TD=3.4n FALL=1 $ when d changes 0 to 1, see q change 
 +	TARG v(ck) VAL='vdd/2' RISE=1
 .else

@@ -2,7 +2,7 @@ header
 "PSFversion" "1.00" 
 "simulator" "HSPICE"
 "version" "I-2013.12-SP1 64-BIT" 
-"rundate" "23:34:03 10/20/2020 " 
+"rundate" "08:30:47 10/27/2020 " 
 "runtitle" "dff_timing                                                        " 
 "runtype" "logFile"
 TYPE

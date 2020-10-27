@@ -29,10 +29,10 @@ vin0 d gnd PWL
 + 0s vdd $ q: unknow -> 1 
 + 15.7n vdd 
 + 16.4n 0 $ q: 1 -> 0 (tclk_qf)
-+ 52.66n 0 $ setup violation
-+ 53.36n vdd
-+ 95.5345n vdd $ (negative) hold violation
-+ 96.2345n 0
++ 52.7368n 0 $ setup violation
++ 53.4368n vdd
++ 95.6015n vdd $ (negative) hold violation
++ 96.3015n 0
 + 133.0n 0 $ q: 0 -> 1 (tclk_qr)
 + 133.7n vdd 
 + 141.0n vdd

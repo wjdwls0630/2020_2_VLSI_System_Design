@@ -1,5 +1,5 @@
 si: simSetDef().... simHost is initialized to "localhost" .
-si: simSetDef().... simLoginName is initialized to "2015103977" .
+si: simSetDef().... simLoginName is initialized to "2015104027" .
 si: simSetDef().... simHostDiffers is initialized to "nil".
 si: simSetDef().... simInteractiveSimulatorList is initialized to ("verilog") .
 si: simSetDef().... simPostAnalysisProcessingFunc is initialized to "nil".
@@ -330,5 +330,5 @@ hnlPrintTopCellHeader hnlPrintTopCellFooter hnlPrintPorts hnlPrintDeviceHeader
 hnlPrintDeviceFooter hnlPrintInst) .
 Loading the file
 '/Tools/Cadence/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Loading the file
-'/Tools/Cadence/IC616/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Oct 19 03:08:08 2020
-End netlisting Oct 19 03:08:08 2020
+'/Tools/Cadence/IC616/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Oct 27 07:26:54 2020
+End netlisting Oct 27 07:26:54 2020

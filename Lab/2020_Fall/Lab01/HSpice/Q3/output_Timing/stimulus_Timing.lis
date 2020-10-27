@@ -10,7 +10,7 @@
  lic:  
  lic: FLEXlm: v10.9.8 
  lic: USER:   2015104027           HOSTNAME: vlsi-dist.khu.ac.kr 
- lic: HOSTID: 382c4ac7d475         PID:      16874 
+ lic: HOSTID: 382c4ac7d475         PID:      34313 
  lic: Using FLEXlm license file: 
  lic: 27020@163.180.118.198 
  lic: Checkout 1 hspice 
@@ -581,11 +581,11 @@
  dff_timing
 
   ******  transient analysis tnom=  25.000 temp=  25.000 *****
- tclk_qf= 4.9449e-11  targ= 3.1799e-08   trig= 3.1750e-08
- tclk_qr= 6.3290e-11  targ= 1.3881e-07   trig= 1.3875e-07
- tclk-q= 5.6370e-11
- avgpower= 1.7651e-05  from= 1.0000e-09     to= 1.4800e-07
- peakpower= 2.8347e-04    at= 1.0666e-07
+ tclk_qf= 4.9149e-11  targ= 3.1799e-08   trig= 3.1750e-08
+ tclk_qr= 6.4170e-11  targ= 1.3881e-07   trig= 1.3875e-07
+ tclk-q= 5.6660e-11
+ avgpower= 9.1932e-06  from= 1.0000e-09     to= 1.4800e-07
+ peakpower= 2.5202e-04    at= 9.5993e-08
              from= 1.0000e-09    to= 1.4800e-07
 
           ***** job concluded
@@ -627,8 +627,8 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1          11
-  transient          0.18      148001        1862         627 rev=        42
+  op point           0.00           1          14
+  transient          0.15      148001        1672         582 rev=        28
   readin             0.01
   errchk             0.00
   setup              0.00
@@ -636,11 +636,11 @@
 
 
            peak memory used        173.31 megabytes
-           total cpu time            0.19 seconds
-           total elapsed time        0.96 seconds
-           job started at     23:34:03 10/20/2020
-           job ended   at     23:34:04 10/20/2020
+           total cpu time            0.17 seconds
+           total elapsed time        0.91 seconds
+           job started at     08:30:47 10/27/2020
+           job ended   at     08:30:48 10/27/2020
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.76(s)
+ lic: total license checkout elapse time:        0.74(s)

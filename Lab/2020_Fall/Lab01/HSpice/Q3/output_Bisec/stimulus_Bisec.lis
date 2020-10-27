@@ -10,7 +10,7 @@
  lic:  
  lic: FLEXlm: v10.9.8 
  lic: USER:   2015104027           HOSTNAME: vlsi-dist.khu.ac.kr 
- lic: HOSTID: 382c4ac7d475         PID:      13336 
+ lic: HOSTID: 382c4ac7d475         PID:      33803 
  lic: Using FLEXlm license file: 
  lic: 27020@163.180.118.198 
  lic: Checkout 1 hspice 
@@ -36,14 +36,12 @@
           relin =  1.0000E-03 is satisfied
 
           optimization completed, the condition
-          relout =  1.0000E-03 isn't satisfied
+          relout =  1.0000E-03 is satisfied
 
-          the maximum number of iterations (    20)was
-          exceeded. however, results might be accurate. 
 
  **** optimized parameters opt1            
 
- .param delaytime =  1.211e-09      
+ .param delaytime =  1.335e-09      
 
  **info** dc convergence successful at Newton-Raphson method 
  ****** HSPICE -- I-2013.12-SP1 64-BIT (Feb 25 2014) RHEL64 ******              
@@ -56,20 +54,19 @@
 
  +0:ck      = 0.000e+00 0:d       = 1.100e+00 0:q       = 5.452e-01
  +0:vdd     = 1.100e+00 1:clk     = 1.596e-05 1:clk_b   = 1.100e+00
- +1:net18   = 6.234e-05 1:net32   = 1.100e+00 1:net39   = 5.246e-01
+ +1:net18   = 7.604e-05 1:net32   = 1.100e+00 1:net39   = 5.246e-01
  +1:net45   = 5.092e-01 1:net75   = 7.292e-01 1:net76   = 4.149e-01
- +1:net77   = 1.068e+00 1:net78   = 5.681e-06 1:net79   = 2.240e-01
- +1:net80   = 3.300e-05 1:net81   = 2.240e-01 1:net82   = 3.300e-05
+ +1:net77   = 1.068e+00 1:net78   = 5.681e-06 1:net79   = 1.020e+00
+ +1:net80   = 7.153e-07 1:net81   = 2.240e-01 1:net82   = 4.011e-05
 
  ******  
  dff_case11
 
   ******  transient analysis tnom=  25.000 temp=  25.000 *****
- vout= 1.5882e-05    at= 6.1776e-09
-             from= 3.4000e-09    to= 6.2000e-09
- setup11= 1.8866e-10  targ= 5.7500e-09   trig= 5.5613e-09
- avgpower= 4.7486e-06  from= 3.4000e-09     to= 1.1000e-08
- peakpower= 2.6281e-04    at= 5.8020e-09
+ vout= 4.4702e-01  from= 5.4000e-09     to= 6.4000e-09
+ setup11= 6.4551e-11  targ= 5.7500e-09   trig= 5.6854e-09
+ avgpower= 3.4476e-06  from= 3.4000e-09     to= 1.1000e-08
+ peakpower= 2.5702e-04    at= 5.8060e-09
              from= 3.4000e-09    to= 1.1000e-08
 
           ***** job concluded
@@ -111,19 +108,19 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1          33
-  transient          1.01           4       10679        3534 rev=       731
+  op point           0.01           1          42
+  transient          0.65           4        6878        2306 rev=       471
   readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        173.79 megabytes
-           total cpu time            1.04 seconds
-           total elapsed time        1.80 seconds
-           job started at     21:36:32 10/20/2020
-           job ended   at     21:36:34 10/20/2020
+           peak memory used        173.29 megabytes
+           total cpu time            0.67 seconds
+           total elapsed time        1.41 seconds
+           job started at     08:15:08 10/27/2020
+           job ended   at     08:15:09 10/27/2020
 
 
   **warning** (stimulus_Bisec.sp:79) Parameter first_volt="0" overrides previously declared parameter first_volt (stimulus_Bisec.sp:24).
@@ -138,7 +135,6 @@
  **warning**(nmos_vtl:m18)Warning: (B1 + Weff) may be too small in BSIM4 model with w=1e-07 l=5.5e-08.
  **warning**(nmos_vtl:m14)Warning:  Acde = 0.276941 may be too small in BSIM4 model with w=2e-07 l=5.5e-08.
  **warning**(nmos_vtl:m6)Warning:  Acde = 0.276941 may be too small in BSIM4 model with w=1.15e-07 l=5e-08.
- **warning**(pmos_vtl:m7)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=1.5e-07 l=5e-08.
  **warning**(pmos_vtl:m25)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=1.5e-07 l=5.5e-08.
  **warning**(pmos_vtl:m23)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=2.1e-07 l=5e-08.
  **warning**(pmos_vtl:m21)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=2.5e-07 l=5.5e-08.
@@ -147,6 +143,7 @@
  **warning**(pmos_vtl:m11)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=3.1e-07 l=5e-08.
  **warning**(pmos_vtl:m12)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=3.1e-07 l=5.5e-08.
  **warning**(pmos_vtl:m5)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=1.8e-07 l=5.5e-08.
+ **warning**(pmos_vtl:m7)Warning:  Acde = 0.300892 may be too small in BSIM4 model with w=1.5e-07 l=5e-08.
   
       
  **info** set option symb=1 internally to help for convergence.
@@ -158,8 +155,8 @@
  file=output_Bisec/stimulus_Bisec.pa1
 
  **error** endpoints have same sign in bisection.
- For delaytime       =   0.0000    , vout            = -2.26559E-03.
- For delaytime       =  5.00000E-09, vout            = -2.79205E-04.
+ For delaytime       =   0.0000    , vout            = -2.39547E-03.
+ For delaytime       =  5.00000E-09, vout            = -3.17167E-04.
  Both of these are on the same side of the goal value vout            =  1.00000E-06.
 
  delaytime =    failed       
@@ -205,19 +202,19 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1          34
-  transient          0.11           4        1152         374 rev=        89
-  readin             0.00
+  transient          0.10           4        1052         348 rev=        77
+  readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        174.77 megabytes
-           total cpu time            0.12 seconds
-           total elapsed time        0.12 seconds
-           job started at     21:36:32 10/20/2020
-           job ended   at     21:36:34 10/20/2020
+           peak memory used        174.27 megabytes
+           total cpu time            0.11 seconds
+           total elapsed time        0.11 seconds
+           job started at     08:15:08 10/27/2020
+           job ended   at     08:15:09 10/27/2020
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.76(s)
+ lic: total license checkout elapse time:        0.74(s)

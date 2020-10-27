@@ -3,6 +3,6 @@ $DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
  index            delaytime        vout             setup11           
                   avgpower         peakpower        temper            
                   alter#            
-  1.000e+00        1.211e-09        1.588e-05        1.887e-10        
-                   4.749e-06        2.628e-04        2.500e+01        
+  1.000e+00        1.335e-09        4.470e-01        6.455e-11        
+                   3.448e-06        2.570e-04        2.500e+01        
                   1                 
