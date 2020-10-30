@@ -1,0 +1,37 @@
+** Generated for: hspiceD
+** Design library name: Library_Jin
+** Design cell name: D-FF
+** Design view name: schematic
+
+
+** Library name: Library_Jin
+** Cell name: D-FF
+** View name: schematic
+.subckt dff q d ck vdd gnd 
+m26 clk clk_b gnd gnd NMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m24 clk_b ck gnd gnd NMOS_VTL L=55e-9 W=140e-9 AD=14.7e-15 AS=14.7e-15 PD=350e-9 PS=350e-9 M=1
+m22 q net39 gnd gnd NMOS_VTL L=50e-9 W=160e-9 AD=16.8e-15 AS=16.8e-15 PD=370e-9 PS=370e-9 M=1
+m18 net76 net45 gnd gnd NMOS_VTL L=55e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m17 net39 clk_b net76 gnd NMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m20 net45 net39 gnd gnd NMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m14 net78 net32 gnd gnd NMOS_VTL L=55e-9 W=200e-9 AD=21e-15 AS=21e-15 PD=410e-9 PS=410e-9 M=1
+m13 net39 clk net78 gnd NMOS_VTL L=55e-9 W=200e-9 AD=21e-15 AS=21e-15 PD=410e-9 PS=410e-9 M=1
+m6 net32 net18 gnd gnd NMOS_VTL L=50e-9 W=115e-9 AD=12.075e-15 AS=12.075e-15 PD=325e-9 PS=325e-9 M=1
+m10 net80 net32 gnd gnd NMOS_VTL L=55e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m9 net18 clk net80 gnd NMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m4 net82 d gnd gnd NMOS_VTL L=55e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m3 net18 clk_b net82 gnd NMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m25 clk clk_b vdd vdd PMOS_VTL L=55e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+m23 clk_b ck vdd vdd PMOS_VTL L=50e-9 W=210e-9 AD=22.05e-15 AS=22.05e-15 PD=420e-9 PS=420e-9 M=1
+m21 q net39 vdd vdd PMOS_VTL L=55e-9 W=250e-9 AD=26.25e-15 AS=26.25e-15 PD=460e-9 PS=460e-9 M=1
+m15 net75 net45 vdd vdd PMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m16 net39 clk net75 vdd PMOS_VTL L=50e-9 W=100e-9 AD=10.5e-15 AS=10.5e-15 PD=310e-9 PS=310e-9 M=1
+m19 net45 net39 vdd vdd PMOS_VTL L=55e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+m11 net77 net32 vdd vdd PMOS_VTL L=50e-9 W=310e-9 AD=32.55e-15 AS=32.55e-15 PD=520e-9 PS=520e-9 M=1
+m12 net39 clk_b net77 vdd PMOS_VTL L=55e-9 W=310e-9 AD=32.55e-15 AS=32.55e-15 PD=520e-9 PS=520e-9 M=1
+m5 net32 net18 vdd vdd PMOS_VTL L=55e-9 W=180e-9 AD=18.9e-15 AS=18.9e-15 PD=390e-9 PS=390e-9 M=1
+m7 net79 net32 vdd vdd PMOS_VTL L=50e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+m8 net18 clk_b net79 vdd PMOS_VTL L=50e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+m1 net81 d vdd vdd PMOS_VTL L=50e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+m2 net18 clk net81 vdd PMOS_VTL L=50e-9 W=150e-9 AD=15.75e-15 AS=15.75e-15 PD=360e-9 PS=360e-9 M=1
+.ends

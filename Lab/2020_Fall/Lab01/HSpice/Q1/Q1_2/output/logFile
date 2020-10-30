@@ -1,0 +1,32 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "00:58:15 10/20/2020 " 
+"runtitle" "tttt_vtc_dc_forward                                               " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"srcSweep" "analysisInst" ( 
+"DC Sweep"
+"stimulus.sw0"
+"PSF"
+""
+()
+"DC Sweep"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"stimulus.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP1 64-BIT'
+.TITLE 'fan_in_6_comb_timing'
+ tcdf             tcdr             tpdf             tpdr              
+ avgpower         peakpower        temper           alter#            
+  1.751e-11        9.708e-12        2.958e-11        1.693e-11        
+  1.335e-06        1.309e-04        2.500e+01       1                 

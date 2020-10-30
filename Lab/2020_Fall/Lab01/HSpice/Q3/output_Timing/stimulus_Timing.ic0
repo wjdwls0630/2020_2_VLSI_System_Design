@@ -1,0 +1,31 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP1 64-BIT"
+* "format" "HSP"
+* "rundate" "08:30:47 10/27/2020 "
+* "netlist" "stimulus_Timing.sp "
+* "runtitle" "dff_timing"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ ck = 0.000e+00       
++ d = 1.100e+00       
++ q = 5.452e-01       
++ vdd = 1.100e+00       
++ x1^clk = 1.596e-05       
++ x1^clk_b = 1.100e+00       
++ x1^net18 = 7.604e-05       
++ x1^net32 = 1.100e+00       
++ x1^net39 = 5.246e-01       
++ x1^net45 = 5.092e-01       
++ x1^net75 = 7.292e-01       
++ x1^net76 = 4.149e-01       
++ x1^net77 = 1.068e+00       
++ x1^net78 = 5.681e-06       
++ x1^net79 = 1.020e+00       
++ x1^net80 = 7.153e-07       
++ x1^net81 = 2.240e-01       
++ x1^net82 = 4.011e-05       
+***   END: Saved Operating Point ***                     

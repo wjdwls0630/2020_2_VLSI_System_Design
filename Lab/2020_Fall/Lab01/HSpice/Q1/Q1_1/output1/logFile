@@ -1,0 +1,166 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "23:50:40 10/19/2020 " 
+"runtitle" "tttt_nmos_i-v_curve                                               " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"srcSweep" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("0:vgs " )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_1.sw0@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@1"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.0
+)
+"stimulus_1.sw0@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@2"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.1
+)
+"stimulus_1.sw0@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@3"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.2
+)
+"stimulus_1.sw0@4" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@4"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.3
+)
+"stimulus_1.sw0@5" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@5"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.4
+)
+"stimulus_1.sw0@6" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@6"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.5
+)
+"stimulus_1.sw0@7" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@7"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.6
+)
+"stimulus_1.sw0@8" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@8"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.7
+)
+"stimulus_1.sw0@9" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@9"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.8
+)
+"stimulus_1.sw0@10" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@10"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 0.9
+)
+"stimulus_1.sw0@11" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@11"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 1.0
+)
+"stimulus_1.sw0@12" "analysisInst" ( 
+"DC Analysis"
+"stimulus_1.sw0@12"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"0:vgs " 1.1
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"stimulus_1.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

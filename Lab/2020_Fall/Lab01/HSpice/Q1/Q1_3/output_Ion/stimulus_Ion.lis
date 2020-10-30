@@ -1,0 +1,25 @@
+ ****** HSPICE -- I-2013.12-SP1 64-BIT (Feb 25 2014) RHEL64 ******              
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: stimulus_Ion.sp                                                   
+  Command line options: -i stimulus_Ion.sp -o output_Ion/ -d
+ lic:  
+ lic: FLEXlm: v10.9.8 
+ lic: USER:   2015104027           HOSTNAME: vlsi-dist.khu.ac.kr 
+ lic: HOSTID: 382c4ac7d475         PID:      34126 
+ lic: Using FLEXlm license file: 
+ lic: 27020@163.180.118.198 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-jun-2021/2020.03 
+ lic: 1(in_use)/5(total) FLOATING license(s) on SERVER 27020@163.180.118.198 
+ lic:   
+ Init: read install configuration file: /Tools/Synopsys/Hspice/hspice/meta.cfg
+ **error** (stimulus_Ion.sp:7) unable to open file "../../../corner.lib" .Either file doesn't exists or path is wrong. Please enter the correct file location. 
+
+               ***** job aborted
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.77(s)

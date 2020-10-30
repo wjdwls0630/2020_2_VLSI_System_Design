@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "fan_in_6_comb"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/graduation_project3/2015103977/2020_2_VLSI/Lab01/HSpice/fan_in_6_comb/Pre-Sim/fan_in_6_comb/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Library_Jin/inverter/schematic" "inverter" )
+( "Library_Jin/fan_in_6_comb/schematic" "fan_in_6_comb" )
+ )
+( term
+ )
+( param
+ )
+( "inverter" "ihnl/cds1/map" )
+( "fan_in_6_comb" "ihnl/cds0/map" )
+ )

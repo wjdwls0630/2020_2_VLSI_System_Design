@@ -1,0 +1,19 @@
+*drcRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreDRC.rul
+*drcRunDir: /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/DRC_Run/Lab01/fan_in_6_comb
+*drcLayoutPaths: fan_in_6_comb.calibre.db
+*drcLayoutPrimary: fan_in_6_comb
+*drcLayoutLibrary: Library_Jin
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: fan_in_6_comb.drc.results
+*drcSummaryFile: fan_in_6_comb.drc.summary
+*drcDRCRunIncrDRC: 1
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: Library_Jin
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: fan_in_6_comb.def

@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1603110969 1603110969
+lvs_ExtOutFile RUNDIR /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb
+lvs_ExtOutFile RULES_FILE /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb/_calibreLVS.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/LVS_Run/Lab01/fan_in_6_comb/fan_in_6_comb.sp
+lvs_ExtOutFile EXTRACTION_REPORT fan_in_6_comb.lvs.report.ext

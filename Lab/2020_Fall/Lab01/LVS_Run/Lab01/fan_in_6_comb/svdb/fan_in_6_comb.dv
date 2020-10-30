@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/fan_in_6_comb.dv
+dv_start matched                                  
+dv_cell {fan_in_6_comb} {fan_in_6_comb} matched
+dv_obj_count -transformed_nets {10 10} -transformed_inst {3 3} -transformed_port {9 9}
+dv_end

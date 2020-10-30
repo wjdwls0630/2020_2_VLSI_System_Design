@@ -1,0 +1,60 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.6-64b 12/07/2015 20:15 (sjfnl008) $
+          : sub-version  IC6.1.6-64b.500.14 
+Started at: 19-Oct-2020  21:34:39
+User Name : 2015104027
+Host Name : vlsi-dist.khu.ac.kr
+Directory : /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/DRC_Run/Lab01/fan_in_6_comb/fan_in_6_comb.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-288): The automatic layer mapping is done by StreamOut and the xStrmOut_layerMap.txt file is generated. This is because either the layer mapping is not provided or the XST_AUTO_LM value is used with the -layerMap option.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 Library_Jin
+strmFile                                /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/DRC_Run/Lab01/fan_in_6_comb/fan_in_6_comb.calibre.db
+topCell                                 fan_in_6_comb
+view                                    layout
+runDir                                  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/DRC_Run/Lab01/fan_in_6_comb/
+logFile                                 PIPO.LOG.fan_in_6_comb
+summaryFile                             PIPO.SUM.fan_in_6_comb
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView NCSU_TechLib_FreePDK45/NTAP/layout as STRUCTURE NTAP_CDNS_603110879050
+INFO (XSTRM-223): 2. Translating cellView NCSU_TechLib_FreePDK45/PTAP/layout as STRUCTURE PTAP_CDNS_603110879051
+INFO (XSTRM-223): 3. Translating cellView Library_Jin/inverter/layout as STRUCTURE inverter
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 4. Translating cellView Library_Jin/fan_in_6_comb/layout as STRUCTURE fan_in_6_comb
+
+Summary of Objects Translated:
+	Scalar Instances:                       1
+	Array Instances:                        0
+	Polygons:                               14
+	Paths:                                  0
+	Rectangles:                             86
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           11
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   13
+	TextDisplay:                            0
+	Cells:                                  4
+
+Elapsed Time: 10.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 1764KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

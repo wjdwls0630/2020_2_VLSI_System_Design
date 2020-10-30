@@ -1,0 +1,79 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.6-64b 12/07/2015 20:15 (sjfnl008) $
+          : sub-version  IC6.1.6-64b.500.14 
+Started at: 19-Oct-2020  21:35:48
+User Name : 2015104027
+Host Name : vlsi-dist.khu.ac.kr
+Directory : /home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+NCSU_TechLib_FreePDK45/PTAP/layout                              0        0       0        5      0      0         0      0             0      0     0     0       0       
+Library_Jin/inverter/layout     0        0       2        15     0      0         4      0             0      0     0     0       0       
+Library_Jin/fan_in_6_comb/layout                                1        0       12       61     0      0         9      0             0      0     0     0       0       
+NCSU_TechLib_FreePDK45/NTAP/layout                              0        0       0        5      0      0         0      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+NCSU_TechLib_FreePDK45/PTAP/layout                              0        0          0          0          0          0     0        0         0         0        
+Library_Jin/inverter/layout     0        0          0          0          0          0     0        0         2         0        
+Library_Jin/fan_in_6_comb/layout                                0        0          0          0          0          0     0        0         9         0        
+NCSU_TechLib_FreePDK45/NTAP/layout                              0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+metal1          net             11      253       0        0        0        3        0             0    0   0   0     0      0      
+nimplant        drawing         4       0         0        5        0        0        0             0    0   0   0     0      0      
+nwell           drawing         3       0         0        3        0        0        0             0    0   0   0     0      0      
+metal2          drawing         13      0         2        2        0        0        0             0    0   0   0     0      0      
+metal1          drawing         11      0         5        20       0        10       0             0    0   0   0     0      0      
+via1            drawing         12      0         0        10       0        0        0             0    0   0   0     0      0      
+poly            drawing         9       0         6        2        0        0        0             0    0   0   0     0      0      
+pwell           drawing         2       0         0        3        0        0        0             0    0   0   0     0      0      
+pimplant        drawing         5       0         0        5        0        0        0             0    0   0   0     0      0      
+contact         drawing         10      0         0        28       0        0        0             0    0   0   0     0      0      
+active          drawing         1       0         1        8        0        0        0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		1
+	Array Instances:		0
+	Polygons:			14
+	Paths:				0
+	Rectangles:			86
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			11
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				13
+	TextDisplay:		0
+	Cells:				4
+Design Libraries: 
+
+DEFINE NCSU_TechLib_FreePDK45	/Tools/Library/FreePDK45/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE Library_Jin	/home/VLSI_graduated_2020/2015104027/2020_2_VLSI/Lab01/Library_Jin

@@ -1,0 +1,19 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "00:58:15 10/20/2020 " 
+"runtitle" "tttt_vtc_dc_forward                                               " 
+"runtype" "Summary Information"
+"op point time" "      0.00"  
+"op point iterations" "       
+"dc sweep time" "      0.03"       
+"dc sweep iterations" "      2208" 
+"total cpu time" "        0.04"    
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "complete"
+"transient analysis" "invalid"
+trailer
+end

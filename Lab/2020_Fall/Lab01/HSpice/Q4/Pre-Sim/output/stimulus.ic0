@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP1 64-BIT"
+* "format" "HSP"
+* "rundate" "00:09:28 10/21/2020 "
+* "netlist" "stimulus.sp "
+* "runtitle" "fan_in_6_comb_timing"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ a = 0.000e+00       
++ b = 0.000e+00       
++ c = 0.000e+00       
++ d = 0.000e+00       
++ e = 0.000e+00       
++ f = 0.000e+00       
++ vdd = 1.100e+00       
++ y = 6.520e-05       
++ y_b = 1.100e+00       
++ x1^net13 = 7.657e-02       
++ x1^net15 = 1.100e+00       
++ x1^net19 = 1.100e+00       
++ x1^net30 = 1.084e-02       
++ x1^net31 = 2.809e-02       
++ x1^net32 = 1.811e-02       
+***   END: Saved Operating Point ***                     

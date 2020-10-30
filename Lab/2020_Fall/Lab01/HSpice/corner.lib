@@ -1,0 +1,569 @@
+.lib SSSS
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SSSS
+
+.lib SSST
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SSST
+
+.lib SSSF
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SSSF
+
+.lib SSTS
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SSTS
+
+.lib SSTT
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SSTT
+
+.lib SSTF
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SSTF
+
+.lib SSFS
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SSFS
+
+.lib SSFT
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SSFT
+
+.lib SSFF
+.TEMP 125
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SSFF
+
+.lib STSS
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl STSS
+
+.lib STST
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl STST
+
+.lib STSF
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl STSF
+
+.lib STTS
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl STTS
+
+.lib STTT
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl STTT
+
+.lib STTF
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl STTF
+
+.lib STFS
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl STFS
+
+.lib STFT
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl STFT
+
+.lib STFF
+.TEMP 125
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl STFF
+
+.lib SFSS
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SFSS
+
+.lib SFST
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SFST
+
+.lib SFSF
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SFSF
+
+.lib SFTS
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SFTS
+
+.lib SFTT
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SFTT
+
+.lib SFTF
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SFTF
+
+.lib SFFS
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl SFFS
+
+.lib SFFT
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl SFFT
+
+.lib SFFF
+.TEMP 125
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl SFFF
+
+// T~
+.lib TSSS
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TSSS
+
+.lib TSST
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TSST
+
+.lib TSSF
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TSSF
+
+.lib TSTS
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TSTS
+
+.lib TSTT
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TSTT
+
+.lib TSTF
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TSTF
+
+.lib TSFS
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TSFS
+
+.lib TSFT
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TSFT
+
+.lib TSFF
+.TEMP 25
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TSFF
+
+.lib TTSS
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TTSS
+
+.lib TTST
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TTST
+
+.lib TTSF
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TTSF
+
+.lib TTTS
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TTTS
+
+.lib TTTT
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TTTT
+
+.lib TTTF
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TTTF
+
+.lib TTFS
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TTFS
+
+.lib TTFT
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TTFT
+
+.lib TTFF
+.TEMP 25
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TTFF
+
+.lib TFSS
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TFSS
+
+.lib TFST
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TFST
+
+.lib TFSF
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TFSF
+
+.lib TFTS
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TFTS
+
+.lib TFTT
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TFTT
+
+.lib TFTF
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TFTF
+
+.lib TFFS
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl TFFS
+
+.lib TFFT
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl TFFT
+
+.lib TFFF
+.TEMP 25
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl TFFF
+
+// F~
+
+.lib FSSS
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FSSS
+
+.lib FSST
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FSST
+
+.lib FSSF
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FSSF
+
+.lib FSTS
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FSTS
+
+.lib FSTT
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FSTT
+
+.lib FSTF
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FSTF
+
+.lib FSFS
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FSFS
+
+.lib FSFT
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FSFT
+
+.lib FSFF
+.TEMP -45
+.PARAM vdd=0.99
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FSFF
+
+.lib FTSS
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FTSS
+
+.lib FTST
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FTST
+
+.lib FTSF
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FTSF
+
+.lib FTTS
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FTTS
+
+.lib FTTT
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FTTT
+
+.lib FTTF
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FTTF
+
+.lib FTFS
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FTFS
+
+.lib FTFT
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FTFT
+
+.lib FTFF
+.TEMP -45
+.PARAM vdd=1.1
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FTFF
+
+.lib FFSS
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FFSS
+
+.lib FFST
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FFST
+
+.lib FFSF
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FFSF
+
+.lib FFTS
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FFTS
+
+.lib FFTT
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FFTT
+
+.lib FFTF
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FFTF
+
+.lib FFFS
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ss/PMOS_VTL.inc"
+.endl FFFS
+
+.lib FFFT
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_nom/PMOS_VTL.inc"
+.endl FFFT
+
+.lib FFFF
+.TEMP -45
+.PARAM vdd=1.21
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/NMOS_VTL.inc"
+.INCLUDE "/Tools/Library/FreePDK45/ncsu_basekit/models/hspice/tran_models/models_ff/PMOS_VTL.inc"
+.endl FFFF

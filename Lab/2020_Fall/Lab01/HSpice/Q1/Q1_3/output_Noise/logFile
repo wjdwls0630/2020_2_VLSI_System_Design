@@ -1,0 +1,271 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "01:25:26 10/20/2020 " 
+"runtitle" "corner_tt_dc_noise_margin_with_temp_variation                     " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"srcSweep" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("TEMPERATURE" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_Noise.sw0@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw0@1"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" -45.0
+)
+"stimulus_Noise.sw0@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw0@2"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 25.0
+)
+"stimulus_Noise.sw0@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw0@3"
+"PSF"
+"srcSweep"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 125.0
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"stimulus_Noise.su0"
+"PSF"
+""
+()
+"Summary Information"
+)
+"srcSweep1" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("TEMPERATURE" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_Noise.sw1@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw1@1"
+"PSF"
+"srcSweep1"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" -45.0
+)
+"stimulus_Noise.sw1@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw1@2"
+"PSF"
+"srcSweep1"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 25.0
+)
+"stimulus_Noise.sw1@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw1@3"
+"PSF"
+"srcSweep1"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 125.0
+)
+"stimulus_Noise.su1" "analysisInst" ( 
+"Summary Information"
+"stimulus_Noise.su1"
+"PSF"
+""
+()
+"Summary Information"
+)
+"srcSweep2" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("TEMPERATURE" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_Noise.sw2@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw2@1"
+"PSF"
+"srcSweep2"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" -45.0
+)
+"stimulus_Noise.sw2@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw2@2"
+"PSF"
+"srcSweep2"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 25.0
+)
+"stimulus_Noise.sw2@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw2@3"
+"PSF"
+"srcSweep2"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 125.0
+)
+"stimulus_Noise.su2" "analysisInst" ( 
+"Summary Information"
+"stimulus_Noise.su2"
+"PSF"
+""
+()
+"Summary Information"
+)
+"srcSweep3" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("TEMPERATURE" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_Noise.sw3@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw3@1"
+"PSF"
+"srcSweep3"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" -45.0
+)
+"stimulus_Noise.sw3@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw3@2"
+"PSF"
+"srcSweep3"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 25.0
+)
+"stimulus_Noise.sw3@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw3@3"
+"PSF"
+"srcSweep3"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 125.0
+)
+"stimulus_Noise.su3" "analysisInst" ( 
+"Summary Information"
+"stimulus_Noise.su3"
+"PSF"
+""
+()
+"Summary Information"
+)
+"srcSweep4" "analysisInst" ( 
+"DC Analysis"
+""
+"PSF"
+""
+("TEMPERATURE" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"stimulus_Noise.sw4@1" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw4@1"
+"PSF"
+"srcSweep4"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" -45.0
+)
+"stimulus_Noise.sw4@2" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw4@2"
+"PSF"
+"srcSweep4"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 25.0
+)
+"stimulus_Noise.sw4@3" "analysisInst" ( 
+"DC Analysis"
+"stimulus_Noise.sw4@3"
+"PSF"
+"srcSweep4"
+()
+"DC Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TEMPERATURE" 125.0
+)
+"stimulus_Noise.su4" "analysisInst" ( 
+"Summary Information"
+"stimulus_Noise.su4"
+"PSF"
+""
+()
+"Summary Information"
+)

@@ -1,0 +1,14 @@
+       1 x1.
+       2 x1.x_pm_fan_in_6_comb%net19.
+       3 x1.x_pm_fan_in_6_comb%noxref_2.
+       4 x1.x_pm_fan_in_6_comb%net15.
+       5 x1.x_pm_fan_in_6_comb%y_b.
+       6 x1.x_pm_fan_in_6_comb%a.
+       7 x1.x_pm_fan_in_6_comb%b.
+       8 x1.x_pm_fan_in_6_comb%f.
+       9 x1.x_pm_fan_in_6_comb%e.
+      10 x1.x_pm_fan_in_6_comb%d.
+      11 x1.x_pm_fan_in_6_comb%c.
+      12 x1.x_pm_fan_in_6_comb%gnd.
+      13 x1.x_pm_fan_in_6_comb%vdd.
+      14 x1.x_pm_fan_in_6_comb%y.

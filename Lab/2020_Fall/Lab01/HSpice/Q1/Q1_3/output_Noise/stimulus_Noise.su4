@@ -1,0 +1,19 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP1 64-BIT" 
+"rundate" "01:25:26 10/20/2020 " 
+"runtitle" "corner_fs_dc_noise_margin_with_temp_variation                     " 
+"runtype" "Summary Information"
+"op point time" "      0.00"  
+"op point iterations" "       
+"dc sweep time" "      0.09"       
+"dc sweep iterations" "      6623" 
+"total cpu time" "        0.09"    
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "complete"
+"transient analysis" "invalid"
+trailer
+end
