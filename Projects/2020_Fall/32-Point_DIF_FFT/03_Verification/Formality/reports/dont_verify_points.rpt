@@ -1,0 +1,77 @@
+**************************************************
+Report         : dont_verify_points
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+Don't verify points:
+
+    (Port)  ref:/WORK/FFT_PAD/o_DATA_IMAG[12]
+    (Port)  ref:/WORK/FFT_PAD/o_DATA_IMAG[13]
+    (Port)  ref:/WORK/FFT_PAD/o_DATA_IMAG[14]
+    (Port)  ref:/WORK/FFT_PAD/o_DATA_IMAG[15]
+    (BBPin) ref:/WORK/FFT_PAD/pad3/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad10/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad16/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad17/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad22/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad23/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad28/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad29/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad35/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad36/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad41/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad42/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad47/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad48/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad55/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad56/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad61/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad62/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad67/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad68/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad73/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad74/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad79/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad80/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad85/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad86/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad108/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad109/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad115/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad116/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad121/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad122/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad127/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad128/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad133/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad134/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad139/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad140/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad145/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad146/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad151/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad152/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad159/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad160/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad165/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad166/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad171/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad172/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad177/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad178/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad183/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad184/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad189/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad190/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad195/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad196/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad201/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad202/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad205/CLTCH\*unread\*/IN
+    (BBPin) ref:/WORK/FFT_PAD/pad207/CLTCH\*unread\*/IN
+
+1

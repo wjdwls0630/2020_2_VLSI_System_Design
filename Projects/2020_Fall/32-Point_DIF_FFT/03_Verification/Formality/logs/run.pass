@@ -1,0 +1,715 @@
+
+                            Formality (R)
+                Version I-2013.12-SP2 -- Feb 25, 2014
+              Copyright (c) 1988-2020 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys, Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+  ** Highlights of Formality 2013.12 **
+   - ECO assistance and advanced debugging features(requires Formality Ultra license)
+   - Support for Synopsys Golden UPF Flow
+   - Improved UPF debugging using GUI cell/net coloring modes
+   - Improved SVF processing performance
+   - Support for System Verilog configurations
+
+   * Please refer to the Formality Release Notes for details and additional enhancements
+
+Build: 2935271
+Hostname: vlsi-dist.khu.ac.kr (RHEL64)
+Current time: Sun Nov 22 20:04:27 2020
+
+Loading db file '/Tools/Synopsys/fm/I-2013.12-SP2/libraries/syn/gtech.db'
+echo "------------------------------------------------------------------------"
+------------------------------------------------------------------------
+echo "--                                                                    --"
+--                                                                    --
+echo "--                                                                    --"
+--                                                                    --
+echo "--                        verification start                          --"
+--                        verification start                          --
+echo "--                                                                    --"
+--                                                                    --
+echo "--                                                                    --"
+--                                                                    --
+echo "------------------------------------------------------------------------"
+------------------------------------------------------------------------
+# Remove all libraries and containers before starting new verification
+remove_library   -all
+1
+remove_container -all
+Cleared container 'i'
+Cleared container 'r'
+1
+# source the common_setup & Common variables file
+source -echo -v ./fm_scripts/user_scripts/user_design_setup.tcl
+#******************************************************************************
+#**                          user design settings                           **
+#******************************************************************************
+echo "***********************************************************************"
+***********************************************************************
+echo "                                                                       "
+                                                                       
+echo "                      user_design_setup.tcl                            "
+                      user_design_setup.tcl                            
+echo "                                                                       "
+                                                                       
+echo "***********************************************************************"
+***********************************************************************
+#******************************************************************************
+#**                         General FM Varialbes                            **
+#******************************************************************************
+set TOP_MODULE                     "FFT_PAD"    ;# set design top module name
+FFT_PAD
+set FM_NUM_CPUS                   "1"                ;
+1
+set RETIME                         true
+true
+set CLOCK_GATING                   NONE              ;
+NONE
+#######################################################
+## Input Files
+#######################################################
+set FM_IN_VERILOG_REF_FILE       "../../01_RTL_Design/src/FFT_PAD.v"
+../../01_RTL_Design/src/FFT_PAD.v
+set FM_IN_VERILOG_IMPL_FILE      "../../02_RTL_Synthesis/outputs/FFT_PAD.vg"
+../../02_RTL_Synthesis/outputs/FFT_PAD.vg
+# HVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+#########################   DO NOT CHANGE BELOW THIS LINE   ##############################
+##########################################################################################
+set REPORTS_DIR                 "./reports"
+./reports
+## Avoiding too many messages
+source -echo -v ./fm_scripts/common_lib_setup.tcl
+#******************************************************************************
+#**                          common library settings                         **
+#******************************************************************************
+echo "***********************************************************************"
+***********************************************************************
+echo "                                                                       "
+                                                                       
+echo "                       common_lib_setup.tcl                            "
+                       common_lib_setup.tcl                            
+echo "                                                                       "
+                                                                       
+echo "***********************************************************************"
+***********************************************************************
+#******************************************************************************
+#                       set basic parameter                                  **
+#******************************************************************************
+set designer "Man"
+Man
+set company "KHU Room327"
+KHU Room327
+# Define path directories for file locations
+set SVF_DIR "../../02_RTL_Synthesis/svf"
+../../02_RTL_Synthesis/svf
+#******************************************************************************
+#**                         Set Library Parameter                            **
+#******************************************************************************
+set LIB_DIR /Tools/Library/samsung65_2016/CB_1502
+/Tools/Library/samsung65_2016/CB_1502
+set PRIMITIVE_LIB_DIR ${LIB_DIR}/PRIMITIVE
+/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE
+set IO_LIB_DIR ${LIB_DIR}/IO
+/Tools/Library/samsung65_2016/CB_1502/IO
+#******************************************************************************
+#**                Set 'search_path'                                         **
+#******************************************************************************
+set search_path ". $synopsys_root/libraries/syn 		   $PRIMITIVE_LIB_DIR/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys  		   $PRIMITIVE_LIB_DIR/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys                     $PRIMITIVE_LIB_DIR/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys                    $PRIMITIVE_LIB_DIR/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys                    $IO_LIB_DIR/synopsys"
+. /Tools/Synopsys/fm/I-2013.12-SP2/libraries/syn      /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys       /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys                     /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys                    /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys                    /Tools/Library/samsung65_2016/CB_1502/IO/synopsys
+#******************************************************************************
+#**                Set libraries                                             **
+#******************************************************************************
+# PMK (Power Management Kit)
+# RVT
+# SS (Worst)
+set PMK_RVT_SS scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+# HVT
+# SS (Worst)
+set PMK_HVT_SS scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm
+scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm
+# Normal
+# RVT
+# SS (Worst)
+set NOM_RVT_SS scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm
+scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm
+# HVT
+# SS (Worst)
+set NOM_HVT_SS scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm
+scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm
+# IO
+# SS (Worst)
+set IO_SS ss65lp3p3v_wst_108_300_p125
+ss65lp3p3v_wst_108_300_p125
+set target_library [concat         $PMK_RVT_SS.db         $PMK_HVT_SS.db         $NOM_RVT_SS.db         $NOM_HVT_SS.db         $IO_SS.db
+]
+scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db ss65lp3p3v_wst_108_300_p125.db
+read_db -technology_library $PRIMITIVE_LIB_DIR/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/$PMK_RVT_SS.db
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+1
+read_db -technology_library $PRIMITIVE_LIB_DIR/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/$NOM_RVT_SS.db
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+1
+read_db -technology_library $PRIMITIVE_LIB_DIR/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/$PMK_HVT_SS.db
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+1
+read_db -technology_library $PRIMITIVE_LIB_DIR/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/$NOM_HVT_SS.db
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+1
+read_db -technology_library $IO_LIB_DIR/synopsys/$IO_SS.db
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db'
+1
+set_host_options -max_cores $FM_NUM_CPUS
+1
+1
+# read automated setup file where the retiming guidance commands are written
+set_svf $SVF_DIR/$TOP_MODULE.svf
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 247) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 671) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 681) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 702) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 728) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 738) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 759) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 785) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 795) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 816) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 842) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 852) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 873) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 899) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 909) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+
+Unknown guide_merge option '-type'
+Error:  formality_svf/svf.txt (Line: 930) Originally from ../../02_RTL_Synthesis/svf/FFT_PAD.svf: Parse error.
+SVF set to '../../02_RTL_Synthesis/svf/FFT_PAD.svf'.
+1
+source ./fm_scripts/verification.tcl
+***********************************************************************
+                                                                       
+                           FFT_PAD                                 
+                                                                       
+***********************************************************************
+Created container 'ref'
+Current container set to 'ref'
+No target library specified, default is WORK
+Loading verilog file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/FFT_PAD.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/FFT.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift/shift_16.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift/shift_8.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift/shift_4.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift/shift_2.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift/shift_1.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/radix2/radix2.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/ROM/ROM_16.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/ROM/ROM_8.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/ROM/ROM_4.v'
+Loading include file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/ROM/ROM_2.v'
+Setting top design to 'ref:/WORK/FFT_PAD'
+Status:   Elaborating design FFT_PAD   ...  
+Status:   Elaborating design FFT   ...  
+Status:   Elaborating design radix2   ...  
+Status:   Elaborating design shift_16   ...  
+Status:   Elaborating design ROM_16   ...  
+Status:   Elaborating design shift_8   ...  
+Status:   Elaborating design ROM_8   ...  
+Status:   Elaborating design shift_4   ...  
+Status:   Elaborating design ROM_4   ...  
+Status:   Elaborating design shift_2   ...  
+Status:   Elaborating design ROM_2   ...  
+Status:   Elaborating design shift_1   ...  
+Status:  Creating black-box designs...
+Created technology library 'FM_BBOX' in container 'ref' for black-box designs
+Created black-box design 'FM_FORK' in library 'FM_BBOX'
+Status:  Implementing inferred operators...
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1' (FM-300)
+Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH' (FM-300)
+
+************ Library Checking Summary ************
+Warning:  64 unlinked power cell(s) with unread pg pins.
+Warning:  1388 unlinked power cell(s) with no power down functions on outputs.
+Warning:  24 unlinked power cell(s) with no retention ff or latch.
+Warning:  56 unlinked power cell(s) with unread backup pg pins.
+Warning:  372 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'ref:/WORK/FFT_PAD'
+Reference design set to 'ref:/WORK/FFT_PAD'
+Created container 'impl'
+Current container set to 'impl'
+No target library specified, default is WORK
+Loading verilog file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/outputs/FFT_PAD.vg'
+Setting top design to 'impl:/WORK/FFT_PAD'
+Status:  Creating black-box designs...
+Created technology library 'FM_BBOX' in container 'impl' for black-box designs
+Created black-box design 'FM_FORK' in library 'FM_BBOX'
+Status:  Implementing inferred operators...
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1' (FM-300)
+Warning: New black-box 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'impl:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH' (FM-300)
+
+************ Library Checking Summary ************
+Warning:  64 unlinked power cell(s) with unread pg pins.
+Warning:  1388 unlinked power cell(s) with no power down functions on outputs.
+Warning:  24 unlinked power cell(s) with no retention ff or latch.
+Warning:  56 unlinked power cell(s) with unread backup pg pins.
+Warning:  372 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'impl:/WORK/FFT_PAD'
+Implementation design set to 'impl:/WORK/FFT_PAD'
+Set compare rules for 'impl:/WORK/FFT_PAD'
+Set don't verify point 'ref:/WORK/FFT_PAD/o_DATA_IMAG[12]'
+Set don't verify point 'ref:/WORK/FFT_PAD/o_DATA_IMAG[13]'
+Set don't verify point 'ref:/WORK/FFT_PAD/o_DATA_IMAG[14]'
+Set don't verify point 'ref:/WORK/FFT_PAD/o_DATA_IMAG[15]'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad3/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad10/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad16/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad17/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad22/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad23/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad28/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad29/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad35/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad36/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad41/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad42/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad47/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad48/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad55/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad56/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad61/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad62/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad67/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad68/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad73/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad74/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad79/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad80/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad85/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad86/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad108/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad109/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad115/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad116/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad121/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad122/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad127/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad128/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad133/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad134/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad139/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad140/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad145/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad146/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad151/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad152/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad159/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad160/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad165/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad166/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad171/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad172/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad177/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad178/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad183/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad184/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad189/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad190/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad195/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad196/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad201/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad202/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad205/CLTCH\*unread\*/IN'
+Set don't verify point 'ref:/WORK/FFT_PAD/pad207/CLTCH\*unread\*/IN'
+***********************************************************************
+                                                                       
+                           verify  FFT_PAD                         
+                                                                       
+***********************************************************************
+Reference design is 'ref:/WORK/FFT_PAD'
+Implementation design is 'impl:/WORK/FFT_PAD'
+Status:  Checking designs...
+    Warning: Design ref:/SS65LP3P3V_WST_108_300_P125/vsstvh is a black box and there are cells referencing it (FM-160)
+    Warning: Design ref:/SS65LP3P3V_WST_108_300_P125/vssipvh is a black box and there are cells referencing it (FM-160)
+    Warning: Design ref:/SS65LP3P3V_WST_108_300_P125/vddivh is a black box and there are cells referencing it (FM-160)
+    Warning: Design ref:/SS65LP3P3V_WST_108_300_P125/vddtvh is a black box and there are cells referencing it (FM-160)
+    Warning: Design impl:/SS65LP3P3V_WST_108_300_P125/vsstvh is a black box and there are cells referencing it (FM-160)
+    Warning: Design impl:/SS65LP3P3V_WST_108_300_P125/vssipvh is a black box and there are cells referencing it (FM-160)
+    Warning: Design impl:/SS65LP3P3V_WST_108_300_P125/vddivh is a black box and there are cells referencing it (FM-160)
+    Warning: Design impl:/SS65LP3P3V_WST_108_300_P125/vddtvh is a black box and there are cells referencing it (FM-160)
+    Warning: 67 (285) undriven nets found in reference (implementation) design; see formality.log for list (FM-399)
+    Info:  32 (32) multiply-driven nets found in reference (implementation) design; see formality.log for list.
+    Warning: 123 (123) black-box references found in reference (implementation) design; see formality.log for list (FM-182)
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+Status:  Retiming blocks ref:/WORK/FFT_PAD (<top>) and impl:/WORK/FFT_PAD (<top>)...
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPU' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CPD' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD0' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CD1' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtart/CLTCH' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPU' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CPD' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD0' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CD1' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbcudtbrt/CLTCH' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPU' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CPD' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD0' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CD1' (FM-300)
+    Warning: New black-box 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH\*unread\*' is created for an unread tech cell pin 'ref:/SS65LP3P3V_WST_108_300_P125/pvhbsudtbrt/CLTCH' (FM-300)
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+change_names        :         35         40          0          0         75
+environment         :          6          0          0          0          6
+instance_map        :          0          1          0          0          1
+mark                :         22          0          0          0         22
+reg_constant        :        272          0          0          0        272
+reg_merging         :          2          0          0          0          2
+replace             :         16          0          0          0         16
+retiming            :       1056          0          0          0       1056
+retiming_finished   :          1          0          0          0          1
+ungroup             :          0          5          0          0          5
+uniquify            :          2          0          0          0          2
+ununiquify          :          1          0          0          0          1
+
+Note: If verification succeeds you can safely ignore unaccepted guidance commands.
+
+SVF files read:
+  ../../02_RTL_Synthesis/svf/FFT_PAD.svf
+
+SVF files produced:
+  formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 3250 Compare points matched by name    
+ 8 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 847 Matched primary inputs, black-box outputs    
+ 71(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 1944(0) Unmatched reference(implementation) unread points    
+----------------------------------------------------------------------------------------    
+Unmatched Objects                                                        REF        IMPL    
+----------------------------------------------------------------------------------------    
+ Cut-points (Cut)                                                         67           0    
+ Registers                                                                 4           0    
+   Transparent LAT                                                         4           0    
+****************************************************************************************
+
+Status:  Verifying...
+.........
+    Compare point FFT/rom2/count_reg_1_ failed (is not equivalent)
+    Compare point FFT/rom2/count_reg_0_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_0_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_0_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_5_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_4_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_3_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_1_ failed (is not equivalent)
+    Compare point FFT/rom4/count_reg_2_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_5_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_4_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_3_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_1_ failed (is not equivalent)
+    Compare point FFT/rom8/count_reg_2_ failed (is not equivalent)
+    Compare point FFT/rom2/count_reg_5_ failed (is not equivalent)
+    Compare point FFT/rom2/count_reg_4_ failed (is not equivalent)
+    Compare point FFT/rom2/count_reg_2_ failed (is not equivalent)
+    Compare point FFT/rom2/count_reg_3_ failed (is not equivalent)
+.
+    
+Status:  Matching hierarchy...
+...
+    
+    
+Status:  Verifying...
+................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 20:34 731MB/1815.73sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 21:04 993MB/3617.68sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 21:34 993MB/5417.56sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 22:04 993MB/7220.02sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 22:34 993MB/9021.66sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 23:04 1121MB/10824.33sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/22/20 23:34 1121MB/12623.82sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 00:04 1121MB/14423.53sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 00:35 1121MB/16225.76sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 01:05 1121MB/18027.40sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 01:35 1121MB/19829.65sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 02:05 1121MB/21633.66sec
+.............................. 18F/0A/2196P/1044U (67% Verification completed) 11/23/20 02:35 1121MB/23448.79sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 03:05 1121MB/25252.54sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 03:35 1121MB/27051.34sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 04:05 1121MB/28853.13sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 04:35 1121MB/30653.24sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 05:05 1121MB/32452.60sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 05:35 1121MB/34251.96sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 06:05 1121MB/36051.31sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 06:35 1121MB/37850.59sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 07:05 1121MB/39650.00sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 07:35 1121MB/41450.57sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 08:05 1121MB/43249.78sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 08:35 1121MB/45049.75sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 09:05 1121MB/46849.19sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 09:35 1121MB/48648.66sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 10:05 1121MB/50448.30sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 10:35 1121MB/52248.29sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 11:05 1121MB/54046.80sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 11:35 1121MB/55845.69sec
+.............................. 18F/0A/2202P/1038U (68% Verification completed) 11/23/20 12:05 1121MB/57645.25sec
+.............................. 18F/0A/2222P/1018U (68% Verification completed) 11/23/20 12:35 1121MB/59443.31sec
+
+fm_shell (verify)> Interrupt detected: Stopping current operation
+Interrupt/timeout processed by 'ProcessMiter' on crossing -404107901.
+...............
+
+********************************* Verification Results *********************************
+Verification FAILED
+(Equivalence checking aborted due to interrupt/timeout)
+   ATTENTION: 18 failing compare points have unmatched undriven signals in their
+                reference fan-in.  To report such failing points, use
+                "report_failing_points -inputs unmatched -inputs undriven".
+              To read about undriven signal handling, use
+                "man verification_set_undriven_signals".
+----------------------------------------------------------------------------------------
+ Reference design: ref:/WORK/FFT_PAD
+ Implementation design: impl:/WORK/FFT_PAD
+ 2222 Passing compare points
+ 18 Failing compare points
+ 0 Aborted compare points
+ 1018 Unverified compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)         942       0       0       0      29    1251       0    2222
+Failing (not equivalent)       0       0       0       0       0      18       0      18
+Unverified                     0       0       0       0       0    1018       0    1018
+Not Compared
+  Don't verify                60       0       0       0       4       0       0      64
+****************************************************************************************
+Status:  Diagnosing impl:/WORK/FFT_PAD vs ref:/WORK/FFT_PAD...
+Status:  Diagnosis initializing...
+Status:  Analyzing patterns...
+    3 distinct errors detected in implementation design.
+    Number of error candidates: 11
+    Analysis completed
+Status:  Finding matching regions in reference design...
+    3 matching regions detected in reference design.
+Diagnosis completed
+**************************************************
+Report         : failing_points
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+18 Failing compare points (18 matched, 0 unmatched):
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_5_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_5_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_5_
+
+ *This failure may be due to an undriven signal in the reference design;
+  use "report_unmatched_points <compare-point> -status undriven" to see
+  a report of unmatched undriven points in the fan-in of a given compare point.
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+***********************************************************************
+                                                                       
+                      common_report_fail.tcl                           
+                                                                       
+***********************************************************************
+***********************************************************************
+                                                                       
+                    common_report_default.tcl                          
+                                                                       
+***********************************************************************
+**************************************************
+Report         : guidance
+                 -to ./reports/report_guidance
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+SVF files read:
+  ../../02_RTL_Synthesis/svf/FFT_PAD.svf
+
+SVF files produced:
+  ./reports/report_guidance/
+    svf.txt
+**************************************************
+Report         : guidance
+                 -to ../../02_RTL_Synthesis/svf/report_guidance
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+SVF files read:
+  ../../02_RTL_Synthesis/svf/FFT_PAD.svf
+
+SVF files produced:
+  ../../02_RTL_Synthesis/svf/report_guidance/
+    svf.txt
+Info:  Session being saved in minimal format.
+Info:  Session containers saved as read-only.
+Info:  Wrote file './reports/session.fss'.
+1
+start_gui
+1
+#exit
+fm_shell (verify)> exit
+
+Maximum memory usage for this session: 1148240 KB
+CPU usage for this session: 60365.8 seconds
+Current time: Mon Nov 23 12:52:17 2020
+Elapsed time: 60590 seconds
+
+Thank you for using Formality (R)!

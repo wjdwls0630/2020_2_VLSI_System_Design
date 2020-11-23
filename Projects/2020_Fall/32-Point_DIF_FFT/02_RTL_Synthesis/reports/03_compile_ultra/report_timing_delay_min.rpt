@@ -1,0 +1,310 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -max_paths 10
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:57:55 2020
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_1p08v_125c   Library: scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+Wire Load Model Mode: top
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[61]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[85]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[61]/CK (DFFRHQX8MTR)       0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[61]/Q (DFFRHQX8MTR)        0.26       0.26 f
+  FFT/shift_16/U301/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[85]/D (DFFRQX2MTH)         0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[85]/CK (DFFRQX2MTH)        0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[84]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[108]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[84]/CK (DFFRHQX8MTR)       0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[84]/Q (DFFRHQX8MTR)        0.26       0.26 f
+  FFT/shift_16/U278/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[108]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[108]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[107]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[131]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[107]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[107]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U255/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[131]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[131]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[130]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[154]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[130]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[130]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U232/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[154]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[154]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[176]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[200]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[176]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[176]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U186/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[200]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[200]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[191]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[215]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[191]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[191]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U171/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[215]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[215]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[214]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[238]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[214]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[214]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U148/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[238]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[238]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[237]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[261]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[237]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[237]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U125/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[261]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[261]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[153]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[177]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[153]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[153]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U209/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[177]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[177]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: FFT/shift_16/shift_reg_r_reg[260]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_16/shift_reg_r_reg[284]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[260]/CK (DFFRHQX8MTR)      0.00 #     0.00 r
+  FFT/shift_16/shift_reg_r_reg[260]/Q (DFFRHQX8MTR)       0.26       0.26 f
+  FFT/shift_16/U102/Y (AO22X1MTH)                         0.24       0.50 f
+  FFT/shift_16/shift_reg_r_reg[284]/D (DFFRQX2MTH)        0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_16/shift_reg_r_reg[284]/CK (DFFRQX2MTH)       0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1

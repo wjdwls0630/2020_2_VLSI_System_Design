@@ -1,0 +1,1499 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version L-2016.03-SP5-5 for linux64 - Apr 21, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+***********************************************************************
+                                                                       
+                     synopsys_dc_setup.tcl                             
+                                                                       
+***********************************************************************
+***********************************************************************
+       NOTE>>> You MUST fix the design which have multiple ports
+               Use the following command
+               set_fix_multiple_port_nets -all -buffer_constants
+************************************************************************
+***********************************************************************
+       NOTE>>> Use the old compile_fix_multiple_port_nets
+               because reoptimize_design does not honor
+               the set_fix_multiple_port_nets command
+************************************************************************
+Initializing gui preferences from file  /home/VLSI_graduated_2020/2015104027/.synopsys_dv_prefs.tcl
+echo "------------------------------------------------------------------------"
+------------------------------------------------------------------------
+echo "--                                                                    --"
+--                                                                    --
+echo "--                                                                    --"
+--                                                                    --
+echo "--                            compile start                           --"
+--                            compile start                           --
+echo "--                                                                    --"
+--                                                                    --
+echo "--                                                                    --"
+--                                                                    --
+echo "------------------------------------------------------------------------"
+------------------------------------------------------------------------
+##########################################################################################
+##
+## Create Operating_Conditions
+##
+##########################################################################################
+#########################   DO NOT CHANGE BELOW THIS LINE   ##############################
+##########################################################################################
+# Samsung 65nm
+# Dual Vth (Sign-off Corner, no need Multi-VDD)
+# Logic Synthesis & Pre-STA (1st Sign-off)
+# RVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+# HVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+remove_design -all
+1
+# source the common_setup & Common variables file
+source -echo -v ./dc_scripts/user_scripts/user_design_setup.tcl
+#******************************************************************************
+#**                          user design settings                           **
+#******************************************************************************
+echo "***********************************************************************"
+***********************************************************************
+echo "                                                                       "
+                                                                       
+echo "                      user_design_setup.tcl                            "
+                      user_design_setup.tcl                            
+echo "                                                                       "
+                                                                       
+echo "***********************************************************************"
+***********************************************************************
+#******************************************************************************
+#**                         General ICC Varialbes                            **
+#******************************************************************************
+set TOP_MODULE                     "FFT_PAD"    ;# set design top module name
+FFT_PAD
+set POWER_OPT                      true              ;# set to true when enabling Power Optimization during compile.
+true
+set DC_NUM_CPUS                   "1"                ;# used during placement & routing
+1
+set INOUT_OPT                      true               ;# set to true when optimizing i2r and r2o paths
+true
+set INTER_CLK_GROUPS               "clk"    ;   # Define clocks. "clkA clkB"
+clk
+set CLOCK_MAX_TRAN                 "0.7"              ;# clock path max transtion time.
+0.7
+#######################################################
+## Input Files
+#######################################################
+set DC_IN_VERILOG_RTL_FILE       "../01_RTL_Design/src/FFT_PAD.v"
+../01_RTL_Design/src/FFT_PAD.v
+set HOLD_FIX                       true		      ;# If you want to fix hold violation then set true.
+true
+####### Define SDC Files
+## If you have only FUNC1_SDC, Write the sdc file in FUNC1_SDC field.
+## If you have only FUNC2_SDC, Write the sdc file in FUNC2_SDC field.
+set FUNC1_SDC          ""
+set FUNC2_SDC          ""
+####### Define Default Operating Conditions
+##
+## You have to write the default operation condition name and library name of standard cell.
+## If some instances of your design have other operation condition (PVT) such as IO,
+## You have to define the operation condition name and library name in user_opcond.tcl.
+##
+# Set operating conditions
+# Samsung 65nm
+# Dual Vth (Sign-off Corner, no need Multi-VDD)
+# Logic Synthesis & Pre-STA (1st Sign-off)
+# RVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+# HVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+#########################   DO NOT CHANGE BELOW THIS LINE   ##############################
+##########################################################################################
+set REPORTS_DIR                 "./reports"
+./reports
+## Avoiding too many messages
+set_message_info -id PSYN-040   -limit 5
+1
+set_message_info -id PSYN-087   -limit 5
+1
+set_message_info -id LINT-8     -limit 5
+1
+set_message_info -id RT-104     -limit 5
+1
+set_message_info -id RT-065     -limit 5
+1
+set_message_info -id TIM-128    -limit 5
+1
+set_message_info -id TIM-141    -limit 5
+1
+set_message_info -id PSYN-267   -limit 5
+1
+set_message_info -id RT-104     -limit 5
+1
+set_message_info -id PSYN-024   -limit 5
+1
+set_message_info -id PSYN-058   -limit 5
+1
+set_message_info -id PSYN-025   -limit 5
+1
+set_message_info -id PSYN-039   -limit 5
+1
+set_message_info -id PSYN-523   -limit 5
+1
+set_message_info -id PSYN-900   -limit 1
+1
+set_message_info -id CTS-102    -limit 1
+1
+set_message_info -id OPT-112    -limit 1
+1
+set_message_info -id OPT-1206   -limit 1
+1
+set_message_info -id OPT-1215   -limit 1
+1
+1
+source -echo -v ./dc_scripts/common_lib_setup.tcl
+#******************************************************************************
+#**                          common library settings                         **
+#******************************************************************************
+echo "***********************************************************************"
+***********************************************************************
+echo "                                                                       "
+                                                                       
+echo "                       common_lib_setup.tcl                            "
+                       common_lib_setup.tcl                            
+echo "                                                                       "
+                                                                       
+echo "***********************************************************************"
+***********************************************************************
+#******************************************************************************
+#                       set basic parameter                                  **
+#******************************************************************************
+set designer "Man"
+Man
+set company "KHU Room327"
+KHU Room327
+# Define path directories for file locations
+set ALIB_DIR "./alib"
+./alib
+set SVF_DIR "./svf"
+./svf
+#******************************************************************************
+#**                         Set Library Parameter                            **
+#******************************************************************************
+set LIB_DIR /Tools/Library/samsung65_2016/CB_1502
+/Tools/Library/samsung65_2016/CB_1502
+set PRIMITIVE_LIB_DIR ${LIB_DIR}/PRIMITIVE
+/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE
+set IO_LIB_DIR ${LIB_DIR}/IO
+/Tools/Library/samsung65_2016/CB_1502/IO
+#******************************************************************************
+#**                Set 'search_path'                                         **
+#******************************************************************************
+set search_path ". $synopsys_root/libraries/syn 		   $PRIMITIVE_LIB_DIR/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys  		   $PRIMITIVE_LIB_DIR/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys                     $PRIMITIVE_LIB_DIR/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys                    $PRIMITIVE_LIB_DIR/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys                    $IO_LIB_DIR/synopsys"
+. /Tools/Synopsys/DesignCompiler_2017/libraries/syn      /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys       /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys                     /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys                    /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys                    /Tools/Library/samsung65_2016/CB_1502/IO/synopsys
+#******************************************************************************
+#**                Set libraries                                             **
+#******************************************************************************
+# Samsung 65nm
+# Dual Vth (Sign-off Corner, no need Multi-VDD)
+# Logic Synthesis & Pre-STA (1st Sign-off)
+# RVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+# HVT: SS 1.08V 125c - WIRE Zero Wire Load Model
+# PMK (Power Management Kit)
+# RVT
+# SS (Worst)
+set PMK_RVT_SS scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+# HVT
+# SS (Worst)
+set PMK_HVT_SS scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm
+scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm
+# Normal
+# RVT
+# SS (Worst)
+set NOM_RVT_SS scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm
+scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm
+# HVT
+# SS (Worst)
+set NOM_HVT_SS scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm
+scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm
+# IO
+# SS (Worst)
+set IO_SS ss65lp3p3v_wst_108_300_p125
+ss65lp3p3v_wst_108_300_p125
+set target_library [concat         $PMK_RVT_SS.db         $PMK_HVT_SS.db         $NOM_RVT_SS.db         $NOM_HVT_SS.db         $IO_SS.db
+]
+scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db ss65lp3p3v_wst_108_300_p125.db
+# * : all designs which are in dc_shell
+#set synthetic_library dw_foundation.sldb
+set link_library [concat         {*}         $PMK_RVT_SS.db         $PMK_HVT_SS.db         $NOM_RVT_SS.db         $NOM_HVT_SS.db         $IO_SS.db
+]
+* scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db ss65lp3p3v_wst_108_300_p125.db
+set link_path $link_library
+* scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db ss65lp3p3v_wst_108_300_p125.db
+set_app_var alib_library_analysis_path $ALIB_DIR
+./alib
+set_host_options -max_cores $DC_NUM_CPUS
+1
+#******************************************************************************
+#**                    Default Timing Environment Setting                   **
+#******************************************************************************
+set timing_enable_multiple_clocks_per_reg true
+true
+set timing_enable_non_sequential_checks true
+true
+set case_analysis_with_logic_constants true
+true
+set disable_auto_time_borrow false
+false
+#******************************************************************************
+#******************************************************************************
+#**                               ETC                                        **
+#******************************************************************************
+set sh_enable_page_mode false
+false
+setenv TMPDIR [sh pwd]/TMP
+/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/TMP
+set back [sh date +%m%d_%H:%M:%S]
+1122_19:39:49
+#******************************************************************************
+set_svf $SVF_DIR/$TOP_MODULE.svf
+1
+source ./dc_scripts/01_read_designs.tcl
+***********************************************************************
+                                                                       
+                         01_read_designs.tcl                           
+                                                                       
+***********************************************************************
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db'
+Loading db file '/Tools/Synopsys/DesignCompiler_2017/libraries/syn/gtech.db'
+Loading db file '/Tools/Synopsys/DesignCompiler_2017/libraries/syn/standard.sldb'
+  Loading link library 'scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm'
+  Loading link library 'scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm'
+  Loading link library 'scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm'
+  Loading link library 'scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm'
+  Loading link library 'ss65lp3p3v_wst_108_300_p125'
+  Loading link library 'gtech'
+Loading verilog file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/FFT_PAD.v'
+Running PRESTO HDLC
+Compiling source file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/FFT_PAD.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./radix2/radix2.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_16.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_8.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_4.v
+Opening include file /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_2.v
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:38: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:44: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v:45: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine shift_16 line 28 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   shift_reg_i_reg   | Flip-flop |  384  |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   shift_reg_r_reg   | Flip-flop |  384  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:38: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:43: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v:44: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine shift_8 line 28 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_8.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   shift_reg_i_reg   | Flip-flop |  192  |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   shift_reg_r_reg   | Flip-flop |  192  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:38: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:43: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v:44: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine shift_4 line 28 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_4.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   shift_reg_i_reg   | Flip-flop |  96   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   shift_reg_r_reg   | Flip-flop |  96   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:38: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:43: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v:44: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine shift_2 line 28 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   shift_reg_i_reg   | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   shift_reg_r_reg   | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:38: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:43: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v:44: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine shift_1 line 28 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./shift/shift_1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   shift_reg_i_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   shift_reg_r_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./radix2/radix2.v:56: signed to unsigned part selection occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./radix2/radix2.v:57: signed to unsigned part selection occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./radix2/radix2.v:24: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 19 in file
+	'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./radix2/radix2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            24            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 12 in file
+	'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ROM_16 line 112 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 14 in file
+	'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_8.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            35            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ROM_8 line 75 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_8.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ROM_4 line 59 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_4.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ROM_2 line 51 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./ROM/ROM_2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:48: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:49: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:284: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:285: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:315: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:316: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:320: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:321: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:324: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:325: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:328: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:329: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:332: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:333: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:336: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:337: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:340: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:341: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:344: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:345: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:348: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:349: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:352: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:353: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:356: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:357: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:360: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:361: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:364: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:365: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:368: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:369: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:372: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:373: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:376: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:377: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:380: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:381: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:384: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:385: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:388: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:389: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:392: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:393: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:396: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:397: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:400: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:401: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:404: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:405: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:408: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:409: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:412: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:413: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:416: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:417: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:420: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:421: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:424: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:425: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:428: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:429: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:432: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:433: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:436: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:437: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:440: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v:441: unsigned to signed assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 302 in file
+	'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           313            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FFT line 265 in file
+		'/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/./FFT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dout_i_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    result_i_reg     | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    y_1_delay_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    result_r_reg     | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    din_r_reg_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    din_i_reg_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  in_valid_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    s5_count_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    r4_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     count_y_reg     | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   assign_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      over_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     dout_r_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     FFT/256      |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/shift_16.db:shift_16'
+Loaded 12 designs.
+Current design is 'shift_16'.
+Current design is 'FFT_PAD'.
+
+  Linking design 'FFT_PAD'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (12 designs)              /home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/01_RTL_Design/src/FFT_PAD.db, etc
+  scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm (library) /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db
+  scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm (library) /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db
+  scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm (library) /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db
+  scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm (library) /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db
+  ss65lp3p3v_wst_108_300_p125 (library) /Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db
+
+Information: Uniquified 5 instances of design 'radix2'. (OPT-1056)
+1
+# Apply constraints
+source ./dc_scripts/02_constraints.tcl
+***********************************************************************
+                                                                       
+                         02_constraints.tcl                            
+                                                                       
+***********************************************************************
+***********************************************************************
+                                                                       
+                        common_clock_env.tcl                           
+                                                                       
+***********************************************************************
+Information: Updating graph... (UID-83)
+Warning: Design 'FFT_PAD' contains 7 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:39:54 2020
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              5.40   {0 2.7}                       {i_CLK}
+--------------------------------------------------------------------------------
+***********************************************************************
+                                                                       
+                      common_constraints.tcl                           
+                                                                       
+***********************************************************************
+constraints i_RSTN
+Delete i_DATA_REAL[11] delay between PAD and virtual port!
+Delete i_DATA_REAL[10] delay between PAD and virtual port!
+Delete i_DATA_REAL[9] delay between PAD and virtual port!
+Delete i_DATA_REAL[8] delay between PAD and virtual port!
+Delete i_DATA_REAL[7] delay between PAD and virtual port!
+Delete i_DATA_REAL[6] delay between PAD and virtual port!
+Delete i_DATA_REAL[5] delay between PAD and virtual port!
+Delete i_DATA_REAL[4] delay between PAD and virtual port!
+Delete i_DATA_REAL[3] delay between PAD and virtual port!
+Delete i_DATA_REAL[2] delay between PAD and virtual port!
+Delete i_DATA_REAL[1] delay between PAD and virtual port!
+Delete i_DATA_REAL[0] delay between PAD and virtual port!
+Delete i_DATA_IMAG[11] delay between PAD and virtual port!
+Delete i_DATA_IMAG[10] delay between PAD and virtual port!
+Delete i_DATA_IMAG[9] delay between PAD and virtual port!
+Delete i_DATA_IMAG[8] delay between PAD and virtual port!
+Delete i_DATA_IMAG[7] delay between PAD and virtual port!
+Delete i_DATA_IMAG[6] delay between PAD and virtual port!
+Delete i_DATA_IMAG[5] delay between PAD and virtual port!
+Delete i_DATA_IMAG[4] delay between PAD and virtual port!
+Delete i_DATA_IMAG[3] delay between PAD and virtual port!
+Delete i_DATA_IMAG[2] delay between PAD and virtual port!
+Delete i_DATA_IMAG[1] delay between PAD and virtual port!
+Delete i_DATA_IMAG[0] delay between PAD and virtual port!
+Delete o_DATA_REAL[15] delay between PAD and virtual port!
+Delete o_DATA_REAL[14] delay between PAD and virtual port!
+Delete o_DATA_REAL[13] delay between PAD and virtual port!
+Delete o_DATA_REAL[12] delay between PAD and virtual port!
+Delete o_DATA_REAL[11] delay between PAD and virtual port!
+Delete o_DATA_REAL[10] delay between PAD and virtual port!
+Delete o_DATA_REAL[9] delay between PAD and virtual port!
+Delete o_DATA_REAL[8] delay between PAD and virtual port!
+Delete o_DATA_REAL[7] delay between PAD and virtual port!
+Delete o_DATA_REAL[6] delay between PAD and virtual port!
+Delete o_DATA_REAL[5] delay between PAD and virtual port!
+Delete o_DATA_REAL[4] delay between PAD and virtual port!
+Delete o_DATA_REAL[3] delay between PAD and virtual port!
+Delete o_DATA_REAL[2] delay between PAD and virtual port!
+Delete o_DATA_REAL[1] delay between PAD and virtual port!
+Delete o_DATA_REAL[0] delay between PAD and virtual port!
+Delete o_DATA_IMAG[11] delay between PAD and virtual port!
+Delete o_DATA_IMAG[10] delay between PAD and virtual port!
+Delete o_DATA_IMAG[9] delay between PAD and virtual port!
+Delete o_DATA_IMAG[8] delay between PAD and virtual port!
+Delete o_DATA_IMAG[7] delay between PAD and virtual port!
+Delete o_DATA_IMAG[6] delay between PAD and virtual port!
+Delete o_DATA_IMAG[5] delay between PAD and virtual port!
+Delete o_DATA_IMAG[4] delay between PAD and virtual port!
+Delete o_DATA_IMAG[3] delay between PAD and virtual port!
+Delete o_DATA_IMAG[2] delay between PAD and virtual port!
+Delete o_DATA_IMAG[1] delay between PAD and virtual port!
+Delete o_DATA_IMAG[0] delay between PAD and virtual port!
+Delete i_CLK delay between PAD and virtual port!
+Delete i_RSTN delay between PAD and virtual port!
+Delete i_VALID delay between PAD and virtual port!
+Delete o_VALID delay between PAD and virtual port!
+# Define Group Paths
+set ports_clock_root [get_ports [all_fanout -flat -clock_tree -level 0]]
+Warning: Design 'FFT_PAD' contains 7 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+{i_CLK}
+group_path -name REGOUT -to [all_outputs]
+1
+group_path -name REGIN -from [remove_from_collection [all_inputs] $ports_clock_root]
+1
+group_path -name FEEDTHROUGH -from [remove_from_collection [all_inputs] $ports_clock_root] -to [all_outputs]
+1
+source ./dc_scripts/03_compile_ultra.tcl
+***********************************************************************
+                                                                       
+                       03_compile_ultra.tcl                            
+                                                                       
+***********************************************************************
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Loading db file '/Tools/Synopsys/DesignCompiler_2017/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+============================================================================
+
+
+Information: There are 486 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib/alib-52/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db.alib' (placeholder)
+Loaded alib file './alib/alib-52/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db.alib' (placeholder)
+Loaded alib file './alib/alib-52/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db.alib'
+Loaded alib file './alib/alib-52/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db.alib'
+Loaded alib file './alib/alib-52/ss65lp3p3v_wst_108_300_p125.db.alib' (placeholder)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+  Processing 'shift_1'
+  Processing 'radix2_0'
+  Processing 'ROM_2'
+Information: Added key list 'DesignWare' to design 'ROM_2'. (DDB-72)
+  Processing 'shift_2'
+  Processing 'ROM_4'
+Information: Added key list 'DesignWare' to design 'ROM_4'. (DDB-72)
+  Processing 'shift_4'
+  Processing 'ROM_8'
+Information: Added key list 'DesignWare' to design 'ROM_8'. (DDB-72)
+  Processing 'shift_8'
+  Processing 'ROM_16'
+  Processing 'shift_16'
+  Processing 'FFT'
+Information: The register 'din_r_reg_reg[7]' is a constant and will be removed. (OPT-1206)
+Note - message 'OPT-1206' limit (1) exceeded.  Remainder will be suppressed.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+  Mapping 'FFT_DW01_inc_0'
+  Mapping 'FFT_DW01_sub_0'
+  Mapping 'FFT_DW_cmp_0'
+  Mapping 'radix2_0_DW01_sub_0'
+  Mapping 'radix2_0_DW01_sub_1'
+  Mapping 'ROM_2_DW01_inc_0'
+  Mapping 'radix2_1_DW01_sub_0'
+  Mapping 'radix2_1_DW01_sub_1'
+  Mapping 'ROM_4_DW01_inc_0'
+  Mapping 'radix2_2_DW01_sub_0'
+  Mapping 'radix2_2_DW01_sub_1'
+  Mapping 'ROM_8_DW01_inc_0'
+  Mapping 'radix2_3_DW01_sub_0'
+  Mapping 'radix2_3_DW01_sub_1'
+  Mapping 'ROM_16_DW_cmp_0'
+  Mapping 'ROM_16_DW01_inc_0'
+  Mapping 'radix2_4_DW01_sub_0'
+  Mapping 'radix2_4_DW01_sub_1'
+  Mapping 'radix2_4_DP_OP_41_122_1041_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_4_DP_OP_31_125_1582_0'
+  Mapping 'radix2_4_DP_OP_30_124_9496_0'
+  Mapping 'radix2_4_DP_OP_29_123_1582_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_3_DP_OP_41_126_392_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_3_DP_OP_31_129_7705_0'
+  Mapping 'radix2_3_DP_OP_30_128_297_0'
+  Mapping 'radix2_3_DP_OP_29_127_7705_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_2_DP_OP_41_130_7604_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_2_DP_OP_31_133_5664_0'
+  Mapping 'radix2_2_DP_OP_30_132_41_0'
+  Mapping 'radix2_2_DP_OP_29_131_5664_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_1_DP_OP_41_134_6955_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_1_DP_OP_31_137_1820_0'
+  Mapping 'radix2_1_DP_OP_30_136_809_0'
+  Mapping 'radix2_1_DP_OP_29_135_1820_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_0_DP_OP_41_138_2094_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+  Mapping 'radix2_0_DP_OP_31_141_9746_0'
+  Mapping 'radix2_0_DP_OP_30_140_553_0'
+  Mapping 'radix2_0_DP_OP_29_139_9746_0'
+  Processing 'mselector_n2_m24'
+  Processing 'mselector_n2_m24'
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:59   97054.1     34.72   50059.4    3086.6                              2.2493      0.00  
+    0:00:59   97054.1     34.72   50059.4    3086.6                              2.2493      0.00  
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'FFT'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'ROM_16'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'shift_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'shift_4'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'shift_8'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'shift_16'. (DDB-72)
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Selecting implementations
+  Mapping 'radix2_4_DW01_sub_4'
+  Mapping 'radix2_4_DW01_sub_5'
+  Mapping 'radix2_4_DW01_sub_6'
+  Mapping 'radix2_4_DW01_sub_7'
+  Selecting implementations
+  Selecting implementations
+  Selecting implementations
+  Selecting implementations
+Information: The register 'FFT/result_i_reg[0][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[0][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[0][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[0][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[31][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[31][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[31][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[31][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[30][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[30][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[30][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[30][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[29][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[29][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[29][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[29][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[28][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[28][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[28][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[28][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[27][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[27][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[27][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[27][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[26][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[26][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[26][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[26][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[25][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[25][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[25][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[25][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[24][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[24][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[24][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[24][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[23][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[23][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[23][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[23][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[22][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[22][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[22][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[22][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[21][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[21][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[21][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[21][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[20][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[20][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[20][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[20][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[19][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[19][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[19][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[19][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[18][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[18][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[18][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[18][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[17][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[17][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[17][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[17][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[16][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[16][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[16][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[16][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[15][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[15][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[15][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[15][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[14][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[14][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[14][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[14][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[13][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[13][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[13][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[13][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[12][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[12][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[12][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[12][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[11][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[11][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[11][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[11][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[10][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[10][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[10][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[10][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[9][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[9][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[9][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[9][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[8][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[8][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[8][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[8][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[7][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[7][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[7][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[7][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[6][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[6][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[6][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[6][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[5][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[5][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[5][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[5][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[4][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[4][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[4][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[4][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[3][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[3][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[3][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[3][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[2][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[2][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[2][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[2][15]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[1][12]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[1][13]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[1][14]' will be removed. (OPT-1207)
+Information: The register 'FFT/result_i_reg[1][15]' will be removed. (OPT-1207)
+Information: In design 'FFT_PAD', the register 'FFT/din_i_reg_reg[20]' is removed because it is merged to 'FFT/din_i_reg_reg[19]'. (OPT-1215)
+Note - message 'OPT-1215' limit (1) exceeded.  Remainder will be suppressed.
+    0:01:21   88434.2     13.67   20288.5      28.8                              2.2478      0.00  
+    0:01:21   88434.2     13.67   20288.5      28.8                              2.2478      0.00  
+    0:01:21   88434.2     13.67   20288.5      28.8                              2.2478      0.00  
+    0:01:21   88439.0     13.41   20071.9      25.6                              2.2478      0.00  
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:55   98338.2      3.84    3470.9       2.1                              2.2680      0.00  
+    0:01:55   98338.2      3.84    3470.9       2.1                              2.2680      0.00  
+    0:01:58   97147.8      3.82    3396.6       1.7                              2.2651      0.00  
+    0:01:58   97147.8      3.82    3396.6       1.7                              2.2651      0.00  
+    0:02:09   98244.5      2.90    2461.0       2.1                              2.2664      0.00  
+    0:02:09   98244.5      2.90    2461.0       2.1                              2.2664      0.00  
+    0:04:38  110272.3      0.98     722.0       2.0                              2.2942      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:39  110272.3      0.98     722.0       2.0                              2.2942      0.00  
+    0:06:00  113752.0      0.85     566.5       2.5                              2.3024      0.00  
+    0:06:04  113752.0      0.85     566.5       2.5                              2.3024      0.00  
+    0:06:39  114756.8      0.78     510.3       2.7                              2.3048      0.00  
+    0:06:40  114756.8      0.78     510.3       2.7                              2.3048      0.00  
+    0:06:43  111423.4      0.84     518.6       2.7                              2.2966      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:06:44  111423.4      0.84     518.6       2.7                              2.2966      0.00  
+    0:06:49  111143.7      0.77     488.9       2.3 FFT/result_r_reg[13][15]/D    2.2956      0.00  
+    0:06:51  111069.8      0.75     483.6       2.3 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:06:53  111078.7      0.74     480.3       2.3 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:06:55  111060.2      0.74     481.6       2.3 FFT/shift_1/shift_reg_i_reg[23]/D    2.2955      0.00  
+    0:06:57  111081.9      0.73     468.0       2.3 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:06:59  111038.4      0.73     466.5       2.3 FFT/shift_1/shift_reg_i_reg[23]/D    2.2954      0.00  
+    0:07:01  111031.0      0.72     463.5       2.3 FFT/shift_1/shift_reg_r_reg[20]/D    2.2954      0.00  
+    0:07:03  110972.8      0.71     461.7       2.3 FFT/shift_1/shift_reg_i_reg[23]/D    2.2952      0.00  
+    0:07:05  111022.4      0.71     457.6       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:07  110999.7      0.70     452.4       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:09  111004.5      0.70     448.6       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:11  110950.1      0.69     444.6       2.3 FFT/result_r_reg[13][15]/D    2.2952      0.00  
+    0:07:12  110980.5      0.69     442.3       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:13  110989.4      0.69     439.7       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:15  111006.1      0.68     437.6       2.3 FFT/shift_1/shift_reg_i_reg[23]/D    2.2954      0.00  
+    0:07:17  110997.1      0.68     438.4       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:18  111008.0      0.68     437.5       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:20  111026.2      0.68     431.3       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:21  111068.8      0.67     429.3       2.3 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:07:23  111046.1      0.67     427.4       2.3 FFT/result_r_reg[13][15]/D    2.2953      0.00  
+    0:07:25  111065.0      0.67     426.2       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:27  111090.6      0.66     422.4       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:29  111077.4      0.66     421.8       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:30  111089.3      0.65     416.6       2.3 FFT/result_r_reg[13][15]/D    2.2954      0.00  
+    0:07:33  111137.9      0.65     414.2       2.3 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:07:35  111166.4      0.65     375.6       0.0 FFT/result_r_reg[18][15]/D    2.2955      0.00  
+    0:07:37  111153.3      0.65     374.5       0.0 FFT/result_r_reg[18][15]/D    2.2954      0.00  
+    0:07:38  111127.0      0.64     373.4       0.0 FFT/result_r_reg[18][15]/D    2.2954      0.00  
+    0:07:40  111121.6      0.64     369.7       0.0 FFT/result_r_reg[18][15]/D    2.2954      0.00  
+    0:07:42  111262.1      0.64     368.8       0.0 FFT/result_r_reg[13][15]/D    2.2957      0.00  
+    0:07:44  111241.3      0.63     367.5       0.0 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:07:46  111250.9      0.63     366.7       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:07:48  111248.6      0.62     365.1       0.0 FFT/result_r_reg[13][15]/D    2.2956      0.00  
+    0:07:49  111249.0      0.62     364.4       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:07:51  111260.8      0.62     363.5       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:07:52  111290.2      0.62     361.9       0.0 FFT/result_r_reg[13][15]/D    2.2956      0.00  
+    0:07:54  111310.4      0.62     360.6       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:07:55  111279.0      0.61     358.4       0.0 FFT/result_r_reg[18][14]/D    2.2955      0.00  
+    0:07:57  111259.8      0.61     356.1       0.0 FFT/result_r_reg[18][15]/D    2.2954      0.00  
+    0:07:59  111297.6      0.61     354.2       0.0 FFT/result_r_reg[18][15]/D    2.2955      0.00  
+    0:08:00  111307.2      0.61     353.7       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:08:02  111304.0      0.61     351.7       0.0 FFT/result_r_reg[13][15]/D    2.2956      0.00  
+    0:08:03  111310.7      0.60     352.5       0.0 FFT/result_r_reg[13][15]/D    2.2955      0.00  
+    0:08:05  111318.7      0.60     351.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:08:07  111309.8      0.60     349.2       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:08  111330.2      0.60     349.4       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:09  111333.1      0.59     349.2       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:11  111333.8      0.59     347.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:08:12  111335.4      0.59     348.7       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:14  111398.1      0.59     347.2       0.0 FFT/result_r_reg[13][15]/D    2.2958      0.00  
+    0:08:15  111383.4      0.59     346.7       0.0 FFT/result_r_reg[13][15]/D    2.2957      0.00  
+    0:08:17  111389.4      0.58     344.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2957      0.00  
+    0:08:19  111391.0      0.58     341.4       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2958      0.00  
+    0:08:20  111405.1      0.58     341.0       0.0 FFT/result_r_reg[28][15]/D    2.2958      0.00  
+    0:08:22  111386.2      0.58     338.8       0.0 FFT/result_r_reg[18][15]/D    2.2957      0.00  
+    0:08:24  111388.2      0.58     334.4       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2957      0.00  
+    0:08:25  111385.9      0.58     333.5       0.0 FFT/result_r_reg[18][15]/D    2.2957      0.00  
+    0:08:26  111384.3      0.57     334.5       0.0 FFT/result_r_reg[28][15]/D    2.2957      0.00  
+    0:08:28  111373.1      0.57     332.1       0.0 FFT/result_r_reg[28][15]/D    2.2956      0.00  
+    0:08:29  111374.7      0.57     331.9       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:31  111386.6      0.57     328.2       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:32  111395.5      0.57     327.6       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:34  111400.0      0.57     327.2       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:35  111382.4      0.56     325.9       0.0 FFT/result_r_reg[18][15]/D    2.2955      0.00  
+    0:08:38  111385.0      0.56     324.1       0.0 FFT/result_r_reg[18][15]/D    2.2955      0.00  
+    0:08:39  111394.9      0.56     323.3       0.0 FFT/result_r_reg[28][15]/D    2.2955      0.00  
+    0:08:41  111408.6      0.56     322.7       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:08:42  111415.4      0.56     321.5       0.0 FFT/result_r_reg[28][15]/D    2.2956      0.00  
+    0:08:43  111409.3      0.56     321.2       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:45  111416.3      0.56     320.5       0.0 FFT/result_r_reg[18][15]/D    2.2956      0.00  
+    0:08:46  111422.4      0.56     320.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2956      0.00  
+    0:08:48  111488.6      0.55     319.1       0.0 FFT/result_r_reg[28][15]/D    2.2958      0.00  
+    0:08:49  111519.7      0.55     317.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2958      0.00  
+    0:08:50  111565.4      0.55     315.3       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2960      0.00  
+    0:08:52  111586.2      0.55     312.6       0.0 FFT/result_r_reg[28][15]/D    2.2960      0.00  
+    0:08:54  111612.2      0.54     310.2       0.0 FFT/result_r_reg[18][15]/D    2.2961      0.00  
+    0:08:55  111605.4      0.54     309.9       0.0 FFT/result_r_reg[28][15]/D    2.2961      0.00  
+    0:08:56  111616.3      0.54     309.7       0.0 FFT/result_r_reg[18][15]/D    2.2961      0.00  
+    0:08:57  111641.3      0.54     308.3       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2961      0.00  
+    0:08:59  111642.9      0.54     307.2       0.0 FFT/result_r_reg[28][15]/D    2.2961      0.00  
+    0:09:00  111666.6      0.54     306.7       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2963      0.00  
+    0:09:01  111655.7      0.54     305.0       0.0 FFT/result_r_reg[18][14]/D    2.2962      0.00  
+    0:09:03  111659.8      0.53     302.2       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2963      0.00  
+    0:09:04  111666.2      0.53     300.7       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2962      0.00  
+    0:09:06  111692.2      0.53     299.6       0.0 FFT/result_r_reg[18][14]/D    2.2963      0.00  
+    0:09:07  111689.6      0.53     299.1       0.0 FFT/result_r_reg[18][15]/D    2.2963      0.00  
+    0:09:08  111692.8      0.53     298.5       0.0 FFT/result_r_reg[18][14]/D    2.2963      0.00  
+    0:09:10  111766.7      0.53     295.4       0.0 FFT/result_r_reg[18][14]/D    2.2965      0.00  
+    0:09:11  111770.9      0.53     294.2       0.0 FFT/result_r_reg[18][14]/D    2.2965      0.00  
+    0:09:13  111755.2      0.52     293.4       0.0 FFT/result_r_reg[18][15]/D    2.2965      0.00  
+    0:09:14  111759.7      0.52     293.0       0.0 FFT/result_r_reg[18][14]/D    2.2965      0.00  
+    0:09:14  111759.7      0.52     293.0       0.0                              2.2965      0.00  
+    0:09:25  107105.6      0.50     203.3       0.0                              2.2823      0.00  
+    0:09:25  107105.6      0.50     203.3       0.0                              2.2823      0.00  
+    0:09:26  107125.4      0.49     199.7       0.0                              2.2824      0.00  
+    0:09:26  107125.4      0.49     199.7       0.0                              2.2824      0.00  
+    0:10:09  108615.4      0.46     172.8       0.0                              2.2859      0.00  
+    0:10:09  108615.4      0.46     172.8       0.0                              2.2859      0.00  
+    0:10:36  109530.6      0.43     168.5       0.0                              2.2880      0.00  
+    0:10:38  109536.6      0.43     168.4       0.0                              2.2880      0.00  
+    0:11:09  110996.5      0.40     152.0       0.0                              2.2913      0.00  
+    0:11:14  110997.1      0.37     141.7       0.0                              2.2913      0.00  
+    0:11:17  110961.9      0.36     137.4       0.0                              2.2912      0.00  
+    0:11:20  111021.1      0.35     136.1       0.0                              2.2914      0.00  
+    0:11:23  111078.4      0.35     133.6       0.0                              2.2915      0.00  
+    0:11:25  111104.0      0.34     128.6       0.0                              2.2915      0.00  
+    0:11:27  111129.0      0.34     127.3       0.0                              2.2915      0.00  
+    0:11:29  111131.8      0.34     123.8       0.0                              2.2915      0.00  
+    0:11:32  111109.4      0.34     117.2       0.0                              2.2915      0.00  
+    0:11:36  111164.5      0.34     105.8       0.0                              2.2911      0.00  
+    0:11:37  111165.1      0.34     105.1       0.0                              2.2911      0.00  
+
+
+  Beginning Power Optimization
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:11:37  111165.1      0.34     105.1       0.0                              2.2911      0.00  
+    0:11:46  109943.7      0.34     104.5       0.0                              2.2877      0.00  
+    0:11:54  109621.1      0.34     103.9       0.0                              2.2870      0.00  
+    0:11:58  109566.7      0.33     103.5       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2869      0.00  
+    0:11:59  109575.4      0.33     103.6       0.0 FFT/result_r_reg[20][15]/D    2.2869      0.00  
+    0:12:01  109602.9      0.33     105.5       0.0 FFT/result_r_reg[20][15]/D    2.2869      0.00  
+    0:12:03  109585.9      0.33     105.0       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2869      0.00  
+    0:12:04  109593.0      0.32     103.5       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2869      0.00  
+    0:12:06  109636.8      0.32     102.8       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2870      0.00  
+    0:12:08  109666.2      0.32     102.4       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2870      0.00  
+    0:12:09  109680.3      0.32     101.5       0.0 FFT/result_r_reg[2][15]/D    2.2870      0.00  
+    0:12:10  109684.8      0.32     100.0       0.0 FFT/result_r_reg[20][15]/D    2.2870      0.00  
+    0:12:12  109719.4      0.31      97.7       0.0 FFT/result_r_reg[20][15]/D    2.2871      0.00  
+    0:12:14  109734.7      0.31      97.3       0.0 FFT/result_r_reg[20][15]/D    2.2872      0.00  
+    0:12:15  109767.7      0.31      97.1       0.0 FFT/result_r_reg[20][15]/D    2.2872      0.00  
+    0:12:16  109753.9      0.31      96.9       0.0 FFT/result_r_reg[2][15]/D    2.2872      0.00  
+    0:12:18  109753.9      0.31      96.6       0.0 FFT/result_r_reg[20][15]/D    2.2871      0.00  
+    0:12:19  109764.5      0.31      95.9       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2872      0.00  
+    0:12:20  109768.6      0.31      95.7       0.0 FFT/result_r_reg[20][15]/D    2.2872      0.00  
+    0:12:22  109777.0      0.30      95.2       0.0 FFT/result_r_reg[2][15]/D    2.2872      0.00  
+    0:12:24  109793.6      0.30      94.0       0.0 FFT/result_r_reg[20][15]/D    2.2872      0.00  
+    0:12:25  109795.8      0.30      93.8       0.0 FFT/result_r_reg[20][15]/D    2.2872      0.00  
+    0:12:26  109824.3      0.30      93.4       0.0 FFT/result_r_reg[20][15]/D    2.2873      0.00  
+    0:12:28  109830.1      0.30      92.3       0.0 FFT/result_r_reg[2][15]/D    2.2873      0.00  
+    0:12:30  109848.6      0.30      91.1       0.0 FFT/shift_1/shift_reg_i_reg[23]/D    2.2874      0.00  
+    0:12:31  109837.1      0.30      91.1       0.0 FFT/result_r_reg[20][15]/D    2.2873      0.00  
+    0:12:32  109803.2      0.30      90.4       0.0                              2.2872      0.00  
+Information: Complementing port 'in_valid' in design 'shift_8'.
+	 The new name of the port is 'in_valid_BAR'. (OPT-319)
+Information: Complementing port 'in_valid' in design 'ROM_8'.
+	 The new name of the port is 'in_valid_BAR'. (OPT-319)
+Information: Complementing port 'outvalid' in design 'radix2_4'.
+	 The new name of the port is 'outvalid_BAR'. (OPT-319)
+Information: Complementing port 'in_valid_BAR' in design 'shift_8'.
+	 The new name of the port is 'in_valid'. (OPT-319)
+Information: Complementing port 'in_valid_BAR' in design 'ROM_8'.
+	 The new name of the port is 'in_valid'. (OPT-319)
+Information: Complementing port 'outvalid_BAR' in design 'radix2_4'.
+	 The new name of the port is 'outvalid'. (OPT-319)
+    0:12:35  109697.9      0.30      90.2       0.0                              2.2870      0.00  
+    0:12:44  107119.0      0.30      69.7       0.0                              2.2803      0.00  
+    0:12:44  107119.0      0.30      69.7       0.0                              2.2803      0.00  
+    0:12:45  107217.6      0.28      67.5       0.0                              2.2805      0.00  
+    0:12:45  107217.6      0.28      67.5       0.0                              2.2805      0.00  
+    0:13:18  107976.3      0.27      56.2       0.0                              2.2823      0.00  
+    0:13:20  107976.3      0.27      56.2       0.0                              2.2823      0.00  
+    0:13:47  108987.5      0.23      49.9       0.0                              2.2848      0.00  
+    0:13:47  108987.5      0.23      49.9       0.0                              2.2848      0.00  
+    0:14:12  109525.4      0.21      42.8       0.0                              2.2862      0.00  
+    0:14:15  109500.5      0.23      48.4       0.0                              2.2862      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:14:15  109500.5      0.23      48.4       0.0                              2.2862      0.00  
+    0:14:24  106953.0      0.22      42.7       0.0                              2.2792      0.00  
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:14:25  106953.0      0.22      42.7       0.0                              2.2792      0.00  
+    0:14:25  106953.0      0.22      42.7       0.0                              2.2792      0.00  
+    0:14:25  106953.0      0.22      42.7       0.0                              2.2792      0.00  
+    0:14:27  106951.4      0.21      37.5       0.0                              2.2791      0.00  
+    0:14:37  106454.7      0.21      38.5       0.0                              2.2781      0.00  
+    0:14:42  105506.2      0.21      38.5       0.0                              2.2755      0.00  
+    0:15:03   90359.4      0.28      59.1       0.0                              2.2430      0.00  
+    0:15:09   90543.0      0.25      50.9       0.0 FFT/result_r_reg[3][15]/D    2.2434      0.00  
+    0:15:13   90650.2      0.24      50.4       0.0                              2.2436      0.00  
+    0:15:14   90620.8      0.24      50.4       0.0                              2.2436      0.00  
+    0:15:15   90614.7      0.24      50.4       0.0                              2.2436      0.00  
+    0:15:18   90603.8      0.24      48.9       0.0                              2.2436      0.00  
+    0:15:22   90596.8      0.24      47.0       0.0                              2.2435      0.00  
+    0:15:25   90595.8      0.24      45.5       0.0                              2.2435      0.00  
+    0:15:25   90662.4      0.24      45.0       0.0                              2.2436      0.00  
+    0:16:10   81731.5      0.24      44.7       0.0                              2.2243      0.00  
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FFT_PAD' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'FFT/shift_1/clk': 2235 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+***********************************************************************
+                                                                       
+                           fix violation                               
+                                                                       
+***********************************************************************
+***********************************************************************
+                                                                       
+                       common_reports.tcl                              
+                                                                       
+***********************************************************************
+source ./dc_scripts/04_retime.tcl
+***********************************************************************
+                                                                       
+                             04_retime.tcl                             
+                                                                       
+***********************************************************************
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 1088 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:06   81744.0      0.44      46.4       0.0                              2.2244      0.00  
+    0:00:06   81744.0      0.44      46.4       0.0                              2.2244      0.00  
+    0:00:07   81730.2      0.44      60.2       0.0                              2.2243      0.00  
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'radix2_4'. (DDB-72)
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Mapping 'radix2_3_DP_OP_30_128_297_0_0'
+  Mapping 'radix2_1_DP_OP_31_137_1820_0_0'
+  Mapping 'radix2_2_DP_OP_31_133_5664_0_0'
+  Selecting critical implementations
+  Mapping 'radix2_0_DW01_sub_2'
+  Mapping 'radix2_0_DW01_sub_3'
+  Selecting implementations
+  Mapping 'radix2_3_DW01_sub_4'
+  Mapping 'radix2_3_DW01_sub_5'
+  Mapping 'radix2_3_DW01_sub_6'
+  Mapping 'radix2_3_DW01_sub_7'
+  Selecting implementations
+  Mapping 'radix2_2_DW01_sub_4'
+  Mapping 'radix2_2_DW01_sub_5'
+  Selecting implementations
+  Selecting implementations
+    0:01:36   85889.0      0.01       0.0       0.4                              2.2323      0.00  
+    0:01:36   85889.0      0.01       0.0       0.4                              2.2323      0.00  
+    0:01:36   85889.0      0.01       0.0       0.4                              2.2323      0.00  
+    0:01:36   85893.1      0.01       0.0       0.4                              2.2323      0.00  
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:41   85071.7      0.10       2.3       0.4                              2.2304      0.00  
+    0:01:41   85071.7      0.10       2.3       0.4                              2.2304      0.00  
+    0:01:50   81553.6      0.07       1.0       0.4                              2.2165      0.00  
+    0:01:51   81553.6      0.07       1.0       0.4                              2.2165      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:52   81667.5      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:54   81280.6      0.00       0.0       0.4                              2.2168      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:55   81280.6      0.00       0.0       0.4                              2.2168      0.00  
+    0:01:55   81283.5      0.00       0.0       0.0                              2.2168      0.00  
+    0:02:09   80458.9      0.00       0.0       0.0                              2.2139      0.00  
+    0:02:09   80458.9      0.00       0.0       0.0                              2.2139      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+
+
+  Beginning Power Optimization
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:10   80427.2      0.00       0.0       0.0                              2.2140      0.00  
+    0:02:14   80346.2      0.00       0.0       0.0                              2.2139      0.00  
+    0:02:17   80344.0      0.00       0.0       0.0                              2.2139      0.00  
+    0:02:26   80106.9      0.00       0.0       0.0                              2.2131      0.00  
+    0:02:26   80106.9      0.00       0.0       0.0                              2.2131      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80111.0      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:27   80107.8      0.00       0.0       0.0                              2.2132      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:27   80107.8      0.00       0.0       0.0                              2.2132      0.00  
+    0:02:34   79933.4      0.00       0.0       0.0                              2.2127      0.00  
+Loaded alib file './alib/alib-52/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db.alib' (placeholder)
+Loaded alib file './alib/alib-52/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db.alib' (placeholder)
+Loaded alib file './alib/alib-52/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db.alib' (placeholder)
+Loaded alib file './alib/alib-52/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db.alib'
+Loaded alib file './alib/alib-52/ss65lp3p3v_wst_108_300_p125.db.alib' (placeholder)
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:02:36   79933.4      0.00       0.0       0.0                              2.2127      0.00  
+    0:02:36   79933.4      0.00       0.0       0.0                              2.2127      0.00  
+    0:02:36   79933.4      0.00       0.0       0.0                              2.2127      0.00  
+    0:02:37   79925.8      0.00       0.0       0.0                              2.2127      0.00  
+    0:02:46   79737.0      0.00       0.0       0.0                              2.2120      0.00  
+    0:02:48   79736.3      0.00       0.0       0.0                              2.2115      0.00  
+    0:02:58   76450.6      0.05       0.9       0.0                              2.2071      0.00  
+    0:03:04   76555.8      0.00       0.0       0.0 FFT/radix_no5/DP_OP_29_139_9746/R_2469/D    2.2074      0.00  
+    0:03:06   76555.5      0.00       0.0       0.0                              2.2074      0.00  
+    0:03:06   76547.8      0.00       0.0       0.0                              2.2074      0.00  
+    0:03:07   76547.8      0.00       0.0       0.0                              2.2074      0.00  
+    0:03:09   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:03:09   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:09   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:09   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:09   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:10   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:10   76588.5      0.00       0.0       0.0                              2.2075      0.00  
+    0:03:45   73540.8      0.00       0.0       0.0                              2.2005      0.00  
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0026_SS65LP_PMK_RVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0028_SS65LP_PMK_HVT_PMK_FE_Common_N/synopsys/scmetropmk_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db'
+Loading db file '/Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FFT_PAD' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'FFT/radix_no5/sub_x_2/net149453': 2505 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+***********************************************************************
+                                                                       
+                       common_reports.tcl                              
+                                                                       
+***********************************************************************
+source ./dc_scripts/05_design_finish.tcl
+***********************************************************************
+                                                                       
+                        05_design_finish.tcl                           
+                                                                       
+***********************************************************************
+***********************************************************************
+                                                                       
+                   Remove nets connected to CLTCH                      
+                                                                       
+***********************************************************************
+Removing net 'net421' in design 'FFT_PAD'.
+Removing net 'net420' in design 'FFT_PAD'.
+Removing net 'net419' in design 'FFT_PAD'.
+Removing net 'net418' in design 'FFT_PAD'.
+Removing net 'net417' in design 'FFT_PAD'.
+Removing net 'net416' in design 'FFT_PAD'.
+Removing net 'net415' in design 'FFT_PAD'.
+Removing net 'net414' in design 'FFT_PAD'.
+Removing net 'net413' in design 'FFT_PAD'.
+Removing net 'net412' in design 'FFT_PAD'.
+Removing net 'net411' in design 'FFT_PAD'.
+Removing net 'net410' in design 'FFT_PAD'.
+Removing net 'net409' in design 'FFT_PAD'.
+Removing net 'net408' in design 'FFT_PAD'.
+Removing net 'net407' in design 'FFT_PAD'.
+Removing net 'net406' in design 'FFT_PAD'.
+Removing net 'net405' in design 'FFT_PAD'.
+Removing net 'net404' in design 'FFT_PAD'.
+Removing net 'net403' in design 'FFT_PAD'.
+Removing net 'net402' in design 'FFT_PAD'.
+Removing net 'net401' in design 'FFT_PAD'.
+Removing net 'net400' in design 'FFT_PAD'.
+Removing net 'net399' in design 'FFT_PAD'.
+Removing net 'net398' in design 'FFT_PAD'.
+Removing net 'net397' in design 'FFT_PAD'.
+Removing net 'net396' in design 'FFT_PAD'.
+Removing net 'net395' in design 'FFT_PAD'.
+Removing net 'net394' in design 'FFT_PAD'.
+Removing net 'net393' in design 'FFT_PAD'.
+Removing net 'net392' in design 'FFT_PAD'.
+Removing net 'net391' in design 'FFT_PAD'.
+Removing net 'net390' in design 'FFT_PAD'.
+Removing net 'net389' in design 'FFT_PAD'.
+Removing net 'net388' in design 'FFT_PAD'.
+Removing net 'net387' in design 'FFT_PAD'.
+Removing net 'net386' in design 'FFT_PAD'.
+Removing net 'net385' in design 'FFT_PAD'.
+Removing net 'net384' in design 'FFT_PAD'.
+Removing net 'net383' in design 'FFT_PAD'.
+Removing net 'net382' in design 'FFT_PAD'.
+Removing net 'net381' in design 'FFT_PAD'.
+Removing net 'net380' in design 'FFT_PAD'.
+Removing net 'net379' in design 'FFT_PAD'.
+Removing net 'net378' in design 'FFT_PAD'.
+Removing net 'net377' in design 'FFT_PAD'.
+Removing net 'net376' in design 'FFT_PAD'.
+Removing net 'net375' in design 'FFT_PAD'.
+Removing net 'net374' in design 'FFT_PAD'.
+Removing net 'net373' in design 'FFT_PAD'.
+Removing net 'net372' in design 'FFT_PAD'.
+Removing net 'net371' in design 'FFT_PAD'.
+Removing net 'net370' in design 'FFT_PAD'.
+Removing net 'net369' in design 'FFT_PAD'.
+Removing net 'net368' in design 'FFT_PAD'.
+Removing net 'net367' in design 'FFT_PAD'.
+Removing net 'net366' in design 'FFT_PAD'.
+Removing net 'net365' in design 'FFT_PAD'.
+Removing net 'net364' in design 'FFT_PAD'.
+Removing net 'net363' in design 'FFT_PAD'.
+Removing net 'net362' in design 'FFT_PAD'.
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Writing verilog file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/outputs/FFT_PAD.vg'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/outputs/FFT_PAD.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'FFT_PAD' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Writing parasitics to file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/outputs/FFT_PAD_parasitics'. (WP-3)
+Current design is 'FFT'.
+Writing verilog file '/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/02_RTL_Synthesis/outputs/FFT.vg'.
+Error: unknown command 'wrie_sdf' (CMD-005)
+Current design is 'FFT_PAD'.
+{FFT_PAD}
+start_gui
+Current design is 'FFT_PAD'.
+4.1
+#exit
+dc_shell> dc_shell> dc_shell> exit
+
+Thank you...

@@ -1,0 +1,55 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+        -verbose
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:57:59 2020
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm (File: /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0043_SS65LP_Normal_HVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_hvt_ss_1p08v_125c_sadhm.db)
+    scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm (File: /Tools/Library/samsung65_2016/CB_1502/PRIMITIVE/sec100226_0042_SS65LP_Normal_RVT_Normal_FE_Common_N/synopsys/scmetro_cmos10lp_rvt_ss_1p08v_125c_sadhm.db)
+    ss65lp3p3v_wst_108_300_p125 (File: /Tools/Library/samsung65_2016/CB_1502/IO/synopsys/ss65lp3p3v_wst_108_300_p125.db)
+
+
+Operating Conditions: ss_1p08v_125c   Library: scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =  14.1782 mW    (6%)
+  Net Switching Power  = 216.6358 mW   (94%)
+                         ---------
+Total Dynamic Power    = 230.8141 mW  (100%)
+
+Cell Leakage Power     = 116.2555 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             9.3928          216.5345        5.0151e-02          225.9776  (  97.86%)            207
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+register           4.6652        8.1342e-03        6.1946e-03            4.6795  (   2.03%)            2235
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational      0.1202        9.3160e-02        5.9910e-02            0.2733  (   0.12%)            18261
+---------------------------------------------------------------------------------------------------------
+Total             14.1782 mW       216.6358 mW         0.1163 mW       230.9304 mW
+1

@@ -1,0 +1,438 @@
+ 
+****************************************
+Report : cell
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:52 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+   so - sizing only
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+FFT                       FFT                             73540.801099
+                                                                    h, n
+pad1                      ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad2                      vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad3                      pvhbcudtart     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n, so
+pad4                      vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad5                      vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad6                      vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad7                      ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad8                      vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad9                      vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad10                     pvhbcudtart     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad11                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad12                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad13                     vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad14                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad15                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad16                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad17                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad18                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad19                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad20                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad21                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad22                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad23                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad24                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad25                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad26                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad27                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad28                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad29                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad30                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad31                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad32                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad34                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad35                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad36                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad37                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad38                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad39                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad40                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad41                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad42                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad43                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad44                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad45                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad46                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad47                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad48                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad49                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad50                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad51                     vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad52                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad53                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad54                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad55                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad56                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad57                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad58                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad59                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad60                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad61                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad62                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad63                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad64                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad65                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad66                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad67                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad68                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad69                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad70                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad71                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad72                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad73                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad74                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad75                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad76                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad77                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad78                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad79                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad80                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad81                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad82                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad83                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad84                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad85                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad86                     pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad87                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad88                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad89                     vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad90                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad91                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad92                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad93                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad94                     vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad95                     ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad96                     vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad97                     vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad98                     vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad99                     vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad100                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad101                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad102                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad103                    vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad104                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad105                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad106                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad107                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad108                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad109                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad110                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad111                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad112                    vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad113                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad114                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad115                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad116                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad117                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad118                    vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad119                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad120                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad121                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad122                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad123                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad124                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad125                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad126                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad127                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad128                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad129                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad130                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad131                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad132                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad133                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad134                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad135                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad136                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad137                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad138                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad139                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad140                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad141                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad142                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad143                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad144                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad145                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad146                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad147                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad148                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad149                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad150                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad151                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad152                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad153                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad154                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad155                    vddtvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad156                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad157                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad158                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad159                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad160                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad161                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad162                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad163                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad164                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad165                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad166                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad167                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad168                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad169                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad170                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad171                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad172                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad173                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad174                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad175                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad176                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad177                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad178                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad179                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad180                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad181                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad182                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad183                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad184                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad185                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad186                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad187                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad188                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad189                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad190                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad191                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad192                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad193                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad194                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad195                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad196                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad197                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad198                    vddivh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad199                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad200                    vsstvh          ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad201                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad202                    pvhbcudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad203                    vssipvh         ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  b, d
+pad204                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad205                    pvhbcudtart     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad206                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+pad207                    pvhbsudtbrt     ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d, n
+pad208                    ec_breakv       ss65lp3p3v_wst_108_300_p125
+                                                          0.000000  d
+--------------------------------------------------------------------------------
+Total 208 cells                                           73540.801099
+1

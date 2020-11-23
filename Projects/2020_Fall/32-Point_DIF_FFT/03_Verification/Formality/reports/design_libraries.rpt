@@ -1,0 +1,18 @@
+**************************************************
+Report         : design_libraries
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+Number of
+ Designs     Design Library
+---------    --------------
+     51      impl:/FM_RETIMING
+     38      impl:/WORK
+     67      ref:/FM_RETIMING
+    138      ref:/WORK
+
+1

@@ -1,0 +1,201 @@
+ 
+****************************************
+Report : compile_options
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:52 2020
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+FFT_PAD                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+
+FFT                                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_4                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_4_DP_OP_30_124_9496_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+shift_16                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+ROM_16                                   flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3_DP_OP_29_127_7705_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3_DP_OP_30_128_297_0              flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3_DP_OP_31_129_7705_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3_DW01_sub_5                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_3_DW01_sub_7                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+shift_8                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+ROM_8                                    flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2_DP_OP_29_131_5664_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2_DP_OP_30_132_41_0               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2_DP_OP_31_133_5664_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2_DW01_sub_3                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_2_DW01_sub_5                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+shift_4                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+ROM_4                                    flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1_DW01_sub_0                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1_DP_OP_29_135_1820_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1_DP_OP_30_136_809_0              flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1_DP_OP_31_137_1820_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_1_DW01_sub_2                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+shift_2                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+ROM_2                                    flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0_DW01_sub_1                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0_DP_OP_29_139_9746_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0_DP_OP_30_140_553_0              flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0_DP_OP_31_141_9746_0             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+radix2_0_DW01_sub_5                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+shift_1                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1

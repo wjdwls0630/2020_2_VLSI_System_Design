@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:54 2020
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              67.00
+  Critical Path Length:          5.26
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      5.40
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         36
+  Hierarchical Port Count:       4008
+  Leaf Cell Count:              21108
+  Buf/Inv Cell Count:            2928
+  Buf Cell Count:                 209
+  Inv Cell Count:                2719
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     18603
+  Sequential Cell Count:         2505
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    50987.840384
+  Noncombinational Area: 22552.960715
+  Buf/Inv Area:           3120.639935
+  Total Buffer Area:           365.44
+  Total Inverter Area:        2755.20
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             73540.801099
+  Design Area:           73540.801099
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         22003
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: vlsi-dist.khu.ac.kr
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   81.14
+  Logic Optimization:                  0.95
+  Mapping Optimization:               56.49
+  -----------------------------------------
+  Overall Compile Time:              229.48
+  Overall Compile Wall Clock Time:   230.23
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

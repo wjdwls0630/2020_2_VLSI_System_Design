@@ -1,0 +1,1787 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:57:54 2020
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_1p08v_125c   Library: scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+Wire Load Model Mode: top
+
+  Startpoint: FFT/rom8/s_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/shift_1/shift_reg_i_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom8/s_count_reg[1]/CK (DFFRHQX8MTR)                0.00 #     0.00 r
+  FFT/rom8/s_count_reg[1]/Q (DFFRHQX8MTR)                 0.29       0.29 f
+  FFT/rom8/U84/Y (INVX5MTR)                               0.04       0.33 r
+  FFT/rom8/U15/Y (NAND2X8MTR)                             0.05       0.38 f
+  FFT/rom8/U94/Y (NOR2X8MTR)                              0.05       0.43 r
+  FFT/rom8/U16/Y (AOI21X8MTR)                             0.04       0.47 f
+  FFT/rom8/U91/Y (NOR2X8MTR)                              0.05       0.52 r
+  FFT/rom8/w_r[0] (ROM_8)                                 0.00       0.52 r
+  FFT/radix_no2/w_r[0] (radix2_3)                         0.00       0.52 r
+  FFT/radix_no2/DP_OP_30_128_297/I3[0] (radix2_3_DP_OP_30_128_297_0)
+                                                          0.00       0.52 r
+  FFT/radix_no2/DP_OP_30_128_297/U4518/Y (INVX4MTR)       0.03       0.55 f
+  FFT/radix_no2/DP_OP_30_128_297/U4824/Y (NAND2X6MTR)     0.04       0.59 r
+  FFT/radix_no2/DP_OP_30_128_297/U3295/Y (INVX6MTR)       0.03       0.62 f
+  FFT/radix_no2/DP_OP_30_128_297/U6310/Y (OAI22X8MTR)     0.06       0.68 r
+  FFT/radix_no2/DP_OP_30_128_297/U5742/Y (OAI2BB1X4MTR)
+                                                          0.07       0.75 f
+  FFT/radix_no2/DP_OP_30_128_297/U5741/Y (OAI2BB1X4MTR)
+                                                          0.04       0.79 r
+  FFT/radix_no2/DP_OP_30_128_297/U5150/Y (CLKNAND2X4MTR)
+                                                          0.04       0.83 f
+  FFT/radix_no2/DP_OP_30_128_297/U3512/Y (NAND2X6MTR)     0.04       0.88 r
+  FFT/radix_no2/DP_OP_30_128_297/U6436/Y (OAI2B1X8MTR)
+                                                          0.05       0.92 f
+  FFT/radix_no2/DP_OP_30_128_297/U7100/Y (OAI2B1X8MTR)
+                                                          0.05       0.97 r
+  FFT/radix_no2/DP_OP_30_128_297/U6510/Y (NOR2X12MTR)     0.05       1.02 f
+  FFT/radix_no2/DP_OP_30_128_297/U6409/Y (OAI2BB2X8MTR)
+                                                          0.06       1.08 r
+  FFT/radix_no2/DP_OP_30_128_297/U6380/Y (OAI2BB1X4MTR)
+                                                          0.06       1.14 f
+  FFT/radix_no2/DP_OP_30_128_297/U6911/Y (OAI2B1X8MTR)
+                                                          0.05       1.18 r
+  FFT/radix_no2/DP_OP_30_128_297/U5879/Y (NAND2X8MTR)     0.05       1.23 f
+  FFT/radix_no2/DP_OP_30_128_297/U6912/Y (OAI21X8MTR)     0.05       1.28 r
+  FFT/radix_no2/DP_OP_30_128_297/U6329/Y (XNOR2X8MTR)     0.11       1.39 r
+  FFT/radix_no2/DP_OP_30_128_297/U6125/Y (BUFX8MTR)       0.10       1.49 r
+  FFT/radix_no2/DP_OP_30_128_297/U5062/Y (NAND2X6MTR)     0.03       1.52 f
+  FFT/radix_no2/DP_OP_30_128_297/U4236/Y (CLKNAND2X4MTR)
+                                                          0.04       1.56 r
+  FFT/radix_no2/DP_OP_30_128_297/U5039/Y (NAND2X6MTR)     0.05       1.60 f
+  FFT/radix_no2/DP_OP_30_128_297/U5877/Y (OAI2BB1X4MTR)
+                                                          0.04       1.65 r
+  FFT/radix_no2/DP_OP_30_128_297/U5480/Y (NAND2X6MTR)     0.05       1.70 f
+  FFT/radix_no2/DP_OP_30_128_297/U3233/Y (NAND2X6MTR)     0.04       1.74 r
+  FFT/radix_no2/DP_OP_30_128_297/U5464/Y (NAND2X8MTR)     0.05       1.79 f
+  FFT/radix_no2/DP_OP_30_128_297/U3467/Y (NAND2X6MTR)     0.04       1.83 r
+  FFT/radix_no2/DP_OP_30_128_297/U4988/Y (NAND2X8MTR)     0.05       1.88 f
+  FFT/radix_no2/DP_OP_30_128_297/U6034/Y (OAI2B1X8MTR)
+                                                          0.04       1.91 r
+  FFT/radix_no2/DP_OP_30_128_297/U5947/Y (OAI2B1X8MTR)
+                                                          0.06       1.97 f
+  FFT/radix_no2/DP_OP_30_128_297/U5946/Y (OAI2BB1X4MTR)
+                                                          0.04       2.01 r
+  FFT/radix_no2/DP_OP_30_128_297/U5904/Y (OAI2BB1X4MTR)
+                                                          0.06       2.08 f
+  FFT/radix_no2/DP_OP_30_128_297/U5403/Y (NAND2X6MTR)     0.05       2.12 r
+  FFT/radix_no2/DP_OP_30_128_297/U5944/Y (OAI2B1X8MTR)
+                                                          0.05       2.17 f
+  FFT/radix_no2/DP_OP_30_128_297/U3232/Y (NAND2X8MTR)     0.04       2.21 r
+  FFT/radix_no2/DP_OP_30_128_297/U5985/Y (OAI2B1X8MTR)
+                                                          0.05       2.26 f
+  FFT/radix_no2/DP_OP_30_128_297/U7027/Y (NAND2X8MTR)     0.04       2.30 r
+  FFT/radix_no2/DP_OP_30_128_297/U5984/Y (NAND2X8MTR)     0.05       2.35 f
+  FFT/radix_no2/DP_OP_30_128_297/U6929/Y (NAND2X8MTR)     0.04       2.38 r
+  FFT/radix_no2/DP_OP_30_128_297/U6788/Y (OAI2B1X8MTR)
+                                                          0.05       2.43 f
+  FFT/radix_no2/DP_OP_30_128_297/U6391/Y (NAND2X8MTR)     0.04       2.47 r
+  FFT/radix_no2/DP_OP_30_128_297/U6773/Y (OAI2B1X8MTR)
+                                                          0.06       2.53 f
+  FFT/radix_no2/DP_OP_30_128_297/U6780/Y (XNOR2X8MTR)     0.09       2.62 f
+  FFT/radix_no2/DP_OP_30_128_297/U2908/Y (AO22X1MTR)      0.21       2.82 f
+  FFT/radix_no2/DP_OP_30_128_297/U6742/Y (AOI221X1MTR)
+                                                          0.12       2.94 r
+  FFT/radix_no2/DP_OP_30_128_297/U5293/Y (XNOR2X1MTR)     0.13       3.07 r
+  FFT/radix_no2/DP_OP_30_128_297/U5291/Y (XNOR2X1MTR)     0.12       3.19 r
+  FFT/radix_no2/DP_OP_30_128_297/U6787/Y (XNOR2X2MTR)     0.12       3.31 r
+  FFT/radix_no2/DP_OP_30_128_297/U6847/Y (OAI21X2MTR)     0.07       3.38 f
+  FFT/radix_no2/DP_OP_30_128_297/U6846/Y (OAI2BB1X2MTR)
+                                                          0.07       3.44 r
+  FFT/radix_no2/DP_OP_30_128_297/U6045/Y (XNOR2X2MTR)     0.09       3.53 r
+  FFT/radix_no2/DP_OP_30_128_297/U4101/Y (XNOR2X4MTR)     0.14       3.67 r
+  FFT/radix_no2/DP_OP_30_128_297/U4098/Y (XNOR2X2MTR)     0.14       3.81 r
+  FFT/radix_no2/DP_OP_30_128_297/U6473/Y (XNOR2X8MTR)     0.14       3.95 r
+  FFT/radix_no2/DP_OP_30_128_297/U5235/Y (BUFX6MTR)       0.10       4.05 r
+  FFT/radix_no2/DP_OP_30_128_297/U6223/Y (XNOR2X8MTR)     0.07       4.12 r
+  FFT/radix_no2/DP_OP_30_128_297/U6327/Y (XNOR2X8MTR)     0.11       4.23 r
+  FFT/radix_no2/DP_OP_30_128_297/O2[30] (radix2_3_DP_OP_30_128_297_0)
+                                                          0.00       4.23 r
+  FFT/radix_no2/U20/Y (NAND2X8MTR)                        0.05       4.28 f
+  FFT/radix_no2/U215/Y (AOI21X8MTR)                       0.09       4.37 r
+  FFT/radix_no2/op_i[22] (radix2_3)                       0.00       4.37 r
+  FFT/radix_no3/din_b_i[22] (radix2_2)                    0.00       4.37 r
+  FFT/radix_no3/DP_OP_31_133_5664/I2[22] (radix2_2_DP_OP_31_133_5664_0)
+                                                          0.00       4.37 r
+  FFT/radix_no3/DP_OP_31_133_5664/U135/Y (XNOR2X8MTR)     0.09       4.46 r
+  FFT/radix_no3/DP_OP_31_133_5664/U120/Y (XNOR2X8MTR)     0.10       4.56 r
+  FFT/radix_no3/DP_OP_31_133_5664/O1[22] (radix2_2_DP_OP_31_133_5664_0)
+                                                          0.00       4.56 r
+  FFT/radix_no3/U246/Y (NAND2X8MTR)                       0.05       4.62 f
+  FFT/radix_no3/U245/Y (AOI21X8MTR)                       0.07       4.69 r
+  FFT/radix_no3/op_i[22] (radix2_2)                       0.00       4.69 r
+  FFT/radix_no4/din_b_i[22] (radix2_1)                    0.00       4.69 r
+  FFT/radix_no4/DP_OP_31_137_1820/I2[22] (radix2_1_DP_OP_31_137_1820_0)
+                                                          0.00       4.69 r
+  FFT/radix_no4/DP_OP_31_137_1820/U162/Y (XNOR2X2MTR)     0.08       4.76 r
+  FFT/radix_no4/DP_OP_31_137_1820/U106/Y (XNOR2X2MTR)     0.12       4.88 r
+  FFT/radix_no4/DP_OP_31_137_1820/O1[22] (radix2_1_DP_OP_31_137_1820_0)
+                                                          0.00       4.88 r
+  FFT/radix_no4/U263/Y (OAI2BB1X4MTR)                     0.11       4.99 r
+  FFT/radix_no4/U266/Y (AND2X8MTR)                        0.09       5.08 r
+  FFT/radix_no4/op_i[22] (radix2_1)                       0.00       5.08 r
+  FFT/radix_no5/din_b_i[22] (radix2_0)                    0.00       5.08 r
+  FFT/radix_no5/sub_x_2/B[22] (radix2_0_DW01_sub_0)       0.00       5.08 r
+  FFT/radix_no5/sub_x_2/U82/Y (CLKNAND2X4MTR)             0.04       5.12 f
+  FFT/radix_no5/sub_x_2/U102/Y (INVX3MTR)                 0.03       5.15 r
+  FFT/radix_no5/sub_x_2/U164/Y (OAI22X4MTR)               0.04       5.19 f
+  FFT/radix_no5/sub_x_2/U182/Y (XNOR2X2MTR)               0.06       5.26 r
+  FFT/radix_no5/sub_x_2/U198/Y (XNOR2X2MTR)               0.09       5.35 r
+  FFT/radix_no5/sub_x_2/DIFF[23] (radix2_0_DW01_sub_0)
+                                                          0.00       5.35 r
+  FFT/radix_no5/U142/Y (OAI2BB1X4MTR)                     0.11       5.46 r
+  FFT/radix_no5/delay_i[23] (radix2_0)                    0.00       5.46 r
+  FFT/shift_1/din_i[23] (shift_1)                         0.00       5.46 r
+  FFT/shift_1/U54/Y (NAND2X4MTR)                          0.04       5.49 f
+  FFT/shift_1/U57/Y (CLKNAND2X4MTR)                       0.04       5.53 r
+  FFT/shift_1/shift_reg_i_reg[23]/D (DFFRHQX8MTH)         0.00       5.53 r
+  data arrival time                                                  5.53
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/shift_1/shift_reg_i_reg[23]/CK (DFFRHQX8MTH)        0.00       5.24 r
+  library setup time                                      0.05       5.29
+  data required time                                                 5.29
+  --------------------------------------------------------------------------
+  data required time                                                 5.29
+  data arrival time                                                 -5.53
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[6][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U624/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[6][15]/D (DFFRHQX8MTH)                 0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[6][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[5][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U606/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[5][15]/D (DFFRHQX8MTH)                 0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[5][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[1][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U533/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[1][15]/D (DFFRHQX8MTH)                 0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[1][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[0][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[1]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[1]/Q (DFFRHQX8MTR)                  0.28       0.28 r
+  FFT/rom16/U155/Y (INVX16MTR)                            0.04       0.32 f
+  FFT/rom16/U44/Y (NAND2X12MTR)                           0.05       0.37 r
+  FFT/rom16/U29/Y (NOR2X12MTR)                            0.03       0.40 f
+  FFT/rom16/U134/Y (NOR2X8MTR)                            0.06       0.46 r
+  FFT/rom16/U88/Y (OAI21X6MTR)                            0.05       0.51 f
+  FFT/rom16/U19/Y (NOR2X3MTR)                             0.08       0.58 r
+  FFT/rom16/U149/Y (AOI21X8MTR)                           0.06       0.65 f
+  FFT/rom16/w_r[0] (ROM_16)                               0.00       0.65 f
+  FFT/radix_no1/w_r[0] (radix2_4)                         0.00       0.65 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[0] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.65 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4641/Y (NOR2X8MTR)     0.07       0.71 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5154/Y (INVX4MTR)      0.04       0.76 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4813/Y (XOR2X8MTR)     0.09       0.85 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3978/Y (INVX14MTR)     0.07       0.91 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3973/Y (NAND2X6MTR)
+                                                          0.05       0.96 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3108/Y (INVX2MTR)      0.04       1.00 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4812/Y (OAI2BB1X2MTR)
+                                                          0.12       1.12 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4707/Y (XNOR2X8MTR)
+                                                          0.10       1.22 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3297/Y (AOI21X4MTR)
+                                                          0.07       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4171/Y (XNOR2X2MTR)
+                                                          0.11       1.39 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4488/Y (XNOR2X2MTR)
+                                                          0.12       1.52 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4442/Y (XNOR2X4MTR)
+                                                          0.14       1.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3518/Y (OAI21X2MTR)
+                                                          0.07       1.73 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3914/Y (OAI2BB1X2MTR)
+                                                          0.06       1.79 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3631/Y (OAI21X2MTR)
+                                                          0.05       1.84 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3506/Y (OAI2BB1X2MTR)
+                                                          0.05       1.90 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3896/Y (OAI2BB1X2MTR)
+                                                          0.05       1.94 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3501/Y (OAI2BB1X2MTR)
+                                                          0.05       2.00 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3208/Y (OAI21X4MTR)
+                                                          0.05       2.05 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3880/Y (OAI2BB1X2MTR)
+                                                          0.05       2.10 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3870/Y (NAND2X2MTR)
+                                                          0.05       2.15 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3864/Y (CLKNAND2X4MTR)
+                                                          0.04       2.19 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5020/Y (OAI2B1X4MTR)
+                                                          0.04       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4770/Y (OAI2BB1X4MTR)
+                                                          0.04       2.28 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4050/Y (BUFX4MTR)      0.08       2.36 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5454/Y (XNOR2X8MTR)
+                                                          0.09       2.46 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3585/Y (XNOR2X2MTR)
+                                                          0.12       2.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3479/Y (XNOR2X2MTR)
+                                                          0.12       2.70 r
+  FFT/radix_no1/DP_OP_30_124_9496/O1[18] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       2.70 r
+  FFT/radix_no1/U146/Y (CLKNAND2X4MTR)                    0.07       2.77 f
+  FFT/radix_no1/U15/Y (AOI21X8MTR)                        0.09       2.86 r
+  FFT/radix_no1/op_r[10] (radix2_4)                       0.00       2.86 r
+  FFT/radix_no2/din_b_r[10] (radix2_3)                    0.00       2.86 r
+  FFT/radix_no2/DP_OP_29_127_7705/I2[10] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       2.86 r
+  FFT/radix_no2/DP_OP_29_127_7705/U95/Y (XNOR2X2MTR)      0.09       2.94 r
+  FFT/radix_no2/DP_OP_29_127_7705/U61/Y (XNOR2X1MTR)      0.10       3.04 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[10] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.04 r
+  FFT/radix_no2/U101/Y (NAND2X2MTR)                       0.07       3.11 f
+  FFT/radix_no2/U71/Y (AOI21X4MTR)                        0.11       3.22 r
+  FFT/radix_no2/op_r[10] (radix2_3)                       0.00       3.22 r
+  FFT/radix_no3/din_b_r[10] (radix2_2)                    0.00       3.22 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[10] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       3.22 r
+  FFT/radix_no3/DP_OP_29_131_5664/U151/Y (XNOR2X2MTR)     0.09       3.31 r
+  FFT/radix_no3/DP_OP_29_131_5664/U165/Y (XNOR2X2MTR)     0.10       3.41 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[10] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       3.41 r
+  FFT/radix_no3/U260/Y (OAI2BB1X4MTR)                     0.11       3.52 r
+  FFT/radix_no3/U258/Y (AND2X8MTR)                        0.09       3.61 r
+  FFT/radix_no3/op_r[10] (radix2_2)                       0.00       3.61 r
+  FFT/radix_no4/din_b_r[10] (radix2_1)                    0.00       3.61 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[10] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       3.61 r
+  FFT/radix_no4/DP_OP_29_135_1820/U56/Y (XNOR2X2MTR)      0.07       3.68 r
+  FFT/radix_no4/DP_OP_29_135_1820/U151/Y (XNOR2X2MTR)     0.05       3.74 f
+  FFT/radix_no4/DP_OP_29_135_1820/O1[10] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       3.74 f
+  FFT/radix_no4/U233/Y (OAI2BB1X4MTR)                     0.09       3.83 f
+  FFT/radix_no4/U239/Y (AND2X8MTR)                        0.07       3.90 f
+  FFT/radix_no4/op_r[10] (radix2_1)                       0.00       3.90 f
+  FFT/radix_no5/din_b_r[10] (radix2_0)                    0.00       3.90 f
+  FFT/radix_no5/DP_OP_29_139_9746/I2[10] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       3.90 f
+  FFT/radix_no5/DP_OP_29_139_9746/U32/Y (OAI21X3MTR)      0.07       3.97 r
+  FFT/radix_no5/DP_OP_29_139_9746/U37/Y (NAND2X4MTR)      0.05       4.03 f
+  FFT/radix_no5/DP_OP_29_139_9746/U53/Y (OAI21X4MTR)      0.04       4.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U81/Y (NAND2X4MTR)      0.05       4.12 f
+  FFT/radix_no5/DP_OP_29_139_9746/U92/Y (OAI2B1X4MTR)     0.04       4.16 r
+  FFT/radix_no5/DP_OP_29_139_9746/U111/Y (NAND2X4MTR)     0.05       4.21 f
+  FFT/radix_no5/DP_OP_29_139_9746/U110/Y (CLKNAND2X4MTR)
+                                                          0.04       4.24 r
+  FFT/radix_no5/DP_OP_29_139_9746/U112/Y (OAI2BB1X4MTR)
+                                                          0.05       4.29 f
+  FFT/radix_no5/DP_OP_29_139_9746/U114/Y (CLKNAND2X4MTR)
+                                                          0.04       4.32 r
+  FFT/radix_no5/DP_OP_29_139_9746/U113/Y (NAND2X4MTR)     0.04       4.36 f
+  FFT/radix_no5/DP_OP_29_139_9746/U106/Y (CLKNAND2X4MTR)
+                                                          0.03       4.39 r
+  FFT/radix_no5/DP_OP_29_139_9746/U107/Y (OAI2BB1X4MTR)
+                                                          0.04       4.44 f
+  FFT/radix_no5/DP_OP_29_139_9746/U104/Y (OAI21X4MTR)     0.04       4.48 r
+  FFT/radix_no5/DP_OP_29_139_9746/U105/Y (OAI2BB1X4MTR)
+                                                          0.06       4.54 f
+  FFT/radix_no5/DP_OP_29_139_9746/U103/Y (OAI2B1X4MTR)
+                                                          0.04       4.57 r
+  FFT/radix_no5/DP_OP_29_139_9746/U89/Y (OAI2BB1X2MTR)
+                                                          0.06       4.64 f
+  FFT/radix_no5/DP_OP_29_139_9746/U108/Y (OAI21X4MTR)     0.04       4.68 r
+  FFT/radix_no5/DP_OP_29_139_9746/U122/Y (OAI2BB1X4MTR)
+                                                          0.06       4.74 f
+  FFT/radix_no5/DP_OP_29_139_9746/U133/Y (OAI21X4MTR)     0.04       4.77 r
+  FFT/radix_no5/DP_OP_29_139_9746/U134/Y (OAI2BB1X4MTR)
+                                                          0.06       4.83 f
+  FFT/radix_no5/DP_OP_29_139_9746/U117/Y (OAI21X4MTR)     0.04       4.87 r
+  FFT/radix_no5/DP_OP_29_139_9746/U116/Y (OAI2BB1X4MTR)
+                                                          0.06       4.93 f
+  FFT/radix_no5/DP_OP_29_139_9746/U121/Y (OAI21X4MTR)     0.04       4.97 r
+  FFT/radix_no5/DP_OP_29_139_9746/U131/Y (OAI2BB1X4MTR)
+                                                          0.06       5.03 f
+  FFT/radix_no5/DP_OP_29_139_9746/U137/Y (OAI21X4MTR)     0.04       5.06 r
+  FFT/radix_no5/DP_OP_29_139_9746/U35/Y (CLKNAND2X4MTR)
+                                                          0.04       5.11 f
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.07       5.18 f
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 f
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.09       5.27 f
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.09       5.36 f
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.36 f
+  FFT/U517/Y (AO22X2MTR)                                  0.14       5.50 f
+  FFT/result_r_reg[0][15]/D (DFFRHQX8MTH)                 0.00       5.50 f
+  data arrival time                                                  5.50
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[0][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.02       5.26
+  data required time                                                 5.26
+  --------------------------------------------------------------------------
+  data required time                                                 5.26
+  data arrival time                                                 -5.50
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[16][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U808/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[16][15]/D (DFFRHQX8MTH)                0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[16][15]/CK (DFFRHQX8MTH)               0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[15][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U790/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[15][15]/D (DFFRHQX8MTH)                0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[15][15]/CK (DFFRHQX8MTH)               0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[2][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U552/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[2][15]/D (DFFRHQX8MTH)                 0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[2][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[17][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[0]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[0]/Q (DFFRHQX8MTR)                  0.28       0.28 f
+  FFT/rom16/U52/Y (BUFX6MTR)                              0.08       0.36 f
+  FFT/rom16/U153/Y (CLKNAND2X12MTR)                       0.04       0.40 r
+  FFT/rom16/U20/Y (NOR2X4MTR)                             0.04       0.44 f
+  FFT/rom16/U15/Y (NOR2X2MTR)                             0.06       0.51 r
+  FFT/rom16/U122/Y (NAND3X4MTR)                           0.06       0.57 f
+  FFT/rom16/U98/Y (NAND2X4MTR)                            0.08       0.64 r
+  FFT/rom16/U96/Y (CLKNAND2X16MTR)                        0.10       0.74 f
+  FFT/rom16/w_r[5] (ROM_16)                               0.00       0.74 f
+  FFT/radix_no1/w_r[5] (radix2_4)                         0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[5] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.74 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4640/CO (ADDFX2MTR)
+                                                          0.35       1.09 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4747/Y (XOR2X2MTR)     0.10       1.19 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3951/Y (XOR2X2MTR)     0.10       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3936/CO (ADDFHX1MTR)
+                                                          0.24       1.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3935/Y (OAI21X2MTR)
+                                                          0.05       1.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3759/Y (OAI2BB1X2MTR)
+                                                          0.07       1.64 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3140/Y (OAI21X1MTR)
+                                                          0.08       1.72 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4134/Y (OAI2BB1X2MTR)
+                                                          0.06       1.78 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4430/Y (OAI2BB1X2MTR)
+                                                          0.04       1.82 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3902/Y (OAI2BB1X2MTR)
+                                                          0.05       1.88 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3900/Y (OAI21X2MTR)
+                                                          0.05       1.92 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3422/Y (NAND2X3MTR)
+                                                          0.06       1.98 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3038/Y (OAI21X3MTR)
+                                                          0.04       2.03 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3036/Y (OAI2B1X4MTR)
+                                                          0.07       2.10 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3025/Y (OAI21X4MTR)
+                                                          0.08       2.18 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5562/Y (OAI2BB1X4MTR)
+                                                          0.06       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3605/Y (OAI21X3MTR)
+                                                          0.04       2.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4327/Y (CLKNAND2X4MTR)
+                                                          0.06       2.33 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3212/Y (OAI21X4MTR)
+                                                          0.04       2.37 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4963/Y (OAI2BB1X4MTR)
+                                                          0.06       2.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4995/Y (OAI2BB1X4MTR)
+                                                          0.04       2.47 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4693/Y (OAI2BB1X4MTR)
+                                                          0.05       2.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4670/Y (OAI21X4MTR)
+                                                          0.04       2.56 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5560/Y (OAI2BB1X4MTR)
+                                                          0.06       2.62 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3475/Y (OAI21X3MTR)
+                                                          0.04       2.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3722/Y (CLKNAND2X4MTR)
+                                                          0.06       2.72 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4922/Y (INVX4MTR)      0.04       2.76 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5457/Y (OAI22X4MTR)
+                                                          0.04       2.81 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4988/Y (OAI21X4MTR)
+                                                          0.04       2.85 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4964/Y (OAI2BB1X4MTR)
+                                                          0.08       2.92 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4990/Y (OAI21X4MTR)
+                                                          0.05       2.97 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5449/Y (OAI2BB1X4MTR)
+                                                          0.06       3.02 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3822/Y (OAI2BB1X2MTR)
+                                                          0.04       3.06 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3716/Y (OAI2BB1X2MTR)
+                                                          0.06       3.12 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4254/Y (OAI21X3MTR)
+                                                          0.05       3.17 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4796/Y (OAI2BB1X4MTR)
+                                                          0.06       3.23 f
+  FFT/radix_no1/DP_OP_30_124_9496/U5139/Y (OAI21X4MTR)
+                                                          0.04       3.27 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4999/Y (OAI2BB1X4MTR)
+                                                          0.07       3.34 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3815/Y (OAI2BB1X2MTR)
+                                                          0.05       3.38 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4248/Y (OAI2BB1X2MTR)
+                                                          0.05       3.43 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4246/Y (INVX3MTR)      0.05       3.48 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3246/Y (INVX4MTR)      0.03       3.52 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4946/Y (XNOR2X8MTR)
+                                                          0.07       3.59 f
+  FFT/radix_no1/DP_OP_30_124_9496/O1[27] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       3.59 f
+  FFT/radix_no1/U82/Y (NAND2X6MTR)                        0.04       3.63 r
+  FFT/radix_no1/U169/Y (AOI21X8MTR)                       0.06       3.69 f
+  FFT/radix_no1/op_r[19] (radix2_4)                       0.00       3.69 f
+  FFT/radix_no2/din_b_r[19] (radix2_3)                    0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/I2[19] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.69 f
+  FFT/radix_no2/DP_OP_29_127_7705/U50/Y (OAI21X4MTR)      0.08       3.77 r
+  FFT/radix_no2/DP_OP_29_127_7705/U85/Y (NAND2X4MTR)      0.06       3.84 f
+  FFT/radix_no2/DP_OP_29_127_7705/U148/Y (OAI21X4MTR)     0.04       3.88 r
+  FFT/radix_no2/DP_OP_29_127_7705/U128/Y (CLKNAND2X4MTR)
+                                                          0.05       3.93 f
+  FFT/radix_no2/DP_OP_29_127_7705/U133/Y (OAI21X4MTR)     0.04       3.98 r
+  FFT/radix_no2/DP_OP_29_127_7705/U132/Y (OAI2BB1X4MTR)
+                                                          0.06       4.03 f
+  FFT/radix_no2/DP_OP_29_127_7705/U134/Y (OAI2B1X4MTR)
+                                                          0.04       4.07 r
+  FFT/radix_no2/DP_OP_29_127_7705/U146/Y (CLKNAND2X4MTR)
+                                                          0.05       4.12 f
+  FFT/radix_no2/DP_OP_29_127_7705/U151/Y (XNOR2X8MTR)     0.06       4.18 r
+  FFT/radix_no2/DP_OP_29_127_7705/U155/Y (XNOR2X8MTR)     0.09       4.28 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[23] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       4.28 r
+  FFT/radix_no2/U227/Y (NAND2X8MTR)                       0.05       4.33 f
+  FFT/radix_no2/U229/Y (AOI21X8MTR)                       0.08       4.40 r
+  FFT/radix_no2/op_r[23] (radix2_3)                       0.00       4.40 r
+  FFT/radix_no3/din_b_r[23] (radix2_2)                    0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.40 r
+  FFT/radix_no3/DP_OP_29_131_5664/U154/Y (XOR2X8MTR)      0.09       4.49 r
+  FFT/radix_no3/DP_OP_29_131_5664/U153/Y (INVX8MTR)       0.03       4.52 f
+  FFT/radix_no3/DP_OP_29_131_5664/U134/Y (XNOR2X8MTR)     0.05       4.57 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[23] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       4.57 r
+  FFT/radix_no3/U28/Y (NAND2X8MTR)                        0.05       4.63 f
+  FFT/radix_no3/U257/Y (AOI21X8MTR)                       0.07       4.70 r
+  FFT/radix_no3/op_r[23] (radix2_2)                       0.00       4.70 r
+  FFT/radix_no4/din_b_r[23] (radix2_1)                    0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.70 r
+  FFT/radix_no4/DP_OP_29_135_1820/U130/Y (XNOR2X8MTR)     0.09       4.79 r
+  FFT/radix_no4/DP_OP_29_135_1820/U140/Y (INVX8MTR)       0.04       4.82 f
+  FFT/radix_no4/DP_OP_29_135_1820/U146/Y (XNOR2X8MTR)     0.05       4.87 r
+  FFT/radix_no4/DP_OP_29_135_1820/O1[23] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       4.87 r
+  FFT/radix_no4/U20/Y (NAND2X8MTR)                        0.05       4.93 f
+  FFT/radix_no4/U229/Y (AOI21X8MTR)                       0.07       4.99 r
+  FFT/radix_no4/op_r[23] (radix2_1)                       0.00       4.99 r
+  FFT/radix_no5/din_b_r[23] (radix2_0)                    0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/I2[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       4.99 r
+  FFT/radix_no5/DP_OP_29_139_9746/U139/Y (XNOR2X2MTR)     0.07       5.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.11       5.18 r
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 r
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.11       5.29 r
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.11       5.40 r
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.40 r
+  FFT/U826/Y (AO22X2MTR)                                  0.12       5.52 r
+  FFT/result_r_reg[17][15]/D (DFFRHQX8MTH)                0.00       5.52 r
+  data arrival time                                                  5.52
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[17][15]/CK (DFFRHQX8MTH)               0.00       5.24 r
+  library setup time                                      0.04       5.28
+  data required time                                                 5.28
+  --------------------------------------------------------------------------
+  data required time                                                 5.28
+  data arrival time                                                 -5.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: FFT/rom16/count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/result_r_reg[3][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom16/count_reg[1]/CK (DFFRHQX8MTR)                 0.00 #     0.00 r
+  FFT/rom16/count_reg[1]/Q (DFFRHQX8MTR)                  0.28       0.28 r
+  FFT/rom16/U155/Y (INVX16MTR)                            0.04       0.32 f
+  FFT/rom16/U44/Y (NAND2X12MTR)                           0.05       0.37 r
+  FFT/rom16/U29/Y (NOR2X12MTR)                            0.03       0.40 f
+  FFT/rom16/U134/Y (NOR2X8MTR)                            0.06       0.46 r
+  FFT/rom16/U88/Y (OAI21X6MTR)                            0.05       0.51 f
+  FFT/rom16/U19/Y (NOR2X3MTR)                             0.08       0.58 r
+  FFT/rom16/U149/Y (AOI21X8MTR)                           0.06       0.65 f
+  FFT/rom16/w_r[0] (ROM_16)                               0.00       0.65 f
+  FFT/radix_no1/w_r[0] (radix2_4)                         0.00       0.65 f
+  FFT/radix_no1/DP_OP_30_124_9496/I3[0] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       0.65 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4641/Y (NOR2X8MTR)     0.07       0.71 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5154/Y (INVX4MTR)      0.04       0.76 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4813/Y (XOR2X8MTR)     0.09       0.85 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3978/Y (INVX14MTR)     0.07       0.91 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3973/Y (NAND2X6MTR)
+                                                          0.05       0.96 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3108/Y (INVX2MTR)      0.04       1.00 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4812/Y (OAI2BB1X2MTR)
+                                                          0.12       1.12 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4707/Y (XNOR2X8MTR)
+                                                          0.10       1.22 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3297/Y (AOI21X4MTR)
+                                                          0.07       1.29 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4171/Y (XNOR2X2MTR)
+                                                          0.11       1.39 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4488/Y (XNOR2X2MTR)
+                                                          0.12       1.52 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4442/Y (XNOR2X4MTR)
+                                                          0.14       1.66 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3518/Y (OAI21X2MTR)
+                                                          0.07       1.73 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3914/Y (OAI2BB1X2MTR)
+                                                          0.06       1.79 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3631/Y (OAI21X2MTR)
+                                                          0.05       1.84 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3506/Y (OAI2BB1X2MTR)
+                                                          0.05       1.90 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3896/Y (OAI2BB1X2MTR)
+                                                          0.05       1.94 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3501/Y (OAI2BB1X2MTR)
+                                                          0.05       2.00 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3208/Y (OAI21X4MTR)
+                                                          0.05       2.05 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3880/Y (OAI2BB1X2MTR)
+                                                          0.05       2.10 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3870/Y (NAND2X2MTR)
+                                                          0.05       2.15 f
+  FFT/radix_no1/DP_OP_30_124_9496/U3864/Y (CLKNAND2X4MTR)
+                                                          0.04       2.19 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5020/Y (OAI2B1X4MTR)
+                                                          0.04       2.24 f
+  FFT/radix_no1/DP_OP_30_124_9496/U4770/Y (OAI2BB1X4MTR)
+                                                          0.04       2.28 r
+  FFT/radix_no1/DP_OP_30_124_9496/U4050/Y (BUFX4MTR)      0.08       2.36 r
+  FFT/radix_no1/DP_OP_30_124_9496/U5454/Y (XNOR2X8MTR)
+                                                          0.09       2.46 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3585/Y (XNOR2X2MTR)
+                                                          0.12       2.57 r
+  FFT/radix_no1/DP_OP_30_124_9496/U3479/Y (XNOR2X2MTR)
+                                                          0.12       2.70 r
+  FFT/radix_no1/DP_OP_30_124_9496/O1[18] (radix2_4_DP_OP_30_124_9496_0)
+                                                          0.00       2.70 r
+  FFT/radix_no1/U146/Y (CLKNAND2X4MTR)                    0.07       2.77 f
+  FFT/radix_no1/U15/Y (AOI21X8MTR)                        0.09       2.86 r
+  FFT/radix_no1/op_r[10] (radix2_4)                       0.00       2.86 r
+  FFT/radix_no2/din_b_r[10] (radix2_3)                    0.00       2.86 r
+  FFT/radix_no2/DP_OP_29_127_7705/I2[10] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       2.86 r
+  FFT/radix_no2/DP_OP_29_127_7705/U95/Y (XNOR2X2MTR)      0.09       2.94 r
+  FFT/radix_no2/DP_OP_29_127_7705/U61/Y (XNOR2X1MTR)      0.10       3.04 r
+  FFT/radix_no2/DP_OP_29_127_7705/O1[10] (radix2_3_DP_OP_29_127_7705_0)
+                                                          0.00       3.04 r
+  FFT/radix_no2/U101/Y (NAND2X2MTR)                       0.07       3.11 f
+  FFT/radix_no2/U71/Y (AOI21X4MTR)                        0.11       3.22 r
+  FFT/radix_no2/op_r[10] (radix2_3)                       0.00       3.22 r
+  FFT/radix_no3/din_b_r[10] (radix2_2)                    0.00       3.22 r
+  FFT/radix_no3/DP_OP_29_131_5664/I2[10] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       3.22 r
+  FFT/radix_no3/DP_OP_29_131_5664/U151/Y (XNOR2X2MTR)     0.09       3.31 r
+  FFT/radix_no3/DP_OP_29_131_5664/U165/Y (XNOR2X2MTR)     0.10       3.41 r
+  FFT/radix_no3/DP_OP_29_131_5664/O1[10] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       3.41 r
+  FFT/radix_no3/U260/Y (OAI2BB1X4MTR)                     0.11       3.52 r
+  FFT/radix_no3/U258/Y (AND2X8MTR)                        0.09       3.61 r
+  FFT/radix_no3/op_r[10] (radix2_2)                       0.00       3.61 r
+  FFT/radix_no4/din_b_r[10] (radix2_1)                    0.00       3.61 r
+  FFT/radix_no4/DP_OP_29_135_1820/I2[10] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       3.61 r
+  FFT/radix_no4/DP_OP_29_135_1820/U56/Y (XNOR2X2MTR)      0.07       3.68 r
+  FFT/radix_no4/DP_OP_29_135_1820/U151/Y (XNOR2X2MTR)     0.05       3.74 f
+  FFT/radix_no4/DP_OP_29_135_1820/O1[10] (radix2_1_DP_OP_29_135_1820_0)
+                                                          0.00       3.74 f
+  FFT/radix_no4/U233/Y (OAI2BB1X4MTR)                     0.09       3.83 f
+  FFT/radix_no4/U239/Y (AND2X8MTR)                        0.07       3.90 f
+  FFT/radix_no4/op_r[10] (radix2_1)                       0.00       3.90 f
+  FFT/radix_no5/din_b_r[10] (radix2_0)                    0.00       3.90 f
+  FFT/radix_no5/DP_OP_29_139_9746/I2[10] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       3.90 f
+  FFT/radix_no5/DP_OP_29_139_9746/U32/Y (OAI21X3MTR)      0.07       3.97 r
+  FFT/radix_no5/DP_OP_29_139_9746/U37/Y (NAND2X4MTR)      0.05       4.03 f
+  FFT/radix_no5/DP_OP_29_139_9746/U53/Y (OAI21X4MTR)      0.04       4.07 r
+  FFT/radix_no5/DP_OP_29_139_9746/U81/Y (NAND2X4MTR)      0.05       4.12 f
+  FFT/radix_no5/DP_OP_29_139_9746/U92/Y (OAI2B1X4MTR)     0.04       4.16 r
+  FFT/radix_no5/DP_OP_29_139_9746/U111/Y (NAND2X4MTR)     0.05       4.21 f
+  FFT/radix_no5/DP_OP_29_139_9746/U110/Y (CLKNAND2X4MTR)
+                                                          0.04       4.24 r
+  FFT/radix_no5/DP_OP_29_139_9746/U112/Y (OAI2BB1X4MTR)
+                                                          0.05       4.29 f
+  FFT/radix_no5/DP_OP_29_139_9746/U114/Y (CLKNAND2X4MTR)
+                                                          0.04       4.32 r
+  FFT/radix_no5/DP_OP_29_139_9746/U113/Y (NAND2X4MTR)     0.04       4.36 f
+  FFT/radix_no5/DP_OP_29_139_9746/U106/Y (CLKNAND2X4MTR)
+                                                          0.03       4.39 r
+  FFT/radix_no5/DP_OP_29_139_9746/U107/Y (OAI2BB1X4MTR)
+                                                          0.04       4.44 f
+  FFT/radix_no5/DP_OP_29_139_9746/U104/Y (OAI21X4MTR)     0.04       4.48 r
+  FFT/radix_no5/DP_OP_29_139_9746/U105/Y (OAI2BB1X4MTR)
+                                                          0.06       4.54 f
+  FFT/radix_no5/DP_OP_29_139_9746/U103/Y (OAI2B1X4MTR)
+                                                          0.04       4.57 r
+  FFT/radix_no5/DP_OP_29_139_9746/U89/Y (OAI2BB1X2MTR)
+                                                          0.06       4.64 f
+  FFT/radix_no5/DP_OP_29_139_9746/U108/Y (OAI21X4MTR)     0.04       4.68 r
+  FFT/radix_no5/DP_OP_29_139_9746/U122/Y (OAI2BB1X4MTR)
+                                                          0.06       4.74 f
+  FFT/radix_no5/DP_OP_29_139_9746/U133/Y (OAI21X4MTR)     0.04       4.77 r
+  FFT/radix_no5/DP_OP_29_139_9746/U134/Y (OAI2BB1X4MTR)
+                                                          0.06       4.83 f
+  FFT/radix_no5/DP_OP_29_139_9746/U117/Y (OAI21X4MTR)     0.04       4.87 r
+  FFT/radix_no5/DP_OP_29_139_9746/U116/Y (OAI2BB1X4MTR)
+                                                          0.06       4.93 f
+  FFT/radix_no5/DP_OP_29_139_9746/U121/Y (OAI21X4MTR)     0.04       4.97 r
+  FFT/radix_no5/DP_OP_29_139_9746/U131/Y (OAI2BB1X4MTR)
+                                                          0.06       5.03 f
+  FFT/radix_no5/DP_OP_29_139_9746/U137/Y (OAI21X4MTR)     0.04       5.06 r
+  FFT/radix_no5/DP_OP_29_139_9746/U35/Y (CLKNAND2X4MTR)
+                                                          0.04       5.11 f
+  FFT/radix_no5/DP_OP_29_139_9746/U132/Y (XNOR2X2MTR)     0.07       5.18 f
+  FFT/radix_no5/DP_OP_29_139_9746/O1[23] (radix2_0_DP_OP_29_139_9746_0)
+                                                          0.00       5.18 f
+  FFT/radix_no5/U141/Y (OAI2BB1X4MTR)                     0.09       5.27 f
+  FFT/radix_no5/U144/Y (AND2X12MTR)                       0.09       5.36 f
+  FFT/radix_no5/op_r[23] (radix2_0)                       0.00       5.36 f
+  FFT/U570/Y (AO22X2MTR)                                  0.14       5.50 f
+  FFT/result_r_reg[3][15]/D (DFFRHQX8MTH)                 0.00       5.50 f
+  data arrival time                                                  5.50
+
+  clock clk (rise edge)                                   5.40       5.40
+  clock network delay (ideal)                             0.00       5.40
+  clock uncertainty                                      -0.16       5.24
+  FFT/result_r_reg[3][15]/CK (DFFRHQX8MTH)                0.00       5.24 r
+  library setup time                                      0.02       5.26
+  data required time                                                 5.26
+  --------------------------------------------------------------------------
+  data required time                                                 5.26
+  data arrival time                                                 -5.50
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+1

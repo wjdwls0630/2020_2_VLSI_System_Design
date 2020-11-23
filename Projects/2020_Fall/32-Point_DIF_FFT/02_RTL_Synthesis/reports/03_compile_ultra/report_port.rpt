@@ -1,0 +1,456 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:57:53 2020
+****************************************
+
+
+
+Attributes:
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+i_CLK          in      0.0000   0.0000   --      --      --         i
+i_DATA_IMAG[0] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[1] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[2] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[3] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[4] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[5] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[6] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[7] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[8] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[9] in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[10]
+               in      0.0000   0.0000   --      --      --         
+i_DATA_IMAG[11]
+               in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[0] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[1] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[2] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[3] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[4] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[5] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[6] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[7] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[8] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[9] in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[10]
+               in      0.0000   0.0000   --      --      --         
+i_DATA_REAL[11]
+               in      0.0000   0.0000   --      --      --         
+i_RSTN         in      0.0000   0.0000   --      --      --         i
+i_VALID        in      0.0000   0.0000   --      --      --         
+o_DATA_IMAG[0] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[1] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[2] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[3] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[4] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[5] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[6] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[7] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[8] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[9] out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[10]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[11]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[12]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[13]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[14]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_IMAG[15]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[0] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[1] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[2] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[3] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[4] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[5] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[6] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[7] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[8] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[9] out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[10]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[11]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[12]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[13]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[14]
+               out     0.0000   0.0000   --      --      --         
+o_DATA_REAL[15]
+               out     0.0000   0.0000   --      --      --         
+o_VALID        out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+i_CLK              1      --              --              --        -- 
+i_DATA_IMAG[0]
+                   1      --              --              --        -- 
+i_DATA_IMAG[1]
+                   1      --              --              --        -- 
+i_DATA_IMAG[2]
+                   1      --              --              --        -- 
+i_DATA_IMAG[3]
+                   1      --              --              --        -- 
+i_DATA_IMAG[4]
+                   1      --              --              --        -- 
+i_DATA_IMAG[5]
+                   1      --              --              --        -- 
+i_DATA_IMAG[6]
+                   1      --              --              --        -- 
+i_DATA_IMAG[7]
+                   1      --              --              --        -- 
+i_DATA_IMAG[8]
+                   1      --              --              --        -- 
+i_DATA_IMAG[9]
+                   1      --              --              --        -- 
+i_DATA_IMAG[10]
+                   1      --              --              --        -- 
+i_DATA_IMAG[11]
+                   1      --              --              --        -- 
+i_DATA_REAL[0]
+                   1      --              --              --        -- 
+i_DATA_REAL[1]
+                   1      --              --              --        -- 
+i_DATA_REAL[2]
+                   1      --              --              --        -- 
+i_DATA_REAL[3]
+                   1      --              --              --        -- 
+i_DATA_REAL[4]
+                   1      --              --              --        -- 
+i_DATA_REAL[5]
+                   1      --              --              --        -- 
+i_DATA_REAL[6]
+                   1      --              --              --        -- 
+i_DATA_REAL[7]
+                   1      --              --              --        -- 
+i_DATA_REAL[8]
+                   1      --              --              --        -- 
+i_DATA_REAL[9]
+                   1      --              --              --        -- 
+i_DATA_REAL[10]
+                   1      --              --              --        -- 
+i_DATA_REAL[11]
+                   1      --              --              --        -- 
+i_RSTN             1      --              --              --        -- 
+i_VALID            1      --              --              --        -- 
+o_DATA_IMAG[0]
+                   1      --              --              --        -- 
+o_DATA_IMAG[1]
+                   1      --              --              --        -- 
+o_DATA_IMAG[2]
+                   1      --              --              --        -- 
+o_DATA_IMAG[3]
+                   1      --              --              --        -- 
+o_DATA_IMAG[4]
+                   1      --              --              --        -- 
+o_DATA_IMAG[5]
+                   1      --              --              --        -- 
+o_DATA_IMAG[6]
+                   1      --              --              --        -- 
+o_DATA_IMAG[7]
+                   1      --              --              --        -- 
+o_DATA_IMAG[8]
+                   1      --              --              --        -- 
+o_DATA_IMAG[9]
+                   1      --              --              --        -- 
+o_DATA_IMAG[10]
+                   1      --              --              --        -- 
+o_DATA_IMAG[11]
+                   1      --              --              --        -- 
+o_DATA_IMAG[12]
+                   1      --              --              --        -- 
+o_DATA_IMAG[13]
+                   1      --              --              --        -- 
+o_DATA_IMAG[14]
+                   1      --              --              --        -- 
+o_DATA_IMAG[15]
+                   1      --              --              --        -- 
+o_DATA_REAL[0]
+                   1      --              --              --        -- 
+o_DATA_REAL[1]
+                   1      --              --              --        -- 
+o_DATA_REAL[2]
+                   1      --              --              --        -- 
+o_DATA_REAL[3]
+                   1      --              --              --        -- 
+o_DATA_REAL[4]
+                   1      --              --              --        -- 
+o_DATA_REAL[5]
+                   1      --              --              --        -- 
+o_DATA_REAL[6]
+                   1      --              --              --        -- 
+o_DATA_REAL[7]
+                   1      --              --              --        -- 
+o_DATA_REAL[8]
+                   1      --              --              --        -- 
+o_DATA_REAL[9]
+                   1      --              --              --        -- 
+o_DATA_REAL[10]
+                   1      --              --              --        -- 
+o_DATA_REAL[11]
+                   1      --              --              --        -- 
+o_DATA_REAL[12]
+                   1      --              --              --        -- 
+o_DATA_REAL[13]
+                   1      --              --              --        -- 
+o_DATA_REAL[14]
+                   1      --              --              --        -- 
+o_DATA_REAL[15]
+                   1      --              --              --        -- 
+o_VALID            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+i_CLK         --      --      --      --      --      -- 
+i_DATA_IMAG[0]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[1]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[2]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[3]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[4]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[5]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[6]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[7]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[8]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[9]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[10]
+              --      --      --      --      --      -- 
+i_DATA_IMAG[11]
+              --      --      --      --      --      -- 
+i_DATA_REAL[0]
+              --      --      --      --      --      -- 
+i_DATA_REAL[1]
+              --      --      --      --      --      -- 
+i_DATA_REAL[2]
+              --      --      --      --      --      -- 
+i_DATA_REAL[3]
+              --      --      --      --      --      -- 
+i_DATA_REAL[4]
+              --      --      --      --      --      -- 
+i_DATA_REAL[5]
+              --      --      --      --      --      -- 
+i_DATA_REAL[6]
+              --      --      --      --      --      -- 
+i_DATA_REAL[7]
+              --      --      --      --      --      -- 
+i_DATA_REAL[8]
+              --      --      --      --      --      -- 
+i_DATA_REAL[9]
+              --      --      --      --      --      -- 
+i_DATA_REAL[10]
+              --      --      --      --      --      -- 
+i_DATA_REAL[11]
+              --      --      --      --      --      -- 
+i_RSTN        --      --      --      --      --      -- 
+i_VALID       --      --      --      --      --      -- 
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+i_CLK         --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[0]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[1]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[2]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[3]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[4]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[5]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[6]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[7]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[8]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[9]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[10]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_IMAG[11]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[0]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[1]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[2]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[3]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[4]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[5]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[6]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[7]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[8]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[9]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[10]
+              --      --     --      --     --      --     --     --        -- 
+i_DATA_REAL[11]
+              --      --     --      --     --      --     --     --        -- 
+i_RSTN        --      --     --      --     --      --     --     --        -- 
+i_VALID       --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+i_CLK         --      --      --      -- 
+i_DATA_IMAG[0]
+              --      --      --      -- 
+i_DATA_IMAG[1]
+              --      --      --      -- 
+i_DATA_IMAG[2]
+              --      --      --      -- 
+i_DATA_IMAG[3]
+              --      --      --      -- 
+i_DATA_IMAG[4]
+              --      --      --      -- 
+i_DATA_IMAG[5]
+              --      --      --      -- 
+i_DATA_IMAG[6]
+              --      --      --      -- 
+i_DATA_IMAG[7]
+              --      --      --      -- 
+i_DATA_IMAG[8]
+              --      --      --      -- 
+i_DATA_IMAG[9]
+              --      --      --      -- 
+i_DATA_IMAG[10]
+              --      --      --      -- 
+i_DATA_IMAG[11]
+              --      --      --      -- 
+i_DATA_REAL[0]
+              --      --      --      -- 
+i_DATA_REAL[1]
+              --      --      --      -- 
+i_DATA_REAL[2]
+              --      --      --      -- 
+i_DATA_REAL[3]
+              --      --      --      -- 
+i_DATA_REAL[4]
+              --      --      --      -- 
+i_DATA_REAL[5]
+              --      --      --      -- 
+i_DATA_REAL[6]
+              --      --      --      -- 
+i_DATA_REAL[7]
+              --      --      --      -- 
+i_DATA_REAL[8]
+              --      --      --      -- 
+i_DATA_REAL[9]
+              --      --      --      -- 
+i_DATA_REAL[10]
+              --      --      --      -- 
+i_DATA_REAL[11]
+              --      --      --      -- 
+i_RSTN        --      --      --      -- 
+i_VALID       --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+o_DATA_IMAG[0]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[1]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[2]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[3]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[4]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[5]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[6]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[7]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[8]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[9]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[10]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[11]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[12]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[13]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[14]
+              --      --      --      --      --      0.00
+o_DATA_IMAG[15]
+              --      --      --      --      --      0.00
+o_DATA_REAL[0]
+              --      --      --      --      --      0.00
+o_DATA_REAL[1]
+              --      --      --      --      --      0.00
+o_DATA_REAL[2]
+              --      --      --      --      --      0.00
+o_DATA_REAL[3]
+              --      --      --      --      --      0.00
+o_DATA_REAL[4]
+              --      --      --      --      --      0.00
+o_DATA_REAL[5]
+              --      --      --      --      --      0.00
+o_DATA_REAL[6]
+              --      --      --      --      --      0.00
+o_DATA_REAL[7]
+              --      --      --      --      --      0.00
+o_DATA_REAL[8]
+              --      --      --      --      --      0.00
+o_DATA_REAL[9]
+              --      --      --      --      --      0.00
+o_DATA_REAL[10]
+              --      --      --      --      --      0.00
+o_DATA_REAL[11]
+              --      --      --      --      --      0.00
+o_DATA_REAL[12]
+              --      --      --      --      --      0.00
+o_DATA_REAL[13]
+              --      --      --      --      --      0.00
+o_DATA_REAL[14]
+              --      --      --      --      --      0.00
+o_DATA_REAL[15]
+              --      --      --      --      --      0.00
+o_VALID       --      --      --      --      --      0.00
+
+1

@@ -1,0 +1,94 @@
+**************************************************
+Report         : failing_points
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+18 Failing compare points (18 matched, 0 unmatched):
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom2/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom2/count_reg_5_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom4/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom4/count_reg_5_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_0_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_0_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_1_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_1_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_2_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_2_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_3_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_3_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_4_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_4_
+
+ *Ref  DFF        ref:/WORK/FFT_PAD/FFT/rom8/count_reg_5_
+  Impl DFF        impl:/WORK/FFT_PAD/FFT/rom8/count_reg_5_
+
+ *This failure may be due to an undriven signal in the reference design;
+  use "report_unmatched_points <compare-point> -status undriven" to see
+  a report of unmatched undriven points in the fan-in of a given compare point.
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

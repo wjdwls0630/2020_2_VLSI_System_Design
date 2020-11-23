@@ -1,0 +1,18 @@
+**************************************************
+Report         : diagnosed_matching_regions
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+3 distinct matching regions detected in reference.
+
+Recommended matching region:
+
+    Prim    FFT/rom2/C0
+    Prim    FFT/rom4/C0
+    Prim    FFT/rom8/C0
+
+1

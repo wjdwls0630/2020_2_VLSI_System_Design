@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : constraint
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:52 2020
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    FEEDTHROUGH                  0.00      1.00      0.00
+    REGIN                        0.00      1.00      0.00
+    REGOUT                       0.00      1.00      0.00
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    FEEDTHROUGH                  0.00         0      0.00
+    REGIN                        0.00         0      0.00
+    REGOUT                       0.00         0      0.00
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    FEEDTHROUGH                  0.00      1.00      0.00
+    REGIN                        0.00      1.00      0.00
+    REGOUT                       0.00      1.00      0.00
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+    Constraint                                     Slack
+    ----------------------------------------------------
+    max_leakage_power                              -0.10  (VIOLATED)
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    multiport_net                                    0.00 (MET)
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  0.00 (MET)
+    max_delay/setup                                  0.00 (MET)
+    sequential_clock_pulse_width                     0.00 (MET)
+    critical_range                                   0.00 (MET)
+    min_delay/hold                                   0.00 (MET)
+    max_leakage_power                                0.10 (VIOLATED)
+    max_area                                     73540.80 (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:52 2020
+****************************************
+
+
+    Design: FFT_PAD
+
+    max_area               0.00
+  - Current Area       73540.80
+  ------------------------------
+    Slack              -73540.80  (VIOLATED)
+
+
+    Design: FFT_PAD
+
+    max_leakage_power          0.00
+  - Current Leakage Power      0.10
+  ----------------------------------
+    Slack                     -0.10  (VIOLATED)
+
+
+1

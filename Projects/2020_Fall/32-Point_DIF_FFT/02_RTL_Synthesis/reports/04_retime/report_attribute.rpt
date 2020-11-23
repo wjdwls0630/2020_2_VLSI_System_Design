@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : Attribute
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:52 2020
+****************************************
+
+Design          Object             Type      Attribute Name            Value
+--------------------------------------------------------------------------------
+FFT_PAD         FFT_PAD            design    compile_cpu_hostname      vlsi-dist.khu.ac.kr
+FFT_PAD         FFT_PAD            design    ice_canonical_xor2_delay  0.078731
+FFT_PAD         FFT_PAD            design    ice_canonical_nand2_delay 0.053246
+FFT_PAD         FFT_PAD            design    testdb_meth_sig_usage_option
+                                                                       98307
+FFT_PAD         FFT_PAD            design    testdb_meth_sig_usage     106499
+FFT_PAD         FFT_PAD            design    testdb_meth_name          multiplexed_flip_flop
+FFT_PAD         FFT_PAD            design    pads_thru_hier            false
+FFT_PAD         FFT_PAD            design    pads_respect_hier         false
+FFT_PAD         FFT_PAD            design    power_info_requested      true
+FFT_PAD         FFT_PAD            design    map_effort_option         3
+FFT_PAD         FFT_PAD            design    mv_charz                  0
+FFT_PAD         FFT_PAD            design    leakage_power_model       4
+FFT_PAD         FFT_PAD            design    register_merging          17
+FFT_PAD         FFT_PAD            design    compile_tdrs_cpu_time     81.143555
+FFT_PAD         FFT_PAD            design    compile_lib_cpu_time      0.002014
+FFT_PAD         FFT_PAD            design    compile_tot_cpu_time      229.482178
+FFT_PAD         FFT_PAD            design    compile_rbo_cpu_time      56.494629
+FFT_PAD         FFT_PAD            design    compile_abo_cpu_time      82.089355
+FFT_PAD         FFT_PAD            design    compile_tot_wall_time     230.233658
+FFT_PAD         FFT_PAD            design    map                       true
+FFT_PAD         FFT_PAD            design    exact_sequential_map      false
+FFT_PAD         FFT_PAD            design    redundancy_removal        true
+FFT_PAD         FFT_PAD            design    compiled_with_ultra       true
+FFT_PAD         FFT_PAD            design    dynamic_power_opto        true
+FFT_PAD         FFT_PAD            design    leakage_power_opto        true
+FFT_PAD         FFT_PAD            design    max_area                  0.000000
+FFT_PAD         FFT_PAD            design    fix_multiple_port_nets    feedthroughs constants outputs buffer_constants
+FFT_PAD         FFT_PAD            design    design_voltage_unit       1000.000000
+FFT_PAD         FFT_PAD            design    design_current_unit       1.000000
+FFT_PAD         FFT_PAD            design    design_power_unit         0.001000
+FFT_PAD         FFT_PAD            design    design_resistance_unit    1.000000
+FFT_PAD         FFT_PAD            design    design_cap_unit           1.000000
+FFT_PAD         FFT_PAD            design    design_time_unit          1.000000
+FFT_PAD         FFT_PAD            design    temperature_from_min_lib  125.000000
+FFT_PAD         FFT_PAD            design    temperature_from_max_lib  125.000000
+FFT_PAD         FFT_PAD            design    ungroup_all_option        false
+FFT_PAD         FFT_PAD            design    scan_state_route_serial   false
+FFT_PAD         FFT_PAD            design    scan_state_route_clocks   false
+FFT_PAD         FFT_PAD            design    scan_state_route_enables  false
+FFT_PAD         FFT_PAD            design    scan_state_type           1
+FFT_PAD         FFT_PAD            design    min_wire_load_selection_type
+                                                                       0
+FFT_PAD         FFT_PAD            design    wire_load_selection_type  0
+FFT_PAD         FFT_PAD            design    hdl_library               WORK
+FFT_PAD         FFT_PAD            design    hdl_template              FFT_PAD
+FFT_PAD         FFT_PAD            design    hdl_canonical_default_params
+FFT_PAD         FFT_PAD            design    hdl_default_parameters    
+FFT_PAD         FFT_PAD            design    hdl_canonical_params      
+FFT_PAD         FFT_PAD            design    hdl_parameters            
+FFT_PAD         FFT_PAD            design    link_design_libraries     WORK
+FFT_PAD         FFT_PAD            design    presto_gtech_count        208
+
+1

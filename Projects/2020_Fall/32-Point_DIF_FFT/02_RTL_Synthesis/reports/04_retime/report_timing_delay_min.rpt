@@ -1,0 +1,419 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -max_paths 10
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 20:01:53 2020
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_1p08v_125c   Library: scmetropmk_cmos10lp_rvt_ss_1p08v_125c_sadhm
+Wire Load Model Mode: top
+
+  Startpoint: FFT/shift_2/shift_reg_i_reg[45]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/sub_x_2/R_2441
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_2/shift_reg_i_reg[45]/CK (DFFRQX4MTR)         0.00 #     0.00 r
+  FFT/shift_2/shift_reg_i_reg[45]/Q (DFFRQX4MTR)          0.39       0.39 r
+  FFT/shift_2/dout_i[21] (shift_2)                        0.00       0.39 r
+  FFT/radix_no4/din_a_i[21] (radix2_1)                    0.00       0.39 r
+  FFT/radix_no4/sub_x_2/A[21] (radix2_1_DW01_sub_0)       0.00       0.39 r
+  FFT/radix_no4/sub_x_2/U102/Y (XNOR2X1MTR)               0.09       0.48 f
+  FFT/radix_no4/sub_x_2/R_2441/D (DFFRQX1MTH)             0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/sub_x_2/R_2441/CK (DFFRQX1MTH)            0.00       0.00 r
+  library hold time                                       0.39       0.39
+  data required time                                                 0.39
+  --------------------------------------------------------------------------
+  data required time                                                 0.39
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.07       0.49 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.52 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.52 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.52 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.07       0.49 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.52 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.52 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.52 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.07       0.49 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.52 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.52 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.52 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.10       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.43 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.43 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.07       0.49 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.53 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.53 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.53 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.53 f
+  data arrival time                                                  0.53
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FFT/rom2/s_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2226
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/rom2/s_count_reg[1]/CK (DFFRHQX4MTR)                0.00 #     0.00 r
+  FFT/rom2/s_count_reg[1]/Q (DFFRHQX4MTR)                 0.29       0.29 r
+  FFT/rom2/U6/Y (NOR2X4MTR)                               0.06       0.35 f
+  FFT/rom2/state[0] (ROM_2)                               0.00       0.35 f
+  FFT/radix_no4/state[0] (radix2_1)                       0.00       0.35 f
+  FFT/radix_no4/U97/Y (NAND2BX8MTR)                       0.11       0.46 r
+  FFT/radix_no4/U77/Y (CLKNAND2X2MTR)                     0.06       0.52 f
+  FFT/radix_no4/R_2226/D (DFFSQX1MTH)                     0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2226/CK (DFFSQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.08       0.50 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.54 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.54 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.54 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.08       0.50 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.54 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.54 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.54 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U109/Y (OAI21X4MTR)     0.06       0.33 f
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.03       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.42 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.42 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.08       0.50 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.54 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.54 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.54 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: FFT/shift_4/shift_reg_r_reg[92]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FFT/radix_no4/R_2136
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/shift_4/shift_reg_r_reg[92]/CK (DFFRHQX8MTR)        0.00 #     0.00 r
+  FFT/shift_4/shift_reg_r_reg[92]/Q (DFFRHQX8MTR)         0.27       0.27 r
+  FFT/shift_4/dout_r[20] (shift_4)                        0.00       0.27 r
+  FFT/radix_no3/din_a_r[20] (radix2_2)                    0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/I1[20] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.27 r
+  FFT/radix_no3/DP_OP_29_131_5664/U142/Y (OAI2BB1X4MTR)
+                                                          0.10       0.36 r
+  FFT/radix_no3/DP_OP_29_131_5664/U162/Y (XNOR2X2MTR)     0.06       0.43 f
+  FFT/radix_no3/DP_OP_29_131_5664/O1[21] (radix2_2_DP_OP_29_131_5664_0)
+                                                          0.00       0.43 f
+  FFT/radix_no3/U247/Y (AOI22X4MTR)                       0.08       0.51 r
+  FFT/radix_no3/U57/Y (NOR2X8MTR)                         0.04       0.54 f
+  FFT/radix_no3/op_r[21] (radix2_2)                       0.00       0.54 f
+  FFT/radix_no4/din_b_r[21] (radix2_1)                    0.00       0.54 f
+  FFT/radix_no4/R_2136/D (DFFRQX1MTH)                     0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FFT/radix_no4/R_2136/CK (DFFRQX1MTH)                    0.00       0.00 r
+  library hold time                                       0.38       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.16
+
+
+1

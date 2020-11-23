@@ -1,0 +1,161 @@
+------------------------------------------------------------------------
+--                                                                    --
+--                                                                    --
+--                         RTL simulation start                        --
+--                                                                    --
+--                                                                    --
+------------------------------------------------------------------------
+***********************************************************************
+                                                                       
+                      user_design_setup.tcl                            
+                                                                       
+***********************************************************************
+***********************************************************************
+                                                                       
+                       common_lib_setup.tcl                            
+                                                                       
+***********************************************************************
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Sun Nov 22 14:26:38 2020
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../01_RTL_Design/src/FFT.v'
+Parsing included file '../../01_RTL_Design/src/./shift/shift_16.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./shift/shift_8.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./shift/shift_4.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./shift/shift_2.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./shift/shift_1.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./radix2/radix2.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./ROM/ROM_16.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./ROM/ROM_8.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./ROM/ROM_4.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing included file '../../01_RTL_Design/src/./ROM/ROM_2.v'.
+Back to file '../../01_RTL_Design/src/FFT.v'.
+Parsing design file './tb/FFT_tb.v'
+
+Lint-[NS] Null statement
+./tb/FFT_tb.v, 85
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+./tb/FFT_tb.v, 88
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+./tb/FFT_tb.v, 92
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+./tb/FFT_tb.v, 167
+  Null statement is used in following verilog source.
+  
+
+Top Level Modules:
+       TESTBED
+TimeScale is 1 ns / 1 ps
+
+Lint-[VNGS] Variable never gets set
+../../01_RTL_Design/src/./ROM/ROM_8.v, 10
+  Following variable has never been set any value.
+  Source info: valid
+
+
+Lint-[VNGS] Variable never gets set
+../../01_RTL_Design/src/./ROM/ROM_4.v, 10
+  Following variable has never been set any value.
+  Source info: valid
+
+
+Lint-[VNGS] Variable never gets set
+../../01_RTL_Design/src/./ROM/ROM_2.v, 10
+  Following variable has never been set any value.
+  Source info: valid
+
+
+Lint-[CAWM-L] Width mismatch
+../../01_RTL_Design/src/FFT.v, 47
+  Continuous assignment width mismatch
+  5 bits (lhs) versus 6 bits (rhs).
+  Source info: assign y_1 = ((count_y > 5'b0) ? (count_y - 5'b1) : count_y);  
+
+Starting vcs inline pass...
+3 unique modules to generate
+Generating code for _VCSgd_qCKqH
+Generating code for _VCSgd_V11EP
+Generating code for _VCSgd_TAUdR
+3 modules and 0 UDP read. 
+recompiling module radix2
+recompiling module FFT
+recompiling module TESTBED
+All of 3 modules done
+make[1]: Entering directory `/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/03_Verification/VCS/csrc'
+make[1]: Leaving directory `/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/03_Verification/VCS/csrc'
+make[1]: Entering directory `/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/03_Verification/VCS/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _38677_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libzerosoft_rt_stubs.so //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libvirsim.so //Tools/Synopsys/vcs/L-2016.06/linux64/lib/liberrorinf.so //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libsnpsmalloc.so    //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libvcsnew.so //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libsimprofile.so //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive //Tools/Synopsys/vcs/L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          //Tools/Synopsys/vcs/L-2016.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/VLSI_graduated_2020/2015104027/2020_2_VLSI_System_Design/32-Point_DIF_FFT/03_Verification/VCS/csrc'
+CPU time: .265 seconds to compile + .299 seconds to elab + .072 seconds to link
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Nov 22 14:26 2020
+ ---------- SNR = 566798.00
+ ---------- dataset  1 passed!!
+
+ ---------- SNR = 895419.00
+ ---------- dataset  2 passed!!
+
+ ---------- SNR = 842087.00
+ ---------- dataset  3 passed!!
+
+ ---------- SNR = 742201.00
+ ---------- dataset  4 passed!!
+
+ ---------- SNR = 757827.00
+ ---------- dataset  5 passed!!
+
+[1;33m********************************[m
+[1;33mWell Done [m
+[1;33m********************************[m
+[1;35m      ▒~▒▒         [m
+[1;35m      ▒x▒x           [m
+[1;35m▒i▒X▒X▒}▒▒▒X▒▒          [m
+[1;35m▒i      ▒X▒X▒▒        [m
+[1;35m▒i   ▒@ ▒X▒X▒▒   You have passed all patterns!![m
+[1;35m▒i▒š▒  ▒X▒X▒▒          [m
+[1;35m▒i   ▒▒▒X▒X▒▒         [m
+[1;35m                   [m
+[1;32m********************************[m
+[1;32m********************************[m
+Clk period = 10.00 ns
+Average latency = 33.00 cycles
+Bye
+
+
+$finish called from file "./tb/FFT_tb.v", line 210.
+$finish at simulation time              5100000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5100000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.0Mb
+Sun Nov 22 14:26:40 2020

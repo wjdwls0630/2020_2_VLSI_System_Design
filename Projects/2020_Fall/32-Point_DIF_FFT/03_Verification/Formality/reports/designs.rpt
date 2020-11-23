@@ -1,0 +1,345 @@
+**************************************************
+Report         : designs
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+ ______________________________________________________________________________ 
+|                                                                              |
+|  Legend:                                                                     |
+|           Statistics                  Attributes                             |
+|             c = number of cells         c = CONSENSUS resolution type        |
+|                 linked(unlinked)        x = BLACKBOX resolution type         |
+|             p = number of ports         a = AND resolution type              |
+|             n = number of nets          o = OR resolution type               |
+|                                         f = flatten                          |
+|                                         r = retimed                          |
+|                                         v = VHDL configuration               |
+|______________________________________________________________________________|
+
+
+########################################################################################################
+####    DESIGN LIBRARY - impl:/FM_RETIMING
+########################################################################################################
+Design Name                              Statistics                   Attributes     Verification status
+-----------                              ----------                   ----------     -------------------
+fm_ret_STD_RR                            c11(0) p10 n20                  c                     
+fm_ret_back_wb_1_1_0                     c1933(0) p1374 n2729            c                     
+fm_ret_back_wb_1_1_1                     c1927(0) p1366 n2717            c                     
+fm_ret_back_wb_1_1_2                     c6(0) p8 n12                    c                     
+fm_ret_bwmb_1_1_1                        c5315(0) p4740 n10629           c                     
+fm_ret_bwmb_1_1_1_bbox                   c0(0) p1369 n0                  c                     
+fm_ret_bwmb_1_1_2                        c37(0) p36 n73                  c                     
+fm_ret_bwmb_1_1_2_bbox                   c0(0) p11 n0                    c                     
+fm_ret_forw_wb_1_1_0                     c37(0) p100 n61                 c                     
+fm_ret_forw_wb_1_1_1                     c12(0) p21 n16                  c                     
+fm_ret_forw_wb_1_1_10                    c2(0) p6 n4                     c                     
+fm_ret_forw_wb_1_1_11                    c1(0) p9 n3                     c                     
+fm_ret_forw_wb_1_1_12                    c5(0) p9 n8                     c                     
+fm_ret_forw_wb_1_1_13                    c1(0) p3 n2                     c                     
+fm_ret_forw_wb_1_1_14                    c3(0) p5 n4                     c                     
+fm_ret_forw_wb_1_1_2                     c1(0) p5 n2                     c                     
+fm_ret_forw_wb_1_1_3                     c1(0) p9 n3                     c                     
+fm_ret_forw_wb_1_1_4                     c2(0) p10 n4                    c                     
+fm_ret_forw_wb_1_1_5                     c5(0) p11 n7                    c                     
+fm_ret_forw_wb_1_1_6                     c1(0) p3 n2                     c                     
+fm_ret_forw_wb_1_1_7                     c1(0) p3 n2                     c                     
+fm_ret_forw_wb_1_1_8                     c1(0) p3 n2                     c                     
+fm_ret_forw_wb_1_1_9                     c1(0) p3 n2                     c                     
+fm_ret_fwmb_1_1_1                        c20(0) p85 n107                 c                     
+fm_ret_fwmb_1_1_10                       c7(0) p20 n27                   c                     
+fm_ret_fwmb_1_1_10_bbox                  c0(0) p9 n0                     c                     
+fm_ret_fwmb_1_1_11                       c10(0) p35 n45                  c                     
+fm_ret_fwmb_1_1_11_bbox                  c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_12                       c9(0) p30 n40                   c                     
+fm_ret_fwmb_1_1_12_bbox                  c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_13                       c5(0) p10 n14                   c                     
+fm_ret_fwmb_1_1_13_bbox                  c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_14                       c7(0) p20 n26                   c                     
+fm_ret_fwmb_1_1_14_bbox                  c0(0) p8 n0                     c                     
+fm_ret_fwmb_1_1_1_bbox                   c0(0) p24 n0                    c                     
+fm_ret_fwmb_1_1_2                        c7(0) p20 n26                   c                     
+fm_ret_fwmb_1_1_2_bbox                   c0(0) p8 n0                     c                     
+fm_ret_fwmb_1_1_3                        c10(0) p35 n45                  c                     
+fm_ret_fwmb_1_1_3_bbox                   c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_4                        c11(0) p40 n51                  c                     
+fm_ret_fwmb_1_1_4_bbox                   c0(0) p13 n0                    c                     
+fm_ret_fwmb_1_1_5                        c12(0) p45 n57                  c                     
+fm_ret_fwmb_1_1_5_bbox                   c0(0) p14 n0                    c                     
+fm_ret_fwmb_1_1_6                        c5(0) p10 n14                   c                     
+fm_ret_fwmb_1_1_6_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_7                        c5(0) p10 n14                   c                     
+fm_ret_fwmb_1_1_7_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_8                        c5(0) p10 n14                   c                     
+fm_ret_fwmb_1_1_8_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_9                        c5(0) p10 n14                   c                     
+fm_ret_fwmb_1_1_9_bbox                   c0(0) p6 n0                     c                     
+
+
+########################################################################################################
+####    DESIGN LIBRARY - impl:/WORK
+########################################################################################################
+Design Name                              Statistics                   Attributes     Verification status
+-----------                              ----------                   ----------     -------------------
+FFT                                      c24627(0) p60 n26519            c                     
+FFT_PAD                                  c659(0) p60 n631                c                    Failing
+ROM_16                                   c313(0) p53 n327                c                     
+ROM_2                                    c49(0) p53 n87                  c                     
+ROM_4                                    c92(0) p53 n103                 c                     
+ROM_8                                    c220(0) p53 n234                c                     
+SVF_REF_DESIGN                           c52(0) p0 n115                  c                     
+radix2_0                                 c845(0) p252 n1105              c                     
+radix2_0_DP_OP_29_139_9746_0             c117(0) p77 n178                c                     
+radix2_0_DP_OP_30_140_553_0              c430(0) p160 n701               c                     
+radix2_0_DP_OP_31_141_9746_0             c84(0) p74 n146                 c                     
+radix2_0_DW01_sub_1                      c154(0) p80 n211                c                     
+radix2_0_DW01_sub_5                      c259(0) p77 n312                c                     
+radix2_1                                 c833(0) p249 n1075              c                     
+radix2_1_DP_OP_29_135_1820_0             c132(0) p72 n181                c                     
+radix2_1_DP_OP_30_136_809_0              c730(0) p160 n1073              c                     
+radix2_1_DP_OP_31_137_1820_0             c140(0) p74 n191                c                     
+radix2_1_DW01_sub_0                      c136(0) p77 n193                c                     
+radix2_1_DW01_sub_2                      c238(0) p76 n290                c                     
+radix2_2                                 c271(0) p243 n572               c                     
+radix2_2_DP_OP_29_131_5664_0             c134(0) p72 n182                c                     
+radix2_2_DP_OP_30_132_41_0               c3108(0) p160 n3422             c                     
+radix2_2_DP_OP_31_133_5664_0             c117(0) p72 n166                c                     
+radix2_2_DW01_sub_3                      c234(0) p74 n284                c                     
+radix2_2_DW01_sub_5                      c172(0) p74 n222                c                     
+radix2_3                                 c4671(0) p246 n5050             c                     
+radix2_3_DP_OP_29_127_7705_0             c127(0) p72 n177                c                     
+radix2_3_DP_OP_30_128_297_0              c4409(0) p163 n4646             c                     
+radix2_3_DP_OP_31_129_7705_0             c115(0) p72 n166                c                     
+radix2_3_DW01_sub_5                      c162(0) p74 n213                c                     
+radix2_3_DW01_sub_7                      c157(0) p74 n208                c                     
+radix2_4                                 c3144(0) p246 n3511             c                     
+radix2_4_DP_OP_30_124_9496_0             c2859(0) p163 n3104             c                     
+shift_1                                  c115(0) p101 n166               c                     
+shift_16                                 c1042(0) p101 n1109             c                     
+shift_2                                  c212(0) p102 n263               c                     
+shift_4                                  c467(0) p99 n523                c                     
+shift_8                                  c779(0) p100 n830               c                     
+
+
+########################################################################################################
+####    DESIGN LIBRARY - ref:/FM_RETIMING
+########################################################################################################
+Design Name                              Statistics                   Attributes     Verification status
+-----------                              ----------                   ----------     -------------------
+fm_ret_STD_RR                            c11(0) p10 n20                  c                     
+fm_ret_back_wb_1_1_0                     c1933(0) p1374 n2729            c                     
+fm_ret_back_wb_1_1_1                     c1929(0) p1366 n2719            c                     
+fm_ret_back_wb_1_1_2                     c8(0) p8 n14                    c                     
+fm_ret_bconstr_1_1_1                     c580(0) p1367 n2521             c                     
+fm_ret_bconstr_1_1_2                     c6(0) p9 n15                    c                     
+fm_ret_bwmb_1_1_1                        c583(0) p2880 n4250             c                     
+fm_ret_bwmb_1_1_1_bbox                   c0(0) p1369 n0                  c                     
+fm_ret_bwmb_1_1_2                        c9(0) p10 n22                   c                     
+fm_ret_bwmb_1_1_2_bbox                   c0(0) p11 n0                    c                     
+fm_ret_fconstr_1_1_1                     c21(0) p22 n58                  c                     
+fm_ret_fconstr_1_1_10                    c8(0) p7 n17                    c                     
+fm_ret_fconstr_1_1_11                    c11(0) p10 n26                  c                     
+fm_ret_fconstr_1_1_12                    c10(0) p10 n24                  c                     
+fm_ret_fconstr_1_1_13                    c6(0) p4 n10                    c                     
+fm_ret_fconstr_1_1_14                    c8(0) p6 n16                    c                     
+fm_ret_fconstr_1_1_2                     c8(0) p6 n16                    c                     
+fm_ret_fconstr_1_1_3                     c11(0) p10 n26                  c                     
+fm_ret_fconstr_1_1_4                     c12(0) p11 n29                  c                     
+fm_ret_fconstr_1_1_5                     c13(0) p12 n32                  c                     
+fm_ret_fconstr_1_1_6                     c6(0) p4 n10                    c                     
+fm_ret_fconstr_1_1_7                     c6(0) p4 n10                    c                     
+fm_ret_fconstr_1_1_8                     c6(0) p4 n10                    c                     
+fm_ret_fconstr_1_1_9                     c6(0) p4 n10                    c                     
+fm_ret_forw_wb_1_1_0                     c37(0) p100 n61                 c                     
+fm_ret_forw_wb_1_1_1                     c14(0) p21 n18                  c                     
+fm_ret_forw_wb_1_1_10                    c4(0) p6 n6                     c                     
+fm_ret_forw_wb_1_1_11                    c3(0) p9 n5                     c                     
+fm_ret_forw_wb_1_1_12                    c7(0) p9 n10                    c                     
+fm_ret_forw_wb_1_1_13                    c3(0) p3 n4                     c                     
+fm_ret_forw_wb_1_1_14                    c5(0) p5 n6                     c                     
+fm_ret_forw_wb_1_1_2                     c3(0) p5 n4                     c                     
+fm_ret_forw_wb_1_1_3                     c3(0) p9 n5                     c                     
+fm_ret_forw_wb_1_1_4                     c4(0) p10 n6                    c                     
+fm_ret_forw_wb_1_1_5                     c7(0) p11 n9                    c                     
+fm_ret_forw_wb_1_1_6                     c3(0) p3 n4                     c                     
+fm_ret_forw_wb_1_1_7                     c3(0) p3 n4                     c                     
+fm_ret_forw_wb_1_1_8                     c3(0) p3 n4                     c                     
+fm_ret_forw_wb_1_1_9                     c3(0) p3 n4                     c                     
+fm_ret_fwmb_1_1_1                        c44(0) p24 n82                  c                     
+fm_ret_fwmb_1_1_10                       c19(0) p12 n32                  c                     
+fm_ret_fwmb_1_1_10_bbox                  c0(0) p9 n0                     c                     
+fm_ret_fwmb_1_1_11                       c22(0) p12 n38                  c                     
+fm_ret_fwmb_1_1_11_bbox                  c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_12                       c27(0) p18 n48                  c                     
+fm_ret_fwmb_1_1_12_bbox                  c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_13                       c11(0) p6 n16                   c                     
+fm_ret_fwmb_1_1_13_bbox                  c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_14                       c13(0) p6 n20                   c                     
+fm_ret_fwmb_1_1_14_bbox                  c0(0) p8 n0                     c                     
+fm_ret_fwmb_1_1_1_bbox                   c0(0) p24 n0                    c                     
+fm_ret_fwmb_1_1_2                        c13(0) p6 n20                   c                     
+fm_ret_fwmb_1_1_2_bbox                   c0(0) p8 n0                     c                     
+fm_ret_fwmb_1_1_3                        c22(0) p12 n38                  c                     
+fm_ret_fwmb_1_1_3_bbox                   c0(0) p12 n0                    c                     
+fm_ret_fwmb_1_1_4                        c23(0) p12 n40                  c                     
+fm_ret_fwmb_1_1_4_bbox                   c0(0) p13 n0                    c                     
+fm_ret_fwmb_1_1_5                        c24(0) p12 n42                  c                     
+fm_ret_fwmb_1_1_5_bbox                   c0(0) p14 n0                    c                     
+fm_ret_fwmb_1_1_6                        c11(0) p6 n16                   c                     
+fm_ret_fwmb_1_1_6_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_7                        c11(0) p6 n16                   c                     
+fm_ret_fwmb_1_1_7_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_8                        c11(0) p6 n16                   c                     
+fm_ret_fwmb_1_1_8_bbox                   c0(0) p6 n0                     c                     
+fm_ret_fwmb_1_1_9                        c11(0) p6 n16                   c                     
+fm_ret_fwmb_1_1_9_bbox                   c0(0) p6 n0                     c                     
+
+
+########################################################################################################
+####    DESIGN LIBRARY - ref:/WORK
+########################################################################################################
+Design Name                              Statistics                   Attributes     Verification status
+-----------                              ----------                   ----------     -------------------
+FFT                                      c14193(0) p60 n18080            c                     
+FFT_PAD                                  c659(0) p60 n631                c                     
+M_RTL_ADD_UNS_192                        c962(0) p578 n1347              c                     
+M_RTL_ADD_UNS_2                          c12(0) p8 n17                   c                     
+M_RTL_ADD_UNS_24                         c122(0) p74 n171                c                     
+M_RTL_ADD_UNS_25                         c127(0) p77 n178                c                     
+M_RTL_ADD_UNS_3                          c17(0) p11 n24                  c                     
+M_RTL_ADD_UNS_384                        c1922(0) p1154 n2691            c                     
+M_RTL_ADD_UNS_4                          c22(0) p14 n31                  c                     
+M_RTL_ADD_UNS_42                         c212(0) p128 n297               c                     
+M_RTL_ADD_UNS_48                         c242(0) p146 n339               c                     
+M_RTL_ADD_UNS_5                          c27(0) p17 n38                  c                     
+M_RTL_ADD_UNS_6                          c32(0) p20 n45                  c                     
+M_RTL_ADD_UNS_7                          c37(0) p23 n52                  c                     
+M_RTL_ADD_UNS_96                         c482(0) p290 n675               c                     
+M_RTL_DECR_6                             c22(0) p14 n29                  c                     
+M_RTL_DEC_32_5                           c57(0) p38 n63                  c                     
+M_RTL_EQ_1                               c3(0) p3 n5                     c                     
+M_RTL_EQ_CONST_2_0                       c6(0) p3 n8                     c                     
+M_RTL_EQ_CONST_2_1                       c4(0) p3 n6                     c                     
+M_RTL_EQ_CONST_2_2                       c4(0) p3 n6                     c                     
+M_RTL_EQ_CONST_2_3                       c5(0) p3 n7                     c                     
+M_RTL_EQ_CONST_3_4                       c6(0) p4 n9                     c                     
+M_RTL_EQ_CONST_3_5                       c5(0) p4 n8                     c                     
+M_RTL_EQ_CONST_3_6                       c5(0) p4 n8                     c                     
+M_RTL_EQ_CONST_3_7                       c5(0) p4 n8                     c                     
+M_RTL_EQ_CONST_4_8                       c6(0) p5 n10                    c                     
+M_RTL_EQ_CONST_4_9                       c7(0) p5 n11                    c                     
+M_RTL_EQ_CONST_4_a                       c7(0) p5 n11                    c                     
+M_RTL_EQ_CONST_4_b                       c5(0) p5 n9                     c                     
+M_RTL_EQ_CONST_4_c                       c7(0) p5 n11                    c                     
+M_RTL_EQ_CONST_4_d                       c5(0) p5 n9                     c                     
+M_RTL_EQ_CONST_4_e                       c5(0) p5 n9                     c                     
+M_RTL_EQ_CONST_4_f                       c5(0) p5 n9                     c                     
+M_RTL_EQ_CONST_5_00                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_01                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_5_02                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_5_03                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_04                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_5_05                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_06                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_07                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_08                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_5_09                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0a                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0b                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0c                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0d                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0e                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_0f                      c5(0) p6 n10                    c                     
+M_RTL_EQ_CONST_5_10                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_5_11                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_12                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_13                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_14                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_15                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_16                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_17                      c5(0) p6 n10                    c                     
+M_RTL_EQ_CONST_5_18                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_19                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_1a                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_1b                      c5(0) p6 n10                    c                     
+M_RTL_EQ_CONST_5_1c                      c7(0) p6 n12                    c                     
+M_RTL_EQ_CONST_5_1d                      c5(0) p6 n10                    c                     
+M_RTL_EQ_CONST_5_1e                      c5(0) p6 n10                    c                     
+M_RTL_EQ_CONST_5_1f                      c6(0) p6 n11                    c                     
+M_RTL_EQ_CONST_6_20                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_21                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_22                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_23                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_24                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_25                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_26                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_27                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_28                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_29                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2a                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2b                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2c                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2d                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2e                      c7(0) p7 n13                    c                     
+M_RTL_EQ_CONST_6_2f                      c6(0) p7 n12                    c                     
+M_RTL_GEQ_UNS_2                          c9(0) p5 n14                    c                     
+M_RTL_GEQ_UNS_3                          c12(0) p7 n19                   c                     
+M_RTL_GEQ_UNS_4                          c16(0) p9 n25                   c                     
+M_RTL_GEQ_UNS_6                          c29(0) p13 n41                  c                     
+M_RTL_GT_UNS_6                           c28(0) p13 n40                  c                     
+M_RTL_LT_UNS_2                           c8(0) p5 n13                    c                     
+M_RTL_LT_UNS_3                           c11(0) p7 n18                   c                     
+M_RTL_LT_UNS_4                           c15(0) p9 n24                   c                     
+M_RTL_LT_UNS_6                           c28(0) p13 n40                  c                     
+M_RTL_MULT_SIGN_24_25                    c3468(0) p98 n3517              c                     
+M_RTL_MULT_SIGN_24_42                    c5848(0) p132 n5914             c                     
+M_RTL_MUX_2_2                            c8(0) p5 n12                    c                     
+M_RTL_NEQ_1                              c4(0) p3 n6                     c                     
+M_RTL_SUB_BIN_24                         c147(0) p74 n196                c                     
+M_RTL_SUB_BIN_42                         c255(0) p128 n340               c                     
+M_RTL_SUB_BIN_5                          c9(0) p17 n25                   c                     
+M_RTL_SUB_BIN_6                          c8(0) p20 n27                   c                     
+M_RTL_WMUX_17_1                          c38(0) p52 n89                  c                     
+M_RTL_WMUX_17_24                         c866(0) p466 n1308              c                     
+M_RTL_WMUX_2_1                           c7(0) p7 n13                    c                     
+M_RTL_WMUX_2_16                          c82(0) p52 n118                 c                     
+M_RTL_WMUX_2_192                         c962(0) p580 n1350              c                     
+M_RTL_WMUX_2_2                           c12(0) p10 n20                  c                     
+M_RTL_WMUX_2_24                          c122(0) p76 n174                c                     
+M_RTL_WMUX_2_3                           c17(0) p13 n27                  c                     
+M_RTL_WMUX_2_384                         c1922(0) p1156 n2694            c                     
+M_RTL_WMUX_2_4                           c22(0) p16 n34                  c                     
+M_RTL_WMUX_2_48                          c242(0) p148 n342               c                     
+M_RTL_WMUX_2_5                           c27(0) p19 n41                  c                     
+M_RTL_WMUX_2_512                         c2562(0) p1540 n3590            c                     
+M_RTL_WMUX_2_6                           c32(0) p22 n48                  c                     
+M_RTL_WMUX_2_96                          c482(0) p292 n678               c                     
+M_RTL_WMUX_32_1                          c70(0) p97 n166                 c                     
+M_RTL_WMUX_32_16                         c1075(0) p592 n1651             c                     
+M_RTL_WMUX_32_512                        c34307(0) p16960 n50755         c                     
+M_RTL_WMUX_3_1                           c9(0) p10 n18                   c                     
+M_RTL_WMUX_3_16                          c114(0) p70 n168                c                     
+M_RTL_WMUX_4_1                           c14(0) p13 n26                  c                     
+M_RTL_WMUX_4_24                          c267(0) p128 n371               c                     
+M_RTL_WMUX_5_20                          c242(0) p130 n352               c                     
+M_RTL_WMUX_5_24                          c290(0) p154 n420               c                     
+M_RTL_WMUX_9_23                          c462(0) p248 n687               c                     
+M_RTL_WMUX_9_24                          c482(0) p258 n716               c                     
+ROM_16                                   c225(0) p53 n317                c                     
+ROM_2                                    c115(0) p53 n235                c                     
+ROM_4                                    c103(0) p53 n251                c                     
+ROM_8                                    c171(0) p53 n326                c                     
+SVF_REF_DESIGN                           c52(0) p0 n115                  c                     
+radix2_0                                 c261(0) p243 n1021              c                     
+radix2_1                                 c261(0) p243 n1021              c                     
+radix2_2                                 c261(0) p243 n1021              c                     
+radix2_3                                 c261(0) p243 n1021              c                     
+radix2_4                                 c261(0) p243 n1021              c                     
+shift_16                                 c3725(0) p99 n5319              c                     
+shift_4                                  c1049(0) p99 n1486              c                     
+shift_8                                  c2172(0) p99 n2999              c                     
+
+1

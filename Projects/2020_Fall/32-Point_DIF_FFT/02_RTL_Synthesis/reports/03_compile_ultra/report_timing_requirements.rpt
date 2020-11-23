@@ -1,0 +1,15 @@
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : FFT_PAD
+Version: L-2016.03-SP5-5
+Date   : Sun Nov 22 19:57:55 2020
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    i_RSTN
+
+1

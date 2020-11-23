@@ -1,0 +1,1433 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-5
+Date:        Sun Nov 22 19:57:52 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    616
+    Multiply driven inputs (LINT-6)                                27
+    Unconnected ports (LINT-28)                                   589
+
+Cells                                                             472
+    Cells do not drive (LINT-1)                                   147
+    Connected to power or ground (LINT-32)                        306
+    Nets connected to multiple pins on same cell (LINT-33)         19
+--------------------------------------------------------------------------------
+
+Warning: In design 'FFT_PAD', cell 'pad1' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad2' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad4' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad5' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad6' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad7' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad8' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad9' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad11' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad12' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad13' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad14' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad15' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad18' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad19' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad20' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad21' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad24' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad25' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad26' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad27' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad30' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad31' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad32' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad34' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad37' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad38' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad39' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad40' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad43' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad44' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad45' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad46' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad49' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad50' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad51' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad52' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad53' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad54' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad57' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad58' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad59' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad60' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad63' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad64' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad65' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad66' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad69' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad70' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad71' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad72' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad75' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad76' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad77' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad78' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad81' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad82' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad83' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad84' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad87' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad88' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad89' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad90' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad91' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad92' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad93' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad94' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad95' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad96' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad97' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad98' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad99' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad100' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad101' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad102' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad103' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad104' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad105' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad106' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad107' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad110' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad111' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad112' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad113' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad114' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad117' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad118' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad119' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad120' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad123' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad124' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad125' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad126' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad129' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad130' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad131' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad132' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad135' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad136' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad137' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad138' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad141' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad142' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad143' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad144' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad147' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad148' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad149' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad150' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad153' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad154' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad155' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad156' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad157' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad158' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad161' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad162' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad163' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad164' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad167' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad168' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad169' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad170' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad173' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad174' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad175' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad176' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad179' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad180' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad181' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad182' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad185' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad186' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad187' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad188' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad191' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad192' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad193' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad194' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad197' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad198' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad199' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad200' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad203' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad204' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad206' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', cell 'pad208' does not drive any nets. (LINT-1)
+Warning: In design 'FFT_PAD', input port 'i_CLK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_RSTN' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_VALID' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_REAL[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', input port 'i_DATA_IMAG[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FFT_PAD', port 'o_DATA_IMAG[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT_PAD', port 'o_DATA_IMAG[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT_PAD', port 'o_DATA_IMAG[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT_PAD', port 'o_DATA_IMAG[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT', port 'dout_i[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT', port 'dout_i[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT', port 'dout_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT', port 'dout_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_a_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'din_b_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4', port 'delay_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'din_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'shift_16', port 'dout_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_8', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_4', port 'w_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_4', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_4', port 'w_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_4', port 'w_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ROM_2', port 'w_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'w_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'op_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0', port 'outvalid' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_r[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1', port 'w_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2', port 'w_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2', port 'w_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2', port 'w_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3', port 'w_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'DIFF[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'DIFF[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'I2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_29_123_1582_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'I2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_30_124_9496_0', port 'O2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'I2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_4_DP_OP_31_125_1582_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'I4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_3_DP_OP_30_128_297_0', port 'O2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'I4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'I4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'I4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'I4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_2_DP_OP_30_132_41_0', port 'O2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I3[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'I4[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_1_DP_OP_30_136_809_0', port 'O2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_29_139_9746_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I3[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'I4[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_30_140_553_0', port 'O2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I1[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I1[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I1[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I1[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I2[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I2[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I2[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'I2[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'radix2_0_DP_OP_31_141_9746_0', port 'O1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_r[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_a_i[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_r[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_b_i[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_r[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'shift_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'din_i[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[23]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[22]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[21]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[20]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[19]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[18]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[17]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[16]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[15]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[14]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[13]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[12]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[11]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[10]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[9]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[23]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[22]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[21]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[20]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[19]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[18]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[17]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[16]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[15]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[14]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[13]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[12]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[11]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[10]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[9]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[8]' is connected to logic 1. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_r[0]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[23]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[22]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[21]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[20]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[19]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[18]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[17]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[16]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[15]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[14]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[13]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[12]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[11]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[10]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[9]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[8]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[7]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[6]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[5]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[4]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[3]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[2]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[1]' is connected to logic 0. 
+Warning: In design 'FFT', a pin on submodule 'radix_no5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'w_i[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_29_123_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_30_124_9496' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I1[0]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[7]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[6]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[5]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[4]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[3]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[2]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[1]' is connected to logic 0. 
+Warning: In design 'radix2_4', a pin on submodule 'DP_OP_31_125_1582' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I2[0]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[23]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[22]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[21]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[20]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[19]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[18]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[17]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[16]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[15]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[14]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[13]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[12]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[11]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[10]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[9]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[8]' is connected to logic 1. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[7]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[6]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[5]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[4]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[3]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[2]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[1]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[0]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[23]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[22]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[21]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[20]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[19]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[18]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[17]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[16]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[15]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[14]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[13]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[12]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[11]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[10]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[9]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[8]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[7]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[6]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[5]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[4]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[3]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[2]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[1]' is connected to logic 0. 
+Warning: In design 'radix2_0', a pin on submodule 'DP_OP_30_140_553' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[0]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[23]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[22]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[21]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[20]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[19]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[18]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[17]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[16]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[15]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[14]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[13]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[12]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[11]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[10]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[9]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[7]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[6]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[5]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[4]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[3]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[2]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[1]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I3[0]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[7]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[6]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[5]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[4]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[3]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[2]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[1]' is connected to logic 0. 
+Warning: In design 'radix2_1', a pin on submodule 'DP_OP_30_136_809' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[0]' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'DP_OP_30_132_41' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[7]' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'DP_OP_30_132_41' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[5]' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'DP_OP_30_132_41' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[4]' is connected to logic 0. 
+Warning: In design 'radix2_2', a pin on submodule 'DP_OP_30_132_41' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[2]' is connected to logic 0. 
+Warning: In design 'radix2_3', a pin on submodule 'sub_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_3', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'radix2_3', a pin on submodule 'DP_OP_30_128_297' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'I4[5]' is connected to logic 0. 
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no1'. (LINT-33)
+   Net 'n272' is connected to pins 'din_a_r[7]', 'din_a_r[6]'', 'din_a_r[5]', 'din_a_r[4]', 'din_a_r[3]', 'din_a_r[2]', 'din_a_r[1]', 'din_a_r[0]', 'din_a_i[7]', 'din_a_i[6]', 'din_a_i[5]', 'din_a_i[4]', 'din_a_i[3]', 'din_a_i[2]', 'din_a_i[1]', 'din_a_i[0]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no1'. (LINT-33)
+   Net 'din_r_wire[19]' is connected to pins 'din_b_r[23]', 'din_b_r[22]'', 'din_b_r[21]', 'din_b_r[20]', 'din_b_r[19]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no1'. (LINT-33)
+   Net 'din_i_wire[19]' is connected to pins 'din_b_i[23]', 'din_b_i[22]'', 'din_b_i[21]', 'din_b_i[20]', 'din_b_i[19]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'shift_16'. (LINT-33)
+   Net 'n272' is connected to pins 'din_r[7]', 'din_r[6]'', 'din_r[5]', 'din_r[4]', 'din_r[3]', 'din_r[2]', 'din_r[1]', 'din_r[0]', 'din_i[7]', 'din_i[6]', 'din_i[5]', 'din_i[4]', 'din_i[3]', 'din_i[2]', 'din_i[1]', 'din_i[0]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no3'. (LINT-33)
+   Net 'n1675' is connected to pins 'w_i[7]', 'w_i[5]'', 'w_i[4]', 'w_i[2]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no4'. (LINT-33)
+   Net 'n1675' is connected to pins 'w_r[23]', 'w_r[22]'', 'w_r[21]', 'w_r[20]', 'w_r[19]', 'w_r[18]', 'w_r[17]', 'w_r[16]', 'w_r[15]', 'w_r[14]', 'w_r[13]', 'w_r[12]', 'w_r[11]', 'w_r[10]', 'w_r[9]', 'w_r[7]', 'w_r[6]', 'w_r[5]', 'w_r[4]', 'w_r[3]', 'w_r[2]', 'w_r[1]', 'w_r[0]', 'w_i[7]', 'w_i[6]', 'w_i[5]', 'w_i[4]', 'w_i[3]', 'w_i[2]', 'w_i[1]', 'w_i[0]'.
+Warning: In design 'FFT', the same net is connected to more than one pin on submodule 'radix_no5'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'w_r[23]', 'w_r[22]'', 'w_r[21]', 'w_r[20]', 'w_r[19]', 'w_r[18]', 'w_r[17]', 'w_r[16]', 'w_r[15]', 'w_r[14]', 'w_r[13]', 'w_r[12]', 'w_r[11]', 'w_r[10]', 'w_r[9]', 'w_r[7]', 'w_r[6]', 'w_r[5]', 'w_r[4]', 'w_r[3]', 'w_r[2]', 'w_r[1]', 'w_r[0]', 'w_i[23]', 'w_i[22]', 'w_i[21]', 'w_i[20]', 'w_i[19]', 'w_i[18]', 'w_i[17]', 'w_i[16]', 'w_i[15]', 'w_i[14]', 'w_i[13]', 'w_i[12]', 'w_i[11]', 'w_i[10]', 'w_i[9]', 'w_i[8]', 'w_i[7]', 'w_i[6]', 'w_i[5]', 'w_i[4]', 'w_i[3]', 'w_i[2]', 'w_i[1]', 'w_i[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'sub_x_2'. (LINT-33)
+   Net 'n92' is connected to pins 'A[7]', 'A[6]'', 'A[5]', 'A[4]', 'A[3]', 'A[2]', 'A[1]', 'A[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'sub_x_2'. (LINT-33)
+   Net 'n93' is connected to pins 'B[7]', 'B[6]'', 'B[5]', 'B[4]', 'B[3]', 'B[2]', 'B[1]', 'B[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'sub_x_1'. (LINT-33)
+   Net 'n92' is connected to pins 'A[7]', 'A[6]'', 'A[5]', 'A[4]', 'A[3]', 'A[2]', 'A[1]', 'A[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'sub_x_1'. (LINT-33)
+   Net 'n93' is connected to pins 'B[7]', 'B[6]'', 'B[5]', 'B[4]', 'B[3]', 'B[2]', 'B[1]', 'B[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'DP_OP_29_123_1582'. (LINT-33)
+   Net 'n92' is connected to pins 'I1[7]', 'I1[6]'', 'I1[5]', 'I1[4]', 'I1[3]', 'I1[2]', 'I1[1]', 'I1[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'DP_OP_29_123_1582'. (LINT-33)
+   Net 'n93' is connected to pins 'I2[7]', 'I2[6]'', 'I2[5]', 'I2[4]', 'I2[3]', 'I2[2]', 'I2[1]', 'I2[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'DP_OP_30_124_9496'. (LINT-33)
+   Net 'n92' is connected to pins 'I1[7]', 'I1[6]'', 'I1[5]', 'I1[4]', 'I1[3]', 'I1[2]', 'I1[1]', 'I1[0]', 'I2[7]', 'I2[6]', 'I2[5]', 'I2[4]', 'I2[3]', 'I2[2]', 'I2[1]', 'I2[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'DP_OP_31_125_1582'. (LINT-33)
+   Net 'n92' is connected to pins 'I1[7]', 'I1[6]'', 'I1[5]', 'I1[4]', 'I1[3]', 'I1[2]', 'I1[1]', 'I1[0]'.
+Warning: In design 'radix2_4', the same net is connected to more than one pin on submodule 'DP_OP_31_125_1582'. (LINT-33)
+   Net 'n93' is connected to pins 'I2[7]', 'I2[6]'', 'I2[5]', 'I2[4]', 'I2[3]', 'I2[2]', 'I2[1]', 'I2[0]'.
+Warning: In design 'radix2_0', the same net is connected to more than one pin on submodule 'DP_OP_30_140_553'. (LINT-33)
+   Net 'n42' is connected to pins 'I3[23]', 'I3[22]'', 'I3[21]', 'I3[20]', 'I3[19]', 'I3[18]', 'I3[17]', 'I3[16]', 'I3[15]', 'I3[14]', 'I3[13]', 'I3[12]', 'I3[11]', 'I3[10]', 'I3[9]', 'I3[7]', 'I3[6]', 'I3[5]', 'I3[4]', 'I3[3]', 'I3[2]', 'I3[1]', 'I3[0]', 'I4[23]', 'I4[22]', 'I4[21]', 'I4[20]', 'I4[19]', 'I4[18]', 'I4[17]', 'I4[16]', 'I4[15]', 'I4[14]', 'I4[13]', 'I4[12]', 'I4[11]', 'I4[10]', 'I4[9]', 'I4[8]', 'I4[7]', 'I4[6]', 'I4[5]', 'I4[4]', 'I4[3]', 'I4[2]', 'I4[1]', 'I4[0]'.
+Warning: In design 'radix2_1', the same net is connected to more than one pin on submodule 'DP_OP_30_136_809'. (LINT-33)
+   Net 'n146' is connected to pins 'I3[23]', 'I3[22]'', 'I3[21]', 'I3[20]', 'I3[19]', 'I3[18]', 'I3[17]', 'I3[16]', 'I3[15]', 'I3[14]', 'I3[13]', 'I3[12]', 'I3[11]', 'I3[10]', 'I3[9]', 'I3[7]', 'I3[6]', 'I3[5]', 'I3[4]', 'I3[3]', 'I3[2]', 'I3[1]', 'I3[0]', 'I4[7]', 'I4[6]', 'I4[5]', 'I4[4]', 'I4[3]', 'I4[2]', 'I4[1]', 'I4[0]'.
+Warning: In design 'radix2_2', the same net is connected to more than one pin on submodule 'DP_OP_30_132_41'. (LINT-33)
+   Net 'n157' is connected to pins 'I4[7]', 'I4[5]'', 'I4[4]', 'I4[2]'.
+1

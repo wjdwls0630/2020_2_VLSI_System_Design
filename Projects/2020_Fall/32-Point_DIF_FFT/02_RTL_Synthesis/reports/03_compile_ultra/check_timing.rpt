@@ -1,0 +1,103 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'FFT_PAD' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+Warning: The following input ports have no clock_relative delay specified, the command set_input_delay without -clock option will be ignored. (TIM-216)
+--------------------
+i_VALID
+i_DATA_REAL[11]
+i_DATA_REAL[10]
+i_DATA_REAL[9]
+i_DATA_REAL[8]
+i_DATA_REAL[7]
+i_DATA_REAL[6]
+i_DATA_REAL[5]
+i_DATA_REAL[4]
+i_DATA_REAL[3]
+i_DATA_REAL[2]
+i_DATA_REAL[1]
+i_DATA_REAL[0]
+i_DATA_IMAG[11]
+i_DATA_IMAG[10]
+i_DATA_IMAG[9]
+i_DATA_IMAG[8]
+i_DATA_IMAG[7]
+i_DATA_IMAG[6]
+i_DATA_IMAG[5]
+i_DATA_IMAG[4]
+i_DATA_IMAG[3]
+i_DATA_IMAG[2]
+i_DATA_IMAG[1]
+i_DATA_IMAG[0]
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+FFT/din_i_reg_reg[8]/D
+FFT/din_i_reg_reg[9]/D
+FFT/din_i_reg_reg[10]/D
+FFT/din_i_reg_reg[11]/D
+FFT/din_i_reg_reg[12]/D
+FFT/din_i_reg_reg[13]/D
+FFT/din_i_reg_reg[14]/D
+FFT/din_i_reg_reg[15]/D
+FFT/din_i_reg_reg[16]/D
+FFT/din_i_reg_reg[17]/D
+FFT/din_i_reg_reg[18]/D
+FFT/din_i_reg_reg[19]/D
+FFT/din_r_reg_reg[8]/D
+FFT/din_r_reg_reg[9]/D
+FFT/din_r_reg_reg[10]/D
+FFT/din_r_reg_reg[11]/D
+FFT/din_r_reg_reg[12]/D
+FFT/din_r_reg_reg[13]/D
+FFT/din_r_reg_reg[14]/D
+FFT/din_r_reg_reg[15]/D
+FFT/din_r_reg_reg[16]/D
+FFT/din_r_reg_reg[17]/D
+FFT/din_r_reg_reg[18]/D
+FFT/din_r_reg_reg[19]/D
+FFT/in_valid_reg_reg/D
+o_DATA_IMAG[0]
+o_DATA_IMAG[1]
+o_DATA_IMAG[2]
+o_DATA_IMAG[3]
+o_DATA_IMAG[4]
+o_DATA_IMAG[5]
+o_DATA_IMAG[6]
+o_DATA_IMAG[7]
+o_DATA_IMAG[8]
+o_DATA_IMAG[9]
+o_DATA_IMAG[10]
+o_DATA_IMAG[11]
+o_DATA_REAL[0]
+o_DATA_REAL[1]
+o_DATA_REAL[2]
+o_DATA_REAL[3]
+o_DATA_REAL[4]
+o_DATA_REAL[5]
+o_DATA_REAL[6]
+o_DATA_REAL[7]
+o_DATA_REAL[8]
+o_DATA_REAL[9]
+o_DATA_REAL[10]
+o_DATA_REAL[11]
+o_DATA_REAL[12]
+o_DATA_REAL[13]
+o_DATA_REAL[14]
+o_DATA_REAL[15]
+o_VALID
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

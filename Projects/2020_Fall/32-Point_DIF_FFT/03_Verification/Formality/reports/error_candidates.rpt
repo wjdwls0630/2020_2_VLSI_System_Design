@@ -1,0 +1,59 @@
+**************************************************
+Report         : error_candidates
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+3 distinct errors detected in implementation.
+
+Recommended error candidate:
+
+    Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U254
+
+Alternate error candidates:
+ 1. Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U44
+    Cell    FFT/radix_no2/U254
+
+ 2. Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U145
+
+ 3. Cell    FFT/radix_no3/U52
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U254
+
+ 4. Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U44
+    Cell    FFT/radix_no2/U145
+
+ 5. Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U63
+
+ 6. Cell    FFT/radix_no3/U52
+    Cell    FFT/radix_no1/U44
+    Cell    FFT/radix_no2/U254
+
+ 7. Cell    FFT/radix_no3/U52
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U145
+
+ 8. Cell    FFT/radix_no3/U101
+    Cell    FFT/radix_no1/U44
+    Cell    FFT/radix_no2/U63
+
+ 9. Cell    FFT/radix_no3/U52
+    Cell    FFT/radix_no1/U44
+    Cell    FFT/radix_no2/U145
+
+10. Cell    FFT/radix_no3/U52
+    Cell    FFT/radix_no1/U18
+    Cell    FFT/radix_no2/U63
+
+1

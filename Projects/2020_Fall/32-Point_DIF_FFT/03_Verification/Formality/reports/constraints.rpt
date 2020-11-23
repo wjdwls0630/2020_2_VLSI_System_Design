@@ -1,0 +1,30 @@
+**************************************************
+Report         : constraint
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+
+
+No constraints defined.
+1
+**************************************************
+Report         : constraint_type
+
+Reference      : ref:/WORK/FFT_PAD
+Implementation : impl:/WORK/FFT_PAD
+Version        : I-2013.12-SP2
+Date           : Mon Nov 23 12:50:58 2020
+**************************************************
+0hot
+0hot_init0
+0hot_init1
+1hot
+1hot_init0
+1hot_init1
+coupled
+mutex
+
+1

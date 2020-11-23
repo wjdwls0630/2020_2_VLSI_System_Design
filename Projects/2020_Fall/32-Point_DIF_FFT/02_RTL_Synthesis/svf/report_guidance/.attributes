@@ -1,0 +1,6 @@
+BuildDate=Apr 21, 2017
+CheckpointRoot=checkpoints
+CommandRoot=SVF
+NetlistRoot=netlists
+ProductVersion=L-2016.03-SP5-5
+SVFFileFormat=1.0
