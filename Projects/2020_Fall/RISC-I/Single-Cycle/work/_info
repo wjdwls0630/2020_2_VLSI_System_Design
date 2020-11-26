@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle
 vAdder
-Z1 !s110 1606362541
+Z1 !s110 1606377960
 !i10b 1
 !s100 JIa]L_SR8HZR:XZ_G9^YA2
 I5Gd3b7aOA;R9i>@6gFW]f1
@@ -23,7 +23,7 @@ Z3 OV;L;10.4b;61
 r1
 !s85 0
 31
-Z4 !s108 1606362541.000000
+Z4 !s108 1606377960.000000
 Z5 !s107 Registers/Registers.v|Others/Sign_Extend.v|Others/Shift_Left_2.v|Others/MUX2X1.v|Others/Branch_Control.v|Others/Adder.v|InstrMEM/PC.v|InstrMEM/InstrMEM.v|DataMEM/DataMEM.v|Control/Control.v|Control/ALU_Control.v|ALU/ALU.v|CPU.v|parameters.v|CPU_tb.v|
 Z6 !s90 -reportprogress|300|+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle|CPU_tb.v|
 !i113 1

@@ -318,3 +318,201 @@ run
 run
 run
 run
+source run.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 16:31:57 on Nov 26,2020
+# vlog -reportprogress 300 "+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle" CPU_tb.v 
+# -- Compiling module ALU
+# -- Compiling module ALU_Control
+# -- Compiling module Control
+# -- Compiling module DataMEM
+# -- Compiling module InstrMEM
+# -- Compiling module PC
+# -- Compiling module Adder
+# -- Compiling module Branch_Control
+# -- Compiling module MUX2X1
+# -- Compiling module Shift_Left_2
+# -- Compiling module Sign_Extend
+# -- Compiling module Registers
+# -- Compiling module CPU
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 16:31:57 on Nov 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.CPU_tb
+# End time: 16:32:04 on Nov 26,2020, Elapsed time: 3:42:58
+# Errors: 0, Warnings: 1
+# vsim work.CPU_tb 
+# Start time: 16:32:04 on Nov 26,2020
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.PC
+# Loading work.InstrMEM
+# Loading work.Control
+# Loading work.MUX2X1
+# Loading work.Registers
+# Loading work.Sign_Extend
+# Loading work.ALU_Control
+# Loading work.ALU
+# Loading work.DataMEM
+# Loading work.Adder
+# Loading work.Shift_Left_2
+# Loading work.Branch_Control
+add wave -position insertpoint sim:/CPU_tb/*
+add wave -position insertpoint sim:/CPU_tb/CPU/*
+add wave -position insertpoint sim:/CPU_tb/CPU/InstrMEM/*
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# --------------------------- [ Simulation Starts !! ] ---------------------------
+run
+run
+run
+run
+source run.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:04:44 on Nov 26,2020
+# vlog -reportprogress 300 "+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle" CPU_tb.v 
+# -- Compiling module ALU
+# -- Compiling module ALU_Control
+# -- Compiling module Control
+# -- Compiling module DataMEM
+# -- Compiling module InstrMEM
+# -- Compiling module PC
+# -- Compiling module Adder
+# -- Compiling module Branch_Control
+# -- Compiling module MUX2X1
+# -- Compiling module Shift_Left_2
+# -- Compiling module Sign_Extend
+# -- Compiling module Registers
+# -- Compiling module CPU
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 17:04:44 on Nov 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.CPU_tb
+# End time: 17:04:48 on Nov 26,2020, Elapsed time: 0:32:44
+# Errors: 0, Warnings: 1
+# vsim work.CPU_tb 
+# Start time: 17:04:48 on Nov 26,2020
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.PC
+# Loading work.InstrMEM
+# Loading work.Control
+# Loading work.MUX2X1
+# Loading work.Registers
+# Loading work.Sign_Extend
+# Loading work.ALU_Control
+# Loading work.ALU
+# Loading work.DataMEM
+# Loading work.Adder
+# Loading work.Shift_Left_2
+# Loading work.Branch_Control
+add wave -position insertpoint sim:/CPU_tb/*
+add wave -position insertpoint sim:/CPU_tb/CPU/*
+add wave -position insertpoint sim:/CPU_tb/CPU/InstrMEM/*
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# --------------------------- [ Simulation Starts !! ] ---------------------------
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# --------------------------- Simulation Stops !!---------------------------
+# ============================================================================
+# / [1;33m##########                                  #########[m
+# //[1;33m############/                           #############[m
+#   [1;33m  (#############       /            ##################[m
+#   [1;33m  ################################################ [m 
+#   [1;33m     /###########################################  [m   
+#  [1;33m         //(#####################################(  [m    
+#    [1;33m        (##################################(/     [m    
+#    [1;33m     /####################################(     [m    
+#    [1;33m   #####(   /###############(    ########(   [m     
+#    [1;33m (#####       ##############     (########  [m	   
+# .  [1;33m  #######(  (################   (#########( [m	   
+# .   [1;33m/###############/  (######################/	[m   
+# [1;35m    . /////[m[1;33m############################[m[1;35m/ ///([1;33m###( [m	   
+# [1;35m  .//////([m[1;33m##########################[m[1;35m///////[1;33m######  [m	   
+# [1;35m   . /////[m [1;33m#########(       /#########[m[1;35m(//////[1;33m####( [m    
+# [1;35m   (#(([m[1;33m###########(        (#########[m[1;35m((((([1;33m######/  [m  
+#   [1;33m /###############(      /(####################( [m   
+#    [1;33m/#################(  (#######################  [m  
+# [1;33m   (###########################################(  [m 
+# [1;36m	^o^		WOOOOOW  YOU  PASSED!!![m
+# 
+# 
+# ============================================================================
+# ** Note: $finish    : CPU_tb.v(112)
+#    Time: 1020 ps  Iteration: 0  Instance: /CPU_tb
+# 1
+# Break in Module CPU_tb at CPU_tb.v line 112
+source run.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:06:00 on Nov 26,2020
+# vlog -reportprogress 300 "+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle" CPU_tb.v 
+# -- Compiling module ALU
+# -- Compiling module ALU_Control
+# -- Compiling module Control
+# -- Compiling module DataMEM
+# -- Compiling module InstrMEM
+# -- Compiling module PC
+# -- Compiling module Adder
+# -- Compiling module Branch_Control
+# -- Compiling module MUX2X1
+# -- Compiling module Shift_Left_2
+# -- Compiling module Sign_Extend
+# -- Compiling module Registers
+# -- Compiling module CPU
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 17:06:00 on Nov 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.CPU_tb
+# End time: 17:06:05 on Nov 26,2020, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 1
+# vsim work.CPU_tb 
+# Start time: 17:06:05 on Nov 26,2020
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.PC
+# Loading work.InstrMEM
+# Loading work.Control
+# Loading work.MUX2X1
+# Loading work.Registers
+# Loading work.Sign_Extend
+# Loading work.ALU_Control
+# Loading work.ALU
+# Loading work.DataMEM
+# Loading work.Adder
+# Loading work.Shift_Left_2
+# Loading work.Branch_Control
+add wave -position insertpoint sim:/CPU_tb/*
+add wave -position insertpoint sim:/CPU_tb/CPU/*
+add wave -position insertpoint sim:/CPU_tb/CPU/InstrMEM/*
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# --------------------------- [ Simulation Starts !! ] ---------------------------
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:06:41 on Nov 26,2020, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 1
