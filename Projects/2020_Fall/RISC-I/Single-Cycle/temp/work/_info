@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp
+vInstruction_Memory
+Z1 !s110 1606265103
+!i10b 1
+!s100 ?AkQ6<JDJh;R?5XNR;mme2
+I1S^H19kJJV3YFMHNVzF@31
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606262278
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/Instruction_Memory.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/Instruction_Memory.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1606265103.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/Instruction_Memory.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/Instruction_Memory.v|
+!i113 1
+Z5 o-work work
+n@instruction_@memory
+vtestfixture
+R1
+!i10b 1
+!s100 Y]SRWB;780@48hdH7Ngl80
+I[P;kR^Je7K[k`g]B[h0bb3
+R2
+R0
+w1606264639
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/testbench.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/testbench.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/testbench.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/temp/testbench.v|
+!i113 1
+R5

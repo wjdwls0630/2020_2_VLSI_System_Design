@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM
+vDataMEM
+Z1 !s110 1606140432
+!i10b 1
+!s100 bSdH<e@?Y8AnAgKdK0YH]0
+IXlMPz2f=F]Mh:7eIn6WD[2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606139716
+8DataMEM.v
+FDataMEM.v
+L0 5
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1606140432.000000
+Z5 !s107 DataMEM.v|DataMEM_tb.v|
+Z6 !s90 -reportprogress|300|+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM|DataMEM_tb.v|
+!i113 1
+Z7 !s92 +incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM
+n@data@m@e@m
+vDataMEM_tb
+R1
+!i10b 1
+!s100 <;09iP2Hknf7<P]@V`CfY2
+Ii`nnhPeH_W<@1C`71U1SL1
+R2
+R0
+w1606140399
+8DataMEM_tb.v
+FDataMEM_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@data@m@e@m_tb

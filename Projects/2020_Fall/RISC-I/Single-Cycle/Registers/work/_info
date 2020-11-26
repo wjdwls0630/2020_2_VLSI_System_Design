@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Registers
+vAdder
+!s110 1606137505
+!i10b 1
+!s100 e:d9X4=Y@7l;=M=20XN6T1
+Ik[oH39Y8`[Iz@NB]PT31F1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606137496
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Adder.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Adder.v
+L0 1
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1606137505.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Adder.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Adder.v|
+!i113 1
+Z3 o-work work
+n@adder
+vALU
+!s110 1606137331
+!i10b 1
+!s100 j8CElKnBhLoklI5`lUgdM2
+II0c4FST;5D=PiWj:Dc55k0
+R1
+R0
+w1606137329
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU/ALU.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU/ALU.v
+L0 6
+R2
+r1
+!s85 0
+31
+!s108 1606137331.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU/ALU.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU/ALU.v|
+!i113 1
+R3
+n@a@l@u
+vDataMEM
+Z4 !s110 1606139376
+!i10b 1
+!s100 N1nUZENY6:g]jO_9miM:T2
+IgA`1<QmBHNI6hD9fzAB:T2
+R1
+R0
+w1606138963
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z5 !s108 1606139376.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM.v|
+!i113 1
+R3
+n@data@m@e@m
+vDataMEM_tb
+R4
+!i10b 1
+!s100 K_<=`77>BG=>mNWJo]YcU1
+IoRzHSkGDGT97ZaYfC:2Um2
+R1
+R0
+w1606139327
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM_tb.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM_tb.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM/DataMEM_tb.v|
+!i113 1
+R3
+n@data@m@e@m_tb
+vRegisters
+Z6 !s110 1606136001
+!i10b 1
+!s100 `Olb_P^Jif5cb2F4nDdXg1
+IADCC8LTLf[ZBViG3lNX<51
+R1
+R0
+w1606135956
+8Registers.v
+FRegisters.v
+L0 5
+R2
+r1
+!s85 0
+31
+Z7 !s108 1606136001.000000
+Z8 !s107 Registers.v|Registers_tb.v|
+Z9 !s90 -reportprogress|300|+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Registers|Registers_tb.v|
+!i113 1
+Z10 !s92 +incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Registers
+n@registers
+vRegisters_tb
+R6
+!i10b 1
+!s100 b]bWm_:?b;EHnX2AGag^^2
+Iz^X@z49hP:][i<aFo[D5V2
+R1
+R0
+w1606135985
+8Registers_tb.v
+FRegisters_tb.v
+L0 6
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@registers_tb
+vShift_Left_2
+!s110 1606137575
+!i10b 1
+!s100 IeC?LhQfF7<gi;7ZLf=_V1
+IB3g4CG07=laLRzQ57fS^M1
+R1
+R0
+w1606137568
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Shift_Left_2.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Shift_Left_2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1606137575.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Shift_Left_2.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Shift_Left_2.v|
+!i113 1
+R3
+n@shift_@left_2
+vSign_Extend
+!s110 1606136483
+!i10b 1
+!s100 j:2l>37^e7`ONd>?V]c623
+I1]o@S`2;hMaoE5O242PZz2
+R1
+R0
+w1606136483
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1606136483.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend.v|
+!i113 1
+R3
+n@sign_@extend
+vSign_Extend_tb
+!s110 1606136751
+!i10b 1
+!s100 X?P?d>k:^;A];IjPbM`o11
+I7::<IVT@[QK:TU:nFE0mG2
+R1
+R0
+w1606136746
+8/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend_tb.v
+F/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1606136750.000000
+!s107 /home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend_tb.v|
+!s90 -reportprogress|300|-work|work|/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/Others/Sign_Extend_tb.v|
+!i113 1
+R3
+n@sign_@extend_tb

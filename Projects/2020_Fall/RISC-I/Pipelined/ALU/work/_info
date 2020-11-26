@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU
+vALU
+Z1 !s110 1606133742
+!i10b 1
+!s100 BL60AifX@<_H_:ZTiRa]V2
+IDRBGYeRSTNNN<lbOD[9J:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606133733
+8ALU.v
+FALU.v
+L0 6
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1606133742.000000
+Z5 !s107 ALU.v|ALU_tb.v|
+Z6 !s90 -reportprogress|300|+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU|ALU_tb.v|
+!i113 1
+Z7 !s92 +incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/ALU
+n@a@l@u
+vALU_tb
+R1
+!i10b 1
+!s100 f8M3Noa2d<n^EdofjO0hT3
+IOa_1IQS[K01>gYo1E^BHn2
+R2
+R0
+w1606131361
+8ALU_tb.v
+FALU_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@a@l@u_tb

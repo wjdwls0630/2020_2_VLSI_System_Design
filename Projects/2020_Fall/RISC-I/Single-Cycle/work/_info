@@ -1,0 +1,304 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jin/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle
+vAdder
+Z1 !s110 1606362541
+!i10b 1
+!s100 JIa]L_SR8HZR:XZ_G9^YA2
+I5Gd3b7aOA;R9i>@6gFW]f1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606289353
+8Others/Adder.v
+FOthers/Adder.v
+L0 2
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1606362541.000000
+Z5 !s107 Registers/Registers.v|Others/Sign_Extend.v|Others/Shift_Left_2.v|Others/MUX2X1.v|Others/Branch_Control.v|Others/Adder.v|InstrMEM/PC.v|InstrMEM/InstrMEM.v|DataMEM/DataMEM.v|Control/Control.v|Control/ALU_Control.v|ALU/ALU.v|CPU.v|parameters.v|CPU_tb.v|
+Z6 !s90 -reportprogress|300|+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle|CPU_tb.v|
+!i113 1
+Z7 !s92 +incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle
+n@adder
+vALU
+R1
+!i10b 1
+!s100 ]aC4ClX=6INbiVe7amUnS3
+I`6l;89n1MR]TYD<Md?5CJ0
+R2
+R0
+w1606302149
+8ALU/ALU.v
+FALU/ALU.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@a@l@u
+vALU_Control
+R1
+!i10b 1
+!s100 LS]j:onC:E8?0oK=L:5@z3
+IFDR2_9HbEGIaXI5Y0<dPS0
+R2
+R0
+w1606273620
+8Control/ALU_Control.v
+FControl/ALU_Control.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@a@l@u_@control
+vBranch_Control
+R1
+!i10b 1
+!s100 1A6ZYS2FF0W3N4fNbGhMz1
+IS:?odUbN4Hbz`obaYC_hP0
+R2
+R0
+w1606197996
+8Others/Branch_Control.v
+FOthers/Branch_Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@branch_@control
+vControl
+R1
+!i10b 1
+!s100 5cAl^^7cgg<]LO5DF@jV<3
+IZN6=6g9Q_4B2=7AngY:lg2
+R2
+R0
+w1606289293
+8Control/Control.v
+FControl/Control.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@control
+vCPU
+R1
+!i10b 1
+!s100 ]m<WPZYLf5Se:GV`1SPZm0
+I_JL4eg@5F?VdL0k@5@IDD1
+R2
+R0
+w1606362537
+8CPU.v
+FCPU.v
+L0 19
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@c@p@u
+vCPU_tb
+R1
+!i10b 1
+!s100 ?e^PXS1l1M?CO:]TlWi;j0
+I<0=ASW<>8YhlJe9WK^NBb0
+R2
+R0
+w1606315037
+8CPU_tb.v
+FCPU_tb.v
+L0 11
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@c@p@u_tb
+vDataMEM
+R1
+!i10b 1
+!s100 E_;X;82PV_5W[k]b_nN?E2
+II1]8;ULCW4SFhXSE17z::3
+R2
+R0
+w1606302131
+8DataMEM/DataMEM.v
+FDataMEM/DataMEM.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@data@m@e@m
+vInstrMEM
+R1
+!i10b 1
+!s100 >gfXCaO>CjA[cZmnhJdnf1
+IZIiiPk2QbiU7<FIzR4TmJ1
+R2
+R0
+w1606362501
+8InstrMEM/InstrMEM.v
+FInstrMEM/InstrMEM.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@instr@m@e@m
+vMUX2X1
+R1
+!i10b 1
+!s100 Hg>O6M7e0m?OTJ[AJLHY61
+IKCAn3`kIo;C8HNmEMTa:l1
+R2
+R0
+w1606190554
+8Others/MUX2X1.v
+FOthers/MUX2X1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@m@u@x2@x1
+vPC
+R1
+!i10b 1
+!s100 V2Rc[XNEhSgf5Ah9nO;^T2
+IiVGEP>o=UazfiKFLf`fM@0
+R2
+R0
+w1606271951
+8InstrMEM/PC.v
+FInstrMEM/PC.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@p@c
+vRegisters
+R1
+!i10b 1
+!s100 j2;A9UX5V44AY56Z:WUAA3
+IJo=>`0FIeZI70NYdM5cPB0
+R2
+R0
+w1606299643
+8Registers/Registers.v
+FRegisters/Registers.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@registers
+vShift_Left_2
+R1
+!i10b 1
+!s100 IeC?LhQfF7<gi;7ZLf=_V1
+IIgS[L4Zi;QA5Q;nYgPO9k0
+R2
+R0
+w1606189969
+8Others/Shift_Left_2.v
+FOthers/Shift_Left_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@shift_@left_2
+vSign_Extend
+R1
+!i10b 1
+!s100 KAmF3HRI`c:kOPeI`BCVW2
+I>P`jFM5JASo6E24h5h;kX1
+R2
+R0
+w1606302202
+8Others/Sign_Extend.v
+FOthers/Sign_Extend.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@sign_@extend

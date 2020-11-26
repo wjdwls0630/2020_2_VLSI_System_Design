@@ -1,0 +1,44 @@
+//
+// Created by Park, JungJin - 23 Nov 2020
+// wjdwls0630@khu.ac.kr
+//
+
+module ALU (
+  input [3:0] i_ALUop,
+  input [31:0] i_A,
+  input [31:0] i_B,
+  output reg [31:0] o_Y,
+  output o_Zero
+  );
+
+  parameter AND  = 4'b0000; //0
+  parameter OR   = 4'b0001; //1
+  parameter ADD  = 4'b0010; //2
+  parameter SRA  = 4'b0011; //3 Shift right arithmetic
+  parameter SRL  = 4'b0101; //5 Shift right logical
+  parameter SUB  = 4'b0110; //6
+  parameter SLT  = 4'b0111; //7 Set on less than (signed)
+  parameter SLTU = 4'b1000; //8 Set on less than (unsigned)
+  parameter SLL  = 4'b1001; //9 Shift left logical
+  parameter NOR  = 4'b1100; //12
+  parameter XOR  = 4'b1101; //13
+
+  assign o_Zero = (o_Y==32'b0); //o_Zero is true if o_Y is 0
+
+  always @ ( * ) begin
+    case (i_ALUop)
+      AND : o_Y = i_A & i_B;
+      OR  : o_Y = i_A | i_B;
+      ADD : o_Y = i_A + i_B;
+      SRA : o_Y = $signed(i_A) >>> i_B[10:6]; // $d = $t << h(shamt)
+      SRL : o_Y = i_A >> i_B[10:6];
+      SUB : o_Y = i_A - i_B;
+      SLT : o_Y = ($signed(i_A) < $signed(i_B)) ? 32'b1 : 32'b0;
+      SLTU: o_Y = (i_A < i_B) ? 32'b1 : 32'b0;
+      SLL : o_Y = i_A << i_B[10:6];
+      NOR : o_Y = ~(i_A | i_B);
+      XOR : o_Y = i_A ^ i_B;
+      default: o_Y = 32'b0;
+    endcase
+  end
+endmodule //ALU

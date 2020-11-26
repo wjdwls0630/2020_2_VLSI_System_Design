@@ -1,0 +1,22 @@
+source run.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:07:12 on Nov 23,2020
+# vlog -reportprogress 300 "+incdir+~/2020_2_VLSI_System_Design/Projects/2020_Fall/RISC-I/Single-Cycle/DataMEM" DataMEM_tb.v 
+# -- Compiling module DataMEM
+# -- Compiling module DataMEM_tb
+# 
+# Top level modules:
+# 	DataMEM_tb
+# End time: 23:07:12 on Nov 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.DataMEM_tb 
+# Start time: 23:07:12 on Nov 23,2020
+# Loading work.DataMEM_tb
+# Loading work.DataMEM
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $finish    : DataMEM_tb.v(52)
+#    Time: 180 ns  Iteration: 0  Instance: /DataMEM_tb
+# 1
+# Break in Module DataMEM_tb at DataMEM_tb.v line 52
+# End time: 23:07:16 on Nov 23,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
